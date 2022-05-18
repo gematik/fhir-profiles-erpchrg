@@ -96,7 +96,15 @@
         "short": "Prescription Identifier",
         "definition": "The prescription identifier is the main identifier for all the ePrecscription related ressources and the whole prescription workflow. This identifier is genereted by the \"E-Rezept Fachdienst\" and must not be changed manually.",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PrescriptionId"
+            ]
+          }
+        ]
       },
       {
         "id": "ChargeItem.identifier:AccessCode",
@@ -171,7 +179,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "display"
+              "path": "type"
             }
           ],
           "rules": "closed"
@@ -182,59 +190,40 @@
         "id": "ChargeItem.supportingInformation:prescriptionItem",
         "path": "ChargeItem.supportingInformation",
         "sliceName": "prescriptionItem",
-        "definition": "following definition of Task.input, here the ChargeItem stores the reference to the patient's copy of the ePrescription wwith Bundle.signature holds a JWS-detached signature.",
         "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle"
-            ]
-          }
-        ]
+        "max": "1"
       },
       {
-        "id": "ChargeItem.supportingInformation:prescriptionItem.display",
-        "path": "ChargeItem.supportingInformation.display",
+        "id": "ChargeItem.supportingInformation:prescriptionItem.type",
+        "path": "ChargeItem.supportingInformation.type",
         "min": 1,
-        "fixedString": "E-Rezept"
+        "patternUri": "KBV_PR_ERP_Bundle"
       },
       {
         "id": "ChargeItem.supportingInformation:dispenseItem",
         "path": "ChargeItem.supportingInformation",
         "sliceName": "dispenseItem",
-        "definition": "following definition of Task.input, here the ChargeItem stores the reference to the pharmacy's Abgabedaten",
         "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle"
-            ]
-          }
-        ]
+        "max": "1"
       },
       {
-        "id": "ChargeItem.supportingInformation:dispenseItem.display",
-        "path": "ChargeItem.supportingInformation.display",
+        "id": "ChargeItem.supportingInformation:dispenseItem.type",
+        "path": "ChargeItem.supportingInformation.type",
         "min": 1,
-        "fixedString": "Abgabedatensatz"
+        "patternUri": "DAV-PKV-PR-ERP-AbgabedatenBundle"
       },
       {
         "id": "ChargeItem.supportingInformation:receipt",
         "path": "ChargeItem.supportingInformation",
         "sliceName": "receipt",
-        "definition": "following definition of Task.output, here the ChargeItem stores the reference to the receipt-Bundle, with Bundle.signature in CAdES-enveloping format [RFC 5652].",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "ChargeItem.supportingInformation:receipt.display",
-        "path": "ChargeItem.supportingInformation.display",
+        "id": "ChargeItem.supportingInformation:receipt.type",
+        "path": "ChargeItem.supportingInformation.type",
         "min": 1,
-        "fixedString": "Quittung"
+        "patternUri": "GEM_ERP_PR_Bundle"
       }
     ]
   }
