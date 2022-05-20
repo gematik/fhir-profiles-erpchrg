@@ -23,7 +23,8 @@ do
   if [[ ${dependency::1} =~ [a-z] ]]
   then
     echo "Baking FHIR Snapshot of dependency" $dependency "..."
-    fhir bake --package $dependency;
+   # fhir bake --package $dependency;
+   fhir install $dependency
   fi
 
 
