@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "GEM_ERP_VS_ConsentType",
-  "id": "GEM-ERP-VS-ConsentType",
+  "name": "GEM_ERPCHRG_VS_ConsentType",
+  "id": "GEM-ERPCHRG-VS-ConsentType",
   "title": "ValueSet of Consent Codes",
   "description": "Type of Consents for the ePrescription.",
-  "version": "1.2",
-  "url": "https://gematik.de/fhir/erp/ValueSet/GEM_ERP_VS_ConsentType",
+  "version": "1.0",
+  "url": "https://gematik.de/fhir/erp/ValueSet/GEM_ERPCHRG_VS_ConsentType",
   "publisher": "gematik GmbH",
   "contact": [
     {
@@ -21,7 +21,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_ConsentType"
+        "system": "https://gematik.de/fhir/erp/CodeSystem/GEM_ERPCHRG_CS_ConsentType"
       }
     ]
   }

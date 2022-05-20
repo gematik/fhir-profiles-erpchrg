@@ -1,7 +1,7 @@
-Extension: GEM_ERP_EX_MarkingFlag
-Id: GEM-ERP-EX-MarkingFlag
-* ^url = "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_MarkingFlag"
-* ^version = "1.2"
+Extension: GEM_ERPCHRG_EX_MarkingFlag
+Id: GEM-ERPCHRG-EX-MarkingFlag
+* ^url = "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
+* ^version = "1.0"
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "ChargeItem"
