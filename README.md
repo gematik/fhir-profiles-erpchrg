@@ -46,21 +46,21 @@ Run script `validate.sh` to
 You can use following script options
 
 ### Install dependencies from sushi-config.yaml
-[-i] installs dependencies with firely.terminal from './<foldername>/sushi-config.yaml' file
+`-i` installs dependencies with firely.terminal from `./<foldername>/sushi-config.yaml` file
 
 ```bash
 ./validate.sh -i
 ```
 
 ### Change default folder
-[-d foldername] sets foldername for validation. Default is: './Resources'
+`-d foldername` sets foldername for validation. Default is: `./Resources`
 
 ```bash
 validate.sh -d ./Testresources
 ```
 
 ### Process single file
-[-f filename] sets filename for single validation.
+`-f filename` sets filename for single validation.
 ```bash
 validate.sh -f ./Resources/fsh-generated/resources/myProfile.json
 ```
