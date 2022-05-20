@@ -18,7 +18,7 @@ This Repo contains the fsh files to the published E-Rezept Worklow files on <htt
 
 ### Installing
 
-To install the necessary tools with
+To install the necessary tools run
 
 ```bash
 sudo ./install_fhir_tools.sh
@@ -35,7 +35,7 @@ After successfull installation run:
 ```bash
 ./validate.sh -i
 ```
-
+See `../val_out/<current_directory_name>` for results.
 ## Usage <a name = "usage"></a>
 
 Run script `validate.sh` to
@@ -50,6 +50,15 @@ You can use following script options
 
 ```bash
 ./validate.sh -i
+```
+
+### Sort resulting html files into severity folders
+
+`-s` sorts resulting html files in folders by the severities of the findings.
+Categories are: `error`, `warning`, `information` and `unknown`
+
+```bash
+./validate.sh -s
 ```
 
 ### Change default folder
