@@ -14,7 +14,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq",
+  "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq",
   "version": "1.0",
   "name": "GEM_ERPCHRG_PR_Communication_ChargChangeReq",
   "title": "Request for Modification on ChargeItem",
@@ -54,7 +54,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem"
+              "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem"
             ],
             "aggregation": [
               "referenced"

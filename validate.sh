@@ -87,7 +87,7 @@ fi
 
 if [  -z "$file" ];
 then
-  echo "Validating files in folder '$foldername/fsh-generated/resources/' ..."
+  echo "Validating files in folder '$Resources/fsh-generated/resources/' ..."
   # Run Validator on all *.json files in given directory
   for filename in $(find $foldername/fsh-generated/resources/ -name '*.json');
   do
@@ -95,6 +95,7 @@ then
     resultfile=$outputfolder"/$f.html"
 
     echo -e "\n\nProcessing file \033[1m $f \033[0m";
+    # java -jar $validatorpath -version 4.0.1 $filename -ig "./Resources/fsh-generated/resources/"  -proxy 192.168.110.10:3128 -output $resultfile;
     java -jar $validatorpath -version 4.0.1 $filename -proxy 192.168.110.10:3128 -output $resultfile;
     if [ $sort_results == "true" ]
     then

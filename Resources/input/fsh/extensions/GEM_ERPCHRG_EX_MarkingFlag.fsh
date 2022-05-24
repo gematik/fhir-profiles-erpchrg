@@ -1,6 +1,6 @@
 Extension: GEM_ERPCHRG_EX_MarkingFlag
 Id: GEM-ERPCHRG-EX-MarkingFlag
-* ^url = "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
+* ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
 * ^version = "1.0"
 * ^status = #draft
 * ^context.type = #element

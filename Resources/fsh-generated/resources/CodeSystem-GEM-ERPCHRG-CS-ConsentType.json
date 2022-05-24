@@ -7,7 +7,7 @@
   "title": "CodeSystem of types for a consent",
   "description": "Type of patient consent.",
   "version": "1.0",
-  "url": "https://gematik.de/fhir/erp/CodeSystem/GEM_ERPCHRG_CS_ConsentType",
+  "url": "https://gematik.de/fhir/erpchrg/CodeSystem/GEM_ERPCHRG_CS_ConsentType",
   "concept": [
     {
       "code": "CHARGCONS",

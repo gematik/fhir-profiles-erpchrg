@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem",
+  "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem",
   "version": "1.0",
   "name": "GEM_ERPCHRG_PR_ChargeItem",
   "status": "draft",
@@ -69,7 +69,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
+              "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
             ]
           }
         ],

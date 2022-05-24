@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "GEM-ERPCHRG-EX-MarkingFlag",
-  "url": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag",
+  "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag",
   "version": "1.0",
   "name": "GEM_ERPCHRG_EX_MarkingFlag",
   "status": "draft",
@@ -69,16 +69,6 @@
       },
       {
         "id": "Extension.extension:insuranceProvider.value[x]",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
         "path": "Extension.extension.value[x]",
         "short": "true = submitted to insurance provider",
         "type": [
@@ -108,16 +98,6 @@
       },
       {
         "id": "Extension.extension:subsidy.value[x]",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
         "path": "Extension.extension.value[x]",
         "short": "true = submitted to aid organization",
         "type": [
@@ -147,16 +127,6 @@
       },
       {
         "id": "Extension.extension:taxOffice.value[x]",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
         "path": "Extension.extension.value[x]",
         "short": "true = submitted to tax office",
         "type": [
@@ -168,7 +138,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
+        "fixedUri": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
       },
       {
         "id": "Extension.value[x]",
