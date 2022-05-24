@@ -1,14 +1,14 @@
-Profile: GEM_ERP_PR_ChargeItem
+Profile: GEM_ERPCHRG_PR_ChargeItem
 Parent: ChargeItem
-Id: GEM-ERP-PR-ChargeItem
-* ^url = "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_ChargeItem"
-* ^version = "1.2"
+Id: GEM-ERPCHRG-PR-ChargeItem
+* ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem"
+* ^version = "1.0"
 * ^status = #draft
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed
 //* extension ^min = 0
-* extension contains GEM_ERP_EX_MarkingFlag named markingFlag 0..1 MS
+* extension contains GEM_ERPCHRG_EX_MarkingFlag named markingFlag 0..1 MS
 //* extension[markingFlag] ^min = 0
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -48,12 +48,12 @@ Id: GEM-ERP-PR-ChargeItem
 
 
 Instance: ChargeItemExample
-InstanceOf: GEM_ERP_PR_ChargeItem
+InstanceOf: GEM_ERPCHRG_PR_ChargeItem
 Title:   "ChargeItem completed by Fachdienst"
 Usage: #example
 * id = "abc825bc-bc30-45f8-b109-1b343fff5c45"
-* meta.profile[+] = "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_ChargeItem|1.2"
-* extension[+].url = "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_EX_MarkingFlag"
+* meta.profile[+] = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0"
+* extension[+].url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
 * extension[=].extension[+].url = "insuranceProvider"
 * extension[=].extension[=].valueBoolean = false
 * extension[=].extension[+].url = "subsidy"

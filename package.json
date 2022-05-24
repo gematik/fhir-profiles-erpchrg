@@ -1,0 +1,16 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "de.abda.eRezeptAbgabedatenPKV": "latest",
+    "de.basisprofil.r4": "latest",
+    "hl7.fhir.r4.core": "latest",
+    "kbv.ita.erp": "latest",
+    "de.abda.eRezeptAbgabedatenpkv": "latest",
+    "de.gematik.erezept-workflow.r4": "latest"
+  }
+}

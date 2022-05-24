@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "GEM-ERP-PR-Communication-ChargChangeReq",
+  "id": "GEM-ERPCHRG-PR-Communication-ChargChangeReq",
   "meta": {
     "lastUpdated": "2022-04-16T13:43:30.128+00:00"
   },
@@ -14,12 +14,11 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_ChargChangeReq",
-  "version": "1.2",
-  "name": "GEM_ERP_PR_Communication_ChargChangeReq",
+  "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq",
+  "version": "1.0",
+  "name": "GEM_ERPCHRG_PR_Communication_ChargChangeReq",
   "title": "Request for Modification on ChargeItem",
   "status": "draft",
-  "date": "2022-04-16T13:43:27.7930941+00:00",
   "description": "Ressource used for the communication of Change Request on an existing ChargeItem between patient and pharmacy",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -55,7 +54,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_ChargeItem"
+              "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem"
             ],
             "aggregation": [
               "referenced"

@@ -1,16 +1,15 @@
-Profile: GEM_ERP_PR_Communication_ChargChangeReply
+Profile: GEM_ERPCHRG_PR_Communication_ChargChangeReply
 Parent: Communication
-Id: GEM-ERP-PR-Communication-ChargChangeReply
+Id: GEM-ERPCHRG-PR-Communication-ChargChangeReply
 Title: "Reply on change Request on ChargeItem from pharmacy to Patient"
 Description: "Ressource used for the communication to reply to a change request on a ChargeItem"
 * ^meta.lastUpdated = "2022-04-16T13:43:30.128+00:00"
-* ^url = "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_ChargChangeReply"
-* ^version = "1.2"
+* ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReply"
+* ^version = "1.0"
 * ^status = #draft
-* ^date = "2022-04-16T13:43:27.7930941+00:00"
 * ^abstract = true
 * basedOn 1..1
-* basedOn only Reference(GEM_ERP_PR_ChargeItem)
+* basedOn only Reference(GEM_ERPCHRG_PR_ChargeItem)
 * basedOn ^type.aggregation = #referenced
 * basedOn.reference 1..1
 * status = #unknown (exactly)
@@ -26,11 +25,11 @@ Description: "Ressource used for the communication to reply to a change request 
 * payload.content[x] only string
 
 Instance: Communication_ChargChangeReply
-InstanceOf: GEM_ERP_PR_Communication_ChargChangeReply
+InstanceOf: GEM_ERPCHRG_PR_Communication_ChargChangeReply
 Title: "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
 Usage: #example
 * id = "3bbc2209-9c23-4553-986e-a5c9f69a39fb"
-* meta.profile[+] = "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Communication_ChargChangeReply|1.2"
+* meta.profile[+] = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReply|1.0"
 * meta.tag.display = "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
 * basedOn.reference = "ChargeItem/a51520ec-0899-404f-bb97-fe7d461f90a8"
 * status = #unknown
