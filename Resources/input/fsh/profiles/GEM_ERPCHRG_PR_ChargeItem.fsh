@@ -7,9 +7,12 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed
-* extension contains GEM_ERPCHRG_EX_MarkingFlag named markingFlag 0..1 MS
+* extension contains
+    $MarkingFlagUrl named markingFlag 0..1 MS
 * extension[markingFlag] ^short = "Flag list whether submitted Abrechnungsinformationen for PKV, Taxes, Subsidy"
-//* extension[markingFlag].url = https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag
+* extension[markingFlag].extension ^slicing.discriminator.type = #value
+* extension[markingFlag].extension ^slicing.discriminator.path = "url"
+* extension[markingFlag].extension ^slicing.rules = #closed
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.description = "The task ressource contains three identifier. The first one is the identifier for the ask representing one e-prescription. The other identifier are representing the patient as owner of the prescription. One is the \"Krankenversichertennummer\" which identify each patient by his health insurance company and the other is \"Institutionskennzeichen\"."

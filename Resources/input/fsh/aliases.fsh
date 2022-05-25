@@ -19,3 +19,4 @@ Alias: $identifier-telematik-id = http://fhir.de/StructureDefinition/identifier-
 //Alias: $KBV_PR_ERP_Medication_Ingredient = https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_Ingredient
 Alias: $KBV_PR_ERP_Bundle = https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle
 Alias: $identifier-iknr = http://fhir.de/StructureDefinition/identifier-iknr
+Alias: $MarkingFlagUrl = https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag
