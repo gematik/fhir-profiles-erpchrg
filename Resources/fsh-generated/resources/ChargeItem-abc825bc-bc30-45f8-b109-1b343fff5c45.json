@@ -7,12 +7,6 @@
     ]
   },
   "status": "billable",
-  "enterer": {
-    "identifier": {
-      "system": "https://gematik.de/fhir/sid/telematik-id",
-      "value": "606358757"
-    }
-  },
   "extension": [
     {
       "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag",
@@ -32,6 +26,12 @@
       ]
     }
   ],
+  "enterer": {
+    "identifier": {
+      "system": "https://gematik.de/fhir/sid/telematik-id",
+      "value": "606358757"
+    }
+  },
   "identifier": [
     {
       "system": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId",

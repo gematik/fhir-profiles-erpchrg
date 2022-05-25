@@ -63,6 +63,7 @@
         "id": "ChargeItem.extension:markingFlag",
         "path": "ChargeItem.extension",
         "sliceName": "markingFlag",
+        "short": "Flag list whether submitted Abrechnungsinformationen for PKV, Taxes, Subsidy",
         "min": 0,
         "max": "1",
         "type": [
@@ -179,8 +180,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "type"
+              "type": "profile",
+              "path": "$this.resolve()"
             }
           ],
           "rules": "closed"
