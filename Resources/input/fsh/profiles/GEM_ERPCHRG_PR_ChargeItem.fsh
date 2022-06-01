@@ -36,18 +36,8 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * enterer ^short = "Pharmacy that initially provided the Abgabedaten in ChargeItem"
 * enterer.identifier 1..
 * enterer.identifier only $identifier-telematik-id
-* supportingInformation MS
-* supportingInformation ^slicing.discriminator.type = #value
-* supportingInformation ^slicing.discriminator.path = "type"
-* supportingInformation ^slicing.rules = #closed
-* supportingInformation contains
-    prescriptionItem 0..1 and
-    dispenseItem 0..1 and
-    receipt 0..1
-* supportingInformation[dispenseItem].type = #DAV-PKV-PR-ERP-AbgabedatenBundle
-* supportingInformation[receipt].type = #GEM_ERP_PR_Bundle
-* supportingInformation[prescriptionItem].type = #KBV_PR_ERP_Bundle
-
+* supportingInformation 0..3 MS
+* supportingInformation ^definition = "holds references to the 3 relevant documents [prescription, receipt, dispensationInformation] "
 
 
 Instance: ChargeItemExample
@@ -75,8 +65,5 @@ Usage: #example
 * enterer.identifier.value = "606358757"
 * enteredDate = "2021-06-01T07:13:00+05:00"
 * supportingInformation[0] = Reference(urn:uuid:0428d416-149e-48a4-977c-394887b3d85c) "E-Rezept"
-* supportingInformation[=].type = #KBV_PR_ERP_Bunde
 * supportingInformation[+] = Reference(72bd741c-7ad8-41d8-97c3-9aabbdd0f5b4) "Abgabedatensatz"
-* supportingInformation[=].type = #DAV-PKV-PR-ERP-AbgabedatenBundle
 * supportingInformation[+] = Reference(160.123.456.789.123.58) "Quittung"
-* supportingInformation[=].type = #GEM_ERP_PR_Bundle
