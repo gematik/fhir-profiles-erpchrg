@@ -30,8 +30,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Options for submitted ChargeItem",
-        "definition": "Optional Extension for ChargeItem-Ressources in eRx workflow",
-        "max": "1"
+        "definition": "Optional Extension for ChargeItem-Ressources in eRx workflow"
       },
       {
         "id": "Extension.extension",
@@ -70,12 +69,27 @@
       {
         "id": "Extension.extension:insuranceProvider.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
         "short": "true = submitted to insurance provider",
         "type": [
           {
             "code": "boolean"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:insuranceProvider.valueBoolean",
+        "path": "Extension.extension.valueBoolean",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.extension:subsidy",
@@ -99,12 +113,27 @@
       {
         "id": "Extension.extension:subsidy.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
         "short": "true = submitted to aid organization",
         "type": [
           {
             "code": "boolean"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:subsidy.valueBoolean",
+        "path": "Extension.extension.valueBoolean",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.extension:taxOffice",
@@ -128,12 +157,27 @@
       {
         "id": "Extension.extension:taxOffice.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
         "short": "true = submitted to tax office",
         "type": [
           {
             "code": "boolean"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:taxOffice.valueBoolean",
+        "path": "Extension.extension.valueBoolean",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.url",

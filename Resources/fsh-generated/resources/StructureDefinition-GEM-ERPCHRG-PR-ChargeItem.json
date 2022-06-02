@@ -63,6 +63,7 @@
         "id": "ChargeItem.extension:markingFlag",
         "path": "ChargeItem.extension",
         "sliceName": "markingFlag",
+        "short": "Flag list whether submitted Abrechnungsinformationen for PKV, Taxes, Subsidy",
         "min": 0,
         "max": "1",
         "type": [
@@ -176,55 +177,9 @@
       {
         "id": "ChargeItem.supportingInformation",
         "path": "ChargeItem.supportingInformation",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "type"
-            }
-          ],
-          "rules": "closed"
-        },
+        "definition": "holds references to the 3 relevant documents [prescription, receipt, dispensationInformation] ",
+        "max": "3",
         "mustSupport": true
-      },
-      {
-        "id": "ChargeItem.supportingInformation:prescriptionItem",
-        "path": "ChargeItem.supportingInformation",
-        "sliceName": "prescriptionItem",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "ChargeItem.supportingInformation:prescriptionItem.type",
-        "path": "ChargeItem.supportingInformation.type",
-        "min": 1,
-        "patternUri": "KBV_PR_ERP_Bundle"
-      },
-      {
-        "id": "ChargeItem.supportingInformation:dispenseItem",
-        "path": "ChargeItem.supportingInformation",
-        "sliceName": "dispenseItem",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "ChargeItem.supportingInformation:dispenseItem.type",
-        "path": "ChargeItem.supportingInformation.type",
-        "min": 1,
-        "patternUri": "DAV-PKV-PR-ERP-AbgabedatenBundle"
-      },
-      {
-        "id": "ChargeItem.supportingInformation:receipt",
-        "path": "ChargeItem.supportingInformation",
-        "sliceName": "receipt",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "ChargeItem.supportingInformation:receipt.type",
-        "path": "ChargeItem.supportingInformation.type",
-        "min": 1,
-        "patternUri": "GEM_ERP_PR_Bundle"
       }
     ]
   }
