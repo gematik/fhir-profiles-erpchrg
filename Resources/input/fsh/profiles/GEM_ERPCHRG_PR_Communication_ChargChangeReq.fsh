@@ -35,7 +35,7 @@ Usage: #example
 * status = #unknown
 * recipient[+].identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * recipient[=].identifier.value = "3-SMC-B-Testkarte-883110000123465"
-* sender.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
+* sender.identifier.system = "http://fhir.de/StructureDefinition/identifier-kvid-10"
 * sender.identifier.value = "X234567890"
 * sent = "2020-04-29T13:43:30.128+02:00"
 * payload.contentString = "Bitte meinen Namen in Günther ändern, Waltraud ist falsch."
