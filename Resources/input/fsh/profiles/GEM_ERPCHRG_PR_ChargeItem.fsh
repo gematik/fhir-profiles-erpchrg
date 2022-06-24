@@ -32,7 +32,7 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * code.coding.system = "http://terminology.hl7.org/CodeSystem/data-absent-reason" (exactly)
 * code.coding.code = #not-applicable (exactly)
 * subject.identifier 1..
-* subject.identifier only $identifier-pkv
+* subject.identifier only $identifier-kvid-10
 * enterer ^short = "Pharmacy that initially provided the Abgabedaten in ChargeItem"
 * enterer.identifier 1..
 * enterer.identifier only $identifier-telematik-id

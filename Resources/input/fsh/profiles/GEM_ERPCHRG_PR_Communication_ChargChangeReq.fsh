@@ -20,7 +20,7 @@ Description: "Ressource used for the communication of Change Request on an exist
 * recipient.identifier only IdentifierTelematikId
 * sender MS
 * sender.identifier 1..1
-* sender.identifier only $identifier-kvid-10 or $identifier-pkv
+* sender.identifier only $identifier-kvid-10
 * payload 0..1
 * payload.content[x] only string
 

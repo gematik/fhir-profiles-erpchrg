@@ -7,6 +7,15 @@
     ]
   },
   "status": "billable",
+  "subject": {
+    "identifier": {
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "value": "X234567890",
+      "assigner": {
+        "display": "Name einer privaten Krankenversicherung"
+      }
+    }
+  },
   "extension": [
     {
       "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag",
@@ -49,14 +58,6 @@
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason"
       }
     ]
-  },
-  "subject": {
-    "identifier": {
-      "value": "X234567890",
-      "assigner": {
-        "display": "Name einer privaten Krankenversicherung"
-      }
-    }
   },
   "enteredDate": "2021-06-01T07:13:00+05:00",
   "supportingInformation": [
