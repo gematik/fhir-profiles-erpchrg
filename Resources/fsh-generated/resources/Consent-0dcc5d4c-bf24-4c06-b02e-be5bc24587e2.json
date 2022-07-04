@@ -39,7 +39,11 @@
       },
       "value": "X234567890",
       "assigner": {
-        "display": "Name einer privaten Krankenversicherung"
+        "identifier": {
+          "system": "http://fhir.de/sid/arge-ik/iknr",
+          "value": "168140950"
+        },
+        "display": "Barmenia Krankenversicherung a. G."
       }
     }
   },

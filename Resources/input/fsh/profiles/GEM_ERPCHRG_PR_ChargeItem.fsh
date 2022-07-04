@@ -59,8 +59,9 @@ Usage: #example
 * identifier[=].value = "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
 * status = #billable
 * code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
+* subject.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
 * subject.identifier.value = "X234567890"
-* subject.identifier.assigner.display = "Name einer privaten Krankenversicherung"
+* subject.identifier.assigner.display = "AXA Krankenversicherung AG / DBV"
 * enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id" (exactly)
 * enterer.identifier.value = "606358757"
 * enteredDate = "2021-06-01T07:13:00+05:00"

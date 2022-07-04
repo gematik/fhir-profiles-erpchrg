@@ -82,6 +82,7 @@
       {
         "id": "Consent.patient.identifier",
         "path": "Consent.patient.identifier",
+        "min": 1,
         "type": [
           {
             "code": "Identifier",

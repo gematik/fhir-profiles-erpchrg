@@ -52,9 +52,10 @@
   },
   "subject": {
     "identifier": {
+      "system": "http://fhir.de/sid/pkv/kvid-10",
       "value": "X234567890",
       "assigner": {
-        "display": "Name einer privaten Krankenversicherung"
+        "display": "AXA Krankenversicherung AG / DBV"
       }
     }
   },
