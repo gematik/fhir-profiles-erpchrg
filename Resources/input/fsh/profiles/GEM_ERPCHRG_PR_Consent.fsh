@@ -13,6 +13,7 @@ Id: GEM-ERPCHRG-PR-Consent
 * patient 1..
 * patient.identifier 1..1
 * patient.identifier only IdentifierPkv or IdentifierKvid10
+* patient.identifier.assigner.display 0..1
 * dateTime 1..
 * policyRule MS
 * policyRule from http://terminology.hl7.org/ValueSet/v3-ActCode
@@ -32,6 +33,5 @@ Usage: #example
 * patient[=].identifier.value = "X234567890"
 * patient[=].identifier.assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * patient[=].identifier.assigner.identifier.value = "168140950"
-* patient[=].identifier.assigner.display = "Barmenia Krankenversicherung a. G."
 * dateTime = "2021-06-01T07:13:00+05:00"
 * policyRule = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPTIN

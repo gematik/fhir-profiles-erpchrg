@@ -18,6 +18,7 @@ Description: "Ressource used for the communication to reply to a change request 
 * recipient 1..1
 * recipient.identifier 1..1
 * recipient.identifier only $identifier-kvid-10 or $identifier-pkv
+* recipient.identifier.assigner.display 0..1
 * sender 1..1
 * sender.identifier 1..1
 * sender.identifier only IdentifierTelematikId
@@ -53,9 +54,5 @@ Usage: #example
 * sender.identifier.value = "3-SMC-B-Testkarte-883110000123465"
 * recipient[+].identifier.system = "http://fhir.de/sid/pkv/kvid-10"
 * recipient[=].identifier.value = "X234567890"
-// Maybe we need to add an assigner here
-* recipient[=].identifier.assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
-* recipient[=].identifier.assigner.identifier.value = "168140950"
-* recipient[=].identifier.assigner.display = "AXA Krankenversicherung AG / DBV"
 * sent = "2020-07-04T13:46:30.128+02:00"
 * payload.contentString = "Erledigt."

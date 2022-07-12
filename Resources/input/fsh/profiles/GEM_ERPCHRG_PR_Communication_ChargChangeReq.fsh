@@ -52,10 +52,6 @@ Usage: #example
 * status = #unknown
 * recipient[+].identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * recipient[=].identifier.value = "3-SMC-B-Testkarte-883110000123465"
-// Maybe we need to add an assigner here
-* recipient[=].identifier.assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
-* recipient[=].identifier.assigner.identifier.value = "168140950"
-* recipient[=].identifier.assigner.display = "AXA Krankenversicherung AG / DBV"
 * sender.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
 * sender.identifier.value = "X234567890"
 * sent = "2020-07-04T13:43:30.128+02:00"
