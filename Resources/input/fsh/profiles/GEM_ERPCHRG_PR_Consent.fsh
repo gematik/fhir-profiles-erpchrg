@@ -30,6 +30,7 @@ Usage: #example
 * category = https://gematik.de/fhir/erpchrg/CodeSystem/ConsentType#CHARGCONS "Saving electronic charge item."
 * patient[+].identifier.type.coding[+].system = "http://fhir.de/CodeSystem/identifier-type-de-basis"
 * patient[=].identifier.type.coding[=].code = #PKV
+* patient[=].identifier.system = "http://fhir.de/sid/pkv/kvid-10"
 * patient[=].identifier.value = "X234567890"
 * patient[=].identifier.assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * patient[=].identifier.assigner.identifier.value = "168140950"
