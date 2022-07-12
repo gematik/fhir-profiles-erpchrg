@@ -32,7 +32,8 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * code.coding.system = "http://terminology.hl7.org/CodeSystem/data-absent-reason" (exactly)
 * code.coding.code = #not-applicable (exactly)
 * subject.identifier 1..
-* subject.identifier only $identifier-pkv
+* subject.identifier only $identifier-kvid-10 or $identifier-pkv
+* subject.identifier.assigner.display 0..1
 * enterer ^short = "Pharmacy that initially provided the Abgabedaten in ChargeItem"
 * enterer.identifier 1..
 * enterer.identifier only $identifier-telematik-id
@@ -59,8 +60,8 @@ Usage: #example
 * identifier[=].value = "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
 * status = #billable
 * code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
+* subject.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
 * subject.identifier.value = "X234567890"
-* subject.identifier.assigner.display = "Name einer privaten Krankenversicherung"
 * enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id" (exactly)
 * enterer.identifier.value = "606358757"
 * enteredDate = "2021-06-01T07:13:00+05:00"

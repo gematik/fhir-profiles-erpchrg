@@ -11,7 +11,9 @@ Id: GEM-ERPCHRG-PR-Consent
 * category 1..1
 * category from GEM_ERPCHRG_VS_ConsentType (extensible)
 * patient 1..
+* patient.identifier 1..1
 * patient.identifier only IdentifierPkv or IdentifierKvid10
+* patient.identifier.assigner.display 0..1
 * dateTime 1..
 * policyRule MS
 * policyRule from http://terminology.hl7.org/ValueSet/v3-ActCode
@@ -26,9 +28,11 @@ Usage: #example
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
 * category = https://gematik.de/fhir/erpchrg/CodeSystem/ConsentType#CHARGCONS "Saving electronic charge item."
-* patient.identifier.type.coding[+].system = "http://fhir.de/CodeSystem/identifier-type-de-basis"
-* patient.identifier.type.coding[=].code = #PKV
-* patient.identifier.value = "X234567890"
-* patient.identifier.assigner.display = "Name einer privaten Krankenversicherung"
+* patient[+].identifier.type.coding[+].system = "http://fhir.de/CodeSystem/identifier-type-de-basis"
+* patient[=].identifier.type.coding[=].code = #PKV
+* patient[=].identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* patient[=].identifier.value = "X234567890"
+* patient[=].identifier.assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* patient[=].identifier.assigner.identifier.value = "168140950"
 * dateTime = "2021-06-01T07:13:00+05:00"
 * policyRule = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPTIN
