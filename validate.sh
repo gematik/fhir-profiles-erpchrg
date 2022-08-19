@@ -8,6 +8,7 @@ NC='\033[0m' # No Color
 validatorpath=../validator_cli.jar
 outputfolder=../val_out/${PWD##*/}
 foldername='./Resources'
+fhir_folder_path=~/.fhir/packages
 file=''
 install_dependencies="false"
 sort_results="false"
@@ -63,6 +64,7 @@ then
   # load dependencies from sushi-config.yaml
   for dependency in `yq -o=props '.dependencies' $foldername/sushi-config.yaml`;
   do
+    # TODO dont load LATEST -> get by file version
     if [[ ${dependency::1} =~ [a-z] ]]
     then
       # create FHIR Snapshots of dependencies
@@ -72,6 +74,16 @@ then
     fi
   done
 fi
+
+# rename all folders to lower case
+echo -e "Rename all folder name in .fhir folder to lower case";
+for i in `( ls -d $fhir_folder_path/* | grep [A-Z] )`;
+do
+ #TODO Test if folders get renamed
+  echo  $i
+  rsync -a $i `echo $i | tr 'A-Z' 'a-z'`
+# mv -i $i `echo $i | tr 'A-Z' 'a-z'`;
+done
 
 # run sushi
 echo -e "Starting Sushi to process files in '$foldername'";
@@ -85,9 +97,16 @@ else
   wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -O $validatorpath
 fi
 
+# Concatenate folders_for_validation in fhir directory
+folders_to_validate=""
+for package in `(ls -d $fhir_folder_path/*/package)`
+    do
+        folders_to_validate+=" -ig ${package}"
+    done
+# Only validating one file?
 if [  -z "$file" ];
 then
-  echo "Validating files in folder '$Resources/fsh-generated/resources/' ..."
+  echo "Validating files in folder '$foldername/fsh-generated/resources/' ..."
   # Run Validator on all *.json files in given directory
   for filename in $(find $foldername/fsh-generated/resources/ -name '*.json');
   do
@@ -95,21 +114,22 @@ then
     resultfile=$outputfolder"/$f.html"
 
     echo -e "\n\nProcessing file \033[1m $f \033[0m";
-    # java -jar $validatorpath -version 4.0.1 $filename -ig "./Resources/fsh-generated/resources/"  -proxy 192.168.110.10:3128 -output $resultfile;
-    java -jar $validatorpath -version 4.0.1 $filename -proxy 192.168.110.10:3128 -output $resultfile;
+    java -jar $validatorpath -version 4.0.1 $folders_to_validate -ig $foldername/fsh-generated/resources $filename -proxy 192.168.110.10:3128 -output $resultfile;
     if [ $sort_results == "true" ]
     then
       sortBySeverity "$resultfile"
     fi
   done
 else
-   echo -e "Processing \033[1m $file \033[0m";
-   f="$(basename $file .json)"
-   java -jar $validatorpath -version 4.0.1 $file -proxy 192.168.110.10:3128 -output $outputfolder"/$f.html";
-   if [ $sort_results == "true" ]
-    then
-      sortBySeverity $outputfolder"/$f.html"
-    fi
+  echo -e "Processing \033[1m $file \033[0m";
+  echo -e "\n\nProfiles to load for validation:  $folders_to_validate";
+  result_filename="$(basename $file .json)"
+  #   += "-ig $package/package"
+  java -jar $validatorpath -version 4.0.1 $folders_to_validate  -ig $foldername/fsh-generated/resources $file -proxy 192.168.110.10:3128 -output $outputfolder"/$result_filename.html";
+  if [ $sort_results == "true" ]
+  then
+    sortBySeverity $outputfolder"/$result_filename.html"
+  fi
 fi
 
 
