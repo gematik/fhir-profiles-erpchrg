@@ -17,7 +17,9 @@ Description: "Ressource used for the communication to reply to a change request 
 * received MS
 * recipient 1..1
 * recipient.identifier 1..1
-* recipient.identifier only $identifier-kvid-10 or $identifier-pkv
+//* recipient.identifier only $identifier-pkv or $identifier-kvid-10
+// $identifier-pkv kommt erst in DE-Basis > 1.3.2, übergangsweise in kbv.basis enthalten
+* recipient.identifier only $identifier-pkv or $identifier-kvid-10
 * recipient.identifier.assigner.display 0..1
 * sender 1..1
 * sender.identifier 1..1
@@ -45,14 +47,15 @@ Instance: Communication_ChargChangeReply_Pkv
 InstanceOf: GEM_ERPCHRG_PR_Communication_ChargChangeReply
 Title: "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
 Usage: #example
-* id = "3bbc2209-9c23-4553-986e-a5c9f69a39fp"
+* id = "7bbc2209-9c23-4553-986e-a5c9f69a39fp"
 * meta.profile[+] = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReply|1.0"
 * meta.tag.display = "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
 * basedOn.reference = "ChargeItem/a51520ec-0899-404f-bb97-fe7d461f90ap"
 * status = #unknown
 * sender.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * sender.identifier.value = "3-SMC-B-Testkarte-883110000123465"
-* recipient[+].identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+//* recipient[+].identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* recipient[+].identifier.system = "http://www.acme.com/identifiers/patient"
 * recipient[=].identifier.value = "X234567890"
-* sent = "2020-07-04T13:46:30.128+02:00"
+* sent = "2022-07-04T13:46:30.128+02:00"
 * payload.contentString = "Erledigt."
