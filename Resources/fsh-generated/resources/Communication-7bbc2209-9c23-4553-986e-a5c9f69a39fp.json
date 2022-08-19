@@ -26,7 +26,7 @@
   "recipient": [
     {
       "identifier": {
-        "system": "http://www.acme.com/identifiers/patient",
+        "system": "http://fhir.de/sid/pkv/kvid-10",
         "value": "X234567890"
       }
     }
