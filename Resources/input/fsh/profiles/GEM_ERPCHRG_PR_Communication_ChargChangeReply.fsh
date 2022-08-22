@@ -39,7 +39,7 @@ Usage: #example
 * sender.identifier.value = "3-SMC-B-Testkarte-883110000123465"
 * recipient[+].identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * recipient[=].identifier.value = "X234567890"
-* sent = "2020-04-29T13:46:30.128+02:00"
+* sent = "2022-04-29T13:46:30.128+02:00"
 * payload.contentString = "Erledigt."
 
 Instance: Communication_ChargChangeReply_Pkv

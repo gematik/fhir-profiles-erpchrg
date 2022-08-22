@@ -21,8 +21,8 @@
       "coding": [
         {
           "code": "CHARGCONS",
-          "system": "https://gematik.de/fhir/erpchrg/CodeSystem/ConsentType",
-          "display": "Saving electronic charge item."
+          "system": "https://gematik.de/fhir/erpchrg/CodeSystem/GEM_ERPCHRG_CS_ConsentType",
+          "display": "Consent for saving electronic charge item"
         }
       ]
     }
@@ -47,7 +47,7 @@
       }
     }
   },
-  "dateTime": "2021-06-01T07:13:00+05:00",
+  "dateTime": "2022-06-01T07:13:00+05:00",
   "policyRule": {
     "coding": [
       {
