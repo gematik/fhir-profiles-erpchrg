@@ -8,7 +8,7 @@
 
 ## About <a name = "about"></a>
 
-This Repo contains the fsh files to the published E-Rezept Worklow files on <https://simplifier.net/erezept-abrechnungsinformationen> and a script to validate them.
+This Repo contains the fsh files to the published E-Rezept charge item files on https://simplifier.net/erezept-abrechnungsinformationen and a script to validate them.
 
 ## Getting Started <a name = "getting_started"></a>
 
