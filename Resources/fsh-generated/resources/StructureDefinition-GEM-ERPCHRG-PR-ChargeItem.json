@@ -2780,7 +2780,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_AccessCode",
+        "fixedUri": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AccessCode",
         "example": [
           {
             "label": "General",
@@ -8443,7 +8443,7 @@
         "id": "ChargeItem.identifier:AccessCode.system",
         "path": "ChargeItem.identifier.system",
         "min": 1,
-        "fixedUri": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_AccessCode"
+        "fixedUri": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AccessCode"
       },
       {
         "id": "ChargeItem.identifier:AccessCode.value",

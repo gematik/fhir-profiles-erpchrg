@@ -42,25 +42,25 @@
     },
     {
       "packageId": "kbv.ita.for",
-      "version": "1.1.0-prerelease",
+      "version": "1.1.0",
       "uri": "http://fhir.org/packages/kbv.ita.for/ImplementationGuide/kbv.ita.for",
       "id": "kbv_ita_for"
     },
     {
       "packageId": "kbv.ita.erp",
-      "version": "1.1.0-prerelease",
+      "version": "1.1.0",
       "uri": "http://fhir.org/packages/kbv.ita.erp/ImplementationGuide/kbv.ita.erp",
       "id": "kbv_ita_erp"
     },
     {
       "packageId": "de.abda.erezeptabgabedatenpkv",
-      "version": "1.1.0-rc10",
+      "version": "1.1.0-rc9",
       "uri": "http://fhir.org/packages/de.abda.erezeptabgabedatenpkv/ImplementationGuide/de.abda.erezeptabgabedatenpkv",
       "id": "de_abda_erezeptabgabedatenpkv"
     },
     {
       "packageId": "de.gematik.erezept-workflow.r4",
-      "version": "1.2.0-rc2",
+      "version": "1.2.0",
       "uri": "http://fhir.org/packages/de.gematik.erezept-workflow.r4/ImplementationGuide/de.gematik.erezept-workflow.r4",
       "id": "de_gematik_erezept_workflow_r4"
     }
@@ -139,13 +139,6 @@
           "reference": "Communication/7bbc2209-9c23-4553-986e-a5c9f69a39fp"
         },
         "name": "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "ChargeItem/abc825bc-bc30-45f8-b109-1b343fff5c45"
-        },
-        "name": "ChargeItem completed by Fachdienst",
         "exampleBoolean": true
       },
       {

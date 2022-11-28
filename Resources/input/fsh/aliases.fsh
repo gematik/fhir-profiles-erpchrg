@@ -23,3 +23,5 @@ Alias: $DAV_PR_ERP_Abgabeinformationen = http://fhir.abda.de/eRezeptAbgabedaten/
 Alias: $GEM_ERP_PR_Bundle = https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle
 Alias: $identifier-iknr = http://fhir.de/StructureDefinition/identifier-iknr
 Alias: $MarkingFlagUrl = https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag
+Alias: $GEM_ERP_PR_AccessCode = https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AccessCode
+Alias: $GEM_ERP_PR_PrescriptionId = https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PrescriptionId
