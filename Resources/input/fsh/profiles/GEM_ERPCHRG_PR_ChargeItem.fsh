@@ -40,8 +40,19 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * enterer ^short = "Pharmacy that initially provided the Abgabedaten in ChargeItem"
 * enterer.identifier 1..
 * enterer.identifier only $identifier-telematik-id
+
 * supportingInformation 0..3 MS
-* supportingInformation ^definition = "holds references to the 3 relevant documents [prescription, receipt, dispensationInformation] "
+* supportingInformation ^slicing.discriminator.type = #value
+* supportingInformation ^slicing.discriminator.path = "type"
+* supportingInformation ^slicing.rules = #closed
+* supportingInformation ^definition = "holds references to the 3 relevant documents [prescription, receipt, dispensationInformation]"
+* supportingInformation contains
+    prescriptionItem 0..1 and
+    dispenseItem 0..1 and
+    receipt 0..1
+* supportingInformation[dispenseItem].type = $DAV_PR_ERP_Abgabeinformationen
+* supportingInformation[receipt].type = $GEM_ERP_PR_Bundle
+* supportingInformation[prescriptionItem].type = $KBV_PR_ERP_Bundle
 
 
 Instance: ChargeItemExample
