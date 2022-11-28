@@ -143,6 +143,13 @@
       },
       {
         "reference": {
+          "reference": "ChargeItem/abc825bc-bc30-45f8-b109-1b343fff5c45"
+        },
+        "name": "ChargeItem completed by Fachdienst",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Communication/b4cf7f71-3ade-40ab-97a9-929f95af29f2"
         },
         "name": "Communication message sent by patient to pharmacy to request the change of an existing ChargeItem by providing the AccessCode",
