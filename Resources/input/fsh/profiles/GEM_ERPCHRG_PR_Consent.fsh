@@ -15,7 +15,7 @@ Id: GEM-ERPCHRG-PR-Consent
 * category from GEM_ERPCHRG_VS_ConsentType (extensible)
 * patient 1..
 * patient.identifier 1..1
-* patient only Reference($KBV_BASE_PATIENT)
+* patient only Reference($KBV_FOR_PATIENT)
 * dateTime 1..
 * policyRule MS
 * policyRule from http://terminology.hl7.org/ValueSet/v3-ActCode

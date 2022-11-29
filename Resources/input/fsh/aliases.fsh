@@ -26,3 +26,4 @@ Alias: $MarkingFlagUrl = https://gematik.de/fhir/erpchrg/StructureDefinition/GEM
 Alias: $GEM_ERP_PR_AccessCode = https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AccessCode
 Alias: $GEM_ERP_PR_PrescriptionId = https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_PrescriptionId
 Alias: $KBV_BASE_PATIENT = https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient
+Alias: $KBV_FOR_PATIENT = https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient

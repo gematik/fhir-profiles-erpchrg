@@ -4538,7 +4538,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient"
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient"
             ]
           }
         ],
@@ -7830,7 +7830,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient"
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient"
             ]
           }
         ]

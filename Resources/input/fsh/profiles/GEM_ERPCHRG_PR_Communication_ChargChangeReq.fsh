@@ -23,7 +23,7 @@ Description: "Ressource used for the communication of Change Request on an exist
 * recipient.identifier only IdentifierTelematikId
 * sender MS
 * sender.identifier 1..1
-* sender only Reference($KBV_BASE_PATIENT)
+* sender only Reference($KBV_FOR_PATIENT)
 * payload 0..1
 * payload.content[x] only string
 

@@ -20,7 +20,7 @@ Description: "Ressource used for the communication to reply to a change request 
 * received MS
 * recipient 1..1
 * recipient.identifier 1..1
-* recipient only Reference($KBV_BASE_PATIENT)
+* recipient only Reference($KBV_FOR_PATIENT)
 * sender 1..1
 * sender.identifier 1..1
 * sender.identifier only IdentifierTelematikId
