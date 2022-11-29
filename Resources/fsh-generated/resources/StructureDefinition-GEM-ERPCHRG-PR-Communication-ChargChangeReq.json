@@ -1,9 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "GEM-ERPCHRG-PR-Communication-ChargChangeReq",
-  "meta": {
-    "lastUpdated": "2022-04-16T13:43:30.128+00:00"
-  },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -14,11 +11,13 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq",
-  "version": "1.0",
+  "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM-ERPCHRG-PR-Communication-ChargChangeReq",
+  "version": "1.0.1",
   "name": "GEM_ERPCHRG_PR_Communication_ChargChangeReq",
   "title": "Request for Modification on ChargeItem",
   "status": "draft",
+  "experimental": false,
+  "publisher": "gematik GmbH",
   "description": "Ressource used for the communication of Change Request on an existing ChargeItem between patient and pharmacy",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -312,7 +311,7 @@
         "definition": "The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.",
         "comment": "The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Meta.versionId",
           "min": 0,
@@ -390,7 +389,7 @@
         "definition": "A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.",
         "comment": "In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. \n\nThis element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Meta.source",
           "min": 0,
@@ -482,7 +481,7 @@
         "definition": "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
         "comment": "The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Meta.security",
           "min": 0,
@@ -1159,7 +1158,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem"
+              "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM-ERPCHRG-PR-ChargeItem"
             ],
             "aggregation": [
               "referenced"
@@ -3669,11 +3668,26 @@
         "min": 1
       },
       {
+        "id": "Communication.meta.versionId",
+        "path": "Communication.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Communication.meta.source",
+        "path": "Communication.meta.source",
+        "max": "0"
+      },
+      {
         "id": "Communication.meta.profile",
         "path": "Communication.meta.profile",
         "min": 1,
         "max": "1",
         "fixedCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq|1.0"
+      },
+      {
+        "id": "Communication.meta.security",
+        "path": "Communication.meta.security",
+        "max": "0"
       },
       {
         "id": "Communication.basedOn",
@@ -3684,7 +3698,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem"
+              "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM-ERPCHRG-PR-ChargeItem"
             ],
             "aggregation": [
               "referenced"

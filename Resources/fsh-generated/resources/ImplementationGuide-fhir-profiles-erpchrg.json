@@ -131,42 +131,42 @@
           "reference": "Consent/0dcc5d4c-bf24-4c06-b02e-be5bc24587e2"
         },
         "name": "Consent to store digital ChargeItem",
-        "exampleBoolean": true
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM-ERPCHRG-PR-Consent"
       },
       {
         "reference": {
           "reference": "Communication/3bbc2209-9c23-4553-986e-a5c9f69a39fb"
         },
         "name": "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message",
-        "exampleBoolean": true
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM-ERPCHRG-PR-Communication-ChargChangeReply"
       },
       {
         "reference": {
           "reference": "Communication/7bbc2209-9c23-4553-986e-a5c9f69a39fp"
         },
         "name": "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message",
-        "exampleBoolean": true
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM-ERPCHRG-PR-Communication-ChargChangeReply"
       },
       {
         "reference": {
           "reference": "ChargeItem/abc825bc-bc30-45f8-b109-1b343fff5c45"
         },
         "name": "ChargeItem completed by Fachdienst",
-        "exampleBoolean": true
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM-ERPCHRG-PR-ChargeItem"
       },
       {
         "reference": {
           "reference": "Communication/b4cf7f71-3ade-40ab-97a9-929f95af29f2"
         },
         "name": "Communication message sent by patient to pharmacy to request the change of an existing ChargeItem by providing the AccessCode",
-        "exampleBoolean": true
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM-ERPCHRG-PR-Communication-ChargChangeReq"
       },
       {
         "reference": {
           "reference": "Communication/b4cf7f71-3ade-40ab-97a9-929f95af29fp"
         },
         "name": "Communication message sent by patient to pharmacy to request the change of an existing ChargeItem by providing the AccessCode",
-        "exampleBoolean": true
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM-ERPCHRG-PR-Communication-ChargChangeReq"
       }
     ],
     "page": {

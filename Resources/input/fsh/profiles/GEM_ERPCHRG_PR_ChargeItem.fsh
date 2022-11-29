@@ -1,12 +1,8 @@
 Profile: GEM_ERPCHRG_PR_ChargeItem
 Parent: ChargeItem
 Id: GEM-ERPCHRG-PR-ChargeItem
-* ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem"
-* ^version = "1.0"
-* ^status = #draft
-* meta 1..1
-* meta.profile 1..1
-* meta.profile = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0" (exactly)
+* insert Meta
+* insert MetaProfile (GEM_ERPCHRG_PR_ChargeItem)
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed

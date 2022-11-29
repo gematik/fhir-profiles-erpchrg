@@ -1,12 +1,8 @@
 Profile: GEM_ERPCHRG_PR_Consent
 Parent: Consent
 Id: GEM-ERPCHRG-PR-Consent
-* ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent"
-* ^version = "1.0"
-* ^status = #draft
-* meta 1..1
-* meta.profile 1..1
-* meta.profile = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.0" (exactly)
+* insert Meta
+* insert MetaProfile(GEM_ERPCHRG_PR_Consent)
 * status = #active (exactly)
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope" (exactly)
 * scope.coding.code = #patient-privacy (exactly)
