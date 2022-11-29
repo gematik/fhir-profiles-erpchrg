@@ -37,7 +37,6 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * status = #billable (exactly)
 * code.coding.system = "http://terminology.hl7.org/CodeSystem/data-absent-reason" (exactly)
 * code.coding.code = #not-applicable (exactly)
-//TODO check why KBV_FOR_PATIENT isn't working
 * subject only Reference($KBV_FOR_PATIENT)
 * enterer ^short = "Pharmacy that initially provided the Abgabedaten in ChargeItem"
 * enterer.identifier 1..
