@@ -20,9 +20,7 @@ Description: "Ressource used for the communication to reply to a change request 
 * received MS
 * recipient 1..1
 * recipient.identifier 1..1
-// $identifier-pkv kommt erst in DE-Basis > 1.3.2, übergangsweise in kbv.FOR enthalten
-* recipient.identifier only $identifier-pkv or $identifier-kvid-10
-* recipient.identifier.assigner.display 0..1
+* recipient only Reference($KBV_BASE_PATIENT)
 * sender 1..1
 * sender.identifier 1..1
 * sender.identifier only IdentifierTelematikId

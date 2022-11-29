@@ -33,12 +33,12 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * identifier[AccessCode].system 1..1
 * identifier[AccessCode].system = $GEM_ERP_PR_AccessCode (exactly)
 * identifier[AccessCode].value 1..1
+
 * status = #billable (exactly)
 * code.coding.system = "http://terminology.hl7.org/CodeSystem/data-absent-reason" (exactly)
 * code.coding.code = #not-applicable (exactly)
-* subject.identifier 1..
-* subject.identifier only $identifier-kvid-10 or $identifier-pkv
-* subject.identifier.assigner.display 0..1
+//TODO check why KBV_FOR_PATIENT isn't working
+* subject only Reference($KBV_BASE_PATIENT)
 * enterer ^short = "Pharmacy that initially provided the Abgabedaten in ChargeItem"
 * enterer.identifier 1..
 * enterer.identifier only $identifier-telematik-id

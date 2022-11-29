@@ -2812,13 +2812,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.org/fhir/StructureDefinition/HealthcareService"
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient"
             ]
           }
         ],
@@ -3093,11 +3087,7 @@
         },
         "type": [
           {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10",
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Identifier_PkvID_10"
-            ]
+            "code": "Identifier"
           }
         ],
         "condition": [
@@ -3744,21 +3734,20 @@
       {
         "id": "Communication.sender",
         "path": "Communication.sender",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "Communication.sender.identifier",
         "path": "Communication.sender.identifier",
-        "min": 1,
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10",
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Identifier_PkvID_10"
-            ]
-          }
-        ]
+        "min": 1
       },
       {
         "id": "Communication.payload",

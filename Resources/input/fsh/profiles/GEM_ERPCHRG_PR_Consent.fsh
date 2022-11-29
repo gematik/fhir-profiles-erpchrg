@@ -15,9 +15,7 @@ Id: GEM-ERPCHRG-PR-Consent
 * category from GEM_ERPCHRG_VS_ConsentType (extensible)
 * patient 1..
 * patient.identifier 1..1
-// $identifier-pkv kommt erst in DE-Basis > 1.3.2, übergangsweise in kbv.FOR enthalten
-* patient.identifier only $identifier-pkv or $identifier-kvid-10
-* patient.identifier.assigner.display 0..1
+* patient only Reference($KBV_BASE_PATIENT)
 * dateTime 1..
 * policyRule MS
 * policyRule from http://terminology.hl7.org/ValueSet/v3-ActCode
