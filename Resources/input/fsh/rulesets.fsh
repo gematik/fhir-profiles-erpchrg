@@ -1,7 +1,9 @@
-RuleSet: Meta
+RuleSet: Meta (profileName)
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "gematik GmbH"
+* ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/{profileName}"
+* ^version = "1.0"
 
 RuleSet: MetaProfile (profileName)
 * meta 1..1
