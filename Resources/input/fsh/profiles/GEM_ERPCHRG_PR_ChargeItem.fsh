@@ -7,7 +7,7 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed
 * extension contains
-    $MarkingFlagUrl named markingFlag 0..1 MS
+    $GEM_ERPCHRG_EX_MarkingFlag_URL named markingFlag 0..1 MS
 * extension[markingFlag] ^short = "Flag list whether submitted Abrechnungsinformationen for PKV, Taxes, Subsidy"
 * extension[markingFlag].extension ^slicing.discriminator.type = #value
 * extension[markingFlag].extension ^slicing.discriminator.path = "url"
