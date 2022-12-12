@@ -11,7 +11,8 @@ Id: GEM-ERPCHRG-PR-Consent
 * category from GEM_ERPCHRG_VS_ConsentType (extensible)
 * patient 1..
 * patient.identifier 1..1
-* patient only Reference($KBV_FOR_PATIENT)
+* patient.identifier only $identifier-pkv or $identifier-kvid-10
+* patient.identifier.assigner.display 0..1
 * dateTime 1..
 * policyRule MS
 * policyRule from http://terminology.hl7.org/ValueSet/v3-ActCode
@@ -23,7 +24,7 @@ InstanceOf: GEM_ERPCHRG_PR_Consent
 Title:   "Consent to store digital ChargeItem"
 Usage: #example
 * id = "0dcc5d4c-bf24-4c06-b02e-be5bc24587e2"
-* meta.profile[+] = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.0"
+* meta.profile = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.0"
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
 * category = https://gematik.de/fhir/erpchrg/CodeSystem/GEM_ERPCHRG_CS_ConsentType#CHARGCONS "Consent for saving electronic charge item"

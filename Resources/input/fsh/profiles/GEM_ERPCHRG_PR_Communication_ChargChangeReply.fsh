@@ -15,7 +15,8 @@ Description: "Ressource used for the communication to reply to a change request 
 * received MS
 * recipient 1..1
 * recipient.identifier 1..1
-* recipient only Reference($KBV_FOR_PATIENT)
+* recipient.identifier only $identifier-pkv or $identifier-kvid-10
+* recipient.identifier.assigner.display 0..1
 * sender 1..1
 * sender.identifier 1..1
 * sender.identifier only IdentifierTelematikId
