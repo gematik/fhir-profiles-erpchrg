@@ -106,20 +106,21 @@
       {
         "id": "Consent.patient",
         "path": "Consent.patient",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient"
-            ]
-          }
-        ]
+        "min": 1
       },
       {
         "id": "Consent.patient.identifier",
         "path": "Consent.patient.identifier",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Identifier_PkvID_10",
+              "http://fhir.de/StructureDefinition/identifier-kvid-10"
+            ]
+          }
+        ]
       },
       {
         "id": "Consent.dateTime",

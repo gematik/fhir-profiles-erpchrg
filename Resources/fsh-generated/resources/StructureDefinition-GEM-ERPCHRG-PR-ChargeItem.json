@@ -176,13 +176,15 @@
         "fixedCode": "not-applicable"
       },
       {
-        "id": "ChargeItem.subject",
-        "path": "ChargeItem.subject",
+        "id": "ChargeItem.subject.identifier",
+        "path": "ChargeItem.subject.identifier",
+        "min": 1,
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient"
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-kvid-10",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Identifier_PkvID_10"
             ]
           }
         ]
