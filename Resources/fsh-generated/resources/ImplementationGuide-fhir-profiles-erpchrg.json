@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "fhir-profiles-erpchrg",
   "url": "https://gematik.de/fhir/erpchrg/ImplementationGuide/fhir-profiles-erpchrg",
-  "version": "1.0.1",
+  "version": "1.0",
   "name": "AbrechnungsinformationendesERezeptesfrdenPatienten",
   "title": "ePrescription patient receipt definition",
   "status": "draft",
