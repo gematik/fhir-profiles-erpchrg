@@ -234,7 +234,7 @@
         "id": "ChargeItem.supportingInformation:prescriptionItem.type",
         "path": "ChargeItem.supportingInformation.type",
         "min": 1,
-        "patternUri": "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle"
+        "fixedUri": "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle"
       },
       {
         "id": "ChargeItem.supportingInformation:dispenseItem",
@@ -247,7 +247,7 @@
         "id": "ChargeItem.supportingInformation:dispenseItem.type",
         "path": "ChargeItem.supportingInformation.type",
         "min": 1,
-        "patternUri": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen"
+        "fixedUri": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen"
       },
       {
         "id": "ChargeItem.supportingInformation:receipt",
@@ -260,7 +260,7 @@
         "id": "ChargeItem.supportingInformation:receipt.type",
         "path": "ChargeItem.supportingInformation.type",
         "min": 1,
-        "patternUri": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle"
+        "fixedUri": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle"
       }
     ]
   }
