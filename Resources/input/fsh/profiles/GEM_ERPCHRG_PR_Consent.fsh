@@ -1,12 +1,8 @@
 Profile: GEM_ERPCHRG_PR_Consent
 Parent: Consent
 Id: GEM-ERPCHRG-PR-Consent
-* ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent"
-* ^version = "1.0"
-* ^status = #draft
-* meta 1..1
-* meta.profile 1..1
-* meta.profile = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.0" (exactly)
+* insert Meta(GEM_ERPCHRG_PR_Consent)
+* insert MetaProfile(GEM_ERPCHRG_PR_Consent)
 * status = #active (exactly)
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope" (exactly)
 * scope.coding.code = #patient-privacy (exactly)
@@ -15,7 +11,6 @@ Id: GEM-ERPCHRG-PR-Consent
 * category from GEM_ERPCHRG_VS_ConsentType (extensible)
 * patient 1..
 * patient.identifier 1..1
-// $identifier-pkv kommt erst in DE-Basis > 1.3.2, übergangsweise in kbv.FOR enthalten
 * patient.identifier only $identifier-pkv or $identifier-kvid-10
 * patient.identifier.assigner.display 0..1
 * dateTime 1..

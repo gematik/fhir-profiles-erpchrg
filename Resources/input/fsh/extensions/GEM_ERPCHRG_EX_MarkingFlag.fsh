@@ -1,6 +1,6 @@
 Extension: GEM_ERPCHRG_EX_MarkingFlag
 Id: GEM-ERPCHRG-EX-MarkingFlag
-* ^url = $MarkingFlagUrl
+* ^url = $GEM_ERPCHRG_EX_MarkingFlag_URL
 * ^version = "1.0"
 * ^status = #draft
 * ^context.type = #element

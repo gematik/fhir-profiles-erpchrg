@@ -3,14 +3,9 @@ Parent: Communication
 Id: GEM-ERPCHRG-PR-Communication-ChargChangeReply
 Title: "Reply on change Request on ChargeItem from pharmacy to Patient"
 Description: "Ressource used for the communication to reply to a change request on a ChargeItem"
-* ^meta.lastUpdated = "2022-04-16T13:43:30.128+00:00"
-* ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReply"
-* ^version = "1.0"
-* ^status = #draft
+* insert Meta(GEM_ERPCHRG_PR_Communication_ChargChangeReply)
 * ^abstract = true
-* meta 1..1
-* meta.profile 1..1
-* meta.profile = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReply|1.0" (exactly)
+* insert MetaProfile(GEM_ERPCHRG_PR_Communication_ChargChangeReply)
 * basedOn 1..1
 * basedOn only Reference(GEM_ERPCHRG_PR_ChargeItem)
 * basedOn ^type.aggregation = #referenced
@@ -20,7 +15,6 @@ Description: "Ressource used for the communication to reply to a change request 
 * received MS
 * recipient 1..1
 * recipient.identifier 1..1
-// $identifier-pkv kommt erst in DE-Basis > 1.3.2, übergangsweise in kbv.FOR enthalten
 * recipient.identifier only $identifier-pkv or $identifier-kvid-10
 * recipient.identifier.assigner.display 0..1
 * sender 1..1

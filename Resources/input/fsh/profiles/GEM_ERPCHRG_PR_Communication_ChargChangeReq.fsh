@@ -3,11 +3,9 @@ Parent: Communication
 Id: GEM-ERPCHRG-PR-Communication-ChargChangeReq
 Title: "Request for Modification on ChargeItem"
 Description: "Ressource used for the communication of Change Request on an existing ChargeItem between patient and pharmacy"
-* ^meta.lastUpdated = "2022-04-16T13:43:30.128+00:00"
-* ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq"
-* ^version = "1.0"
-* ^status = #draft
+* insert Meta(GEM_ERPCHRG_PR_Communication_ChargChangeReq)
 * ^abstract = true
+* insert MetaProfile(GEM_ERPCHRG_PR_Communication_ChargChangeReq)
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq|1.0" (exactly)
