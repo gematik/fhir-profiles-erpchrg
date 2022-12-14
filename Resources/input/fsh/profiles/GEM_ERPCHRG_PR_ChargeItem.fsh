@@ -21,7 +21,7 @@ Id: GEM-ERPCHRG-PR-ChargeItem
     AccessCode 0..1
 * identifier[PrescriptionID] ^short = "Prescription Identifier"
 * identifier[PrescriptionID] ^definition = "The prescription identifier is the main identifier for all the ePrecscription related ressources and the whole prescription workflow. This identifier is genereted by the \"E-Rezept Fachdienst\" and must not be changed manually."
-* identifier[PrescriptionID].system = $GEM_ERP_PR_PrescriptionId (exactly)
+* identifier[PrescriptionID].system = $GEM_ERP_NS_PrescriptionId (exactly)
 * identifier[PrescriptionID].system 1..1
 * identifier[PrescriptionID].value 1..1
 * identifier[AccessCode] ^short = "AccessCode Identifier"
