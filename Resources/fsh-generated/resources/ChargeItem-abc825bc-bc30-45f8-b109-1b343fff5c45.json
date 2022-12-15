@@ -44,12 +44,7 @@
   },
   "supportingInformation": [
     {
-      "type": "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle",
-      "reference": "urn:uuid:0428d416-149e-48a4-977c-394887b3d85c",
-      "display": "E-Rezept"
-    },
-    {
-      "type": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen",
+      "type": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle",
       "reference": "72bd741c-7ad8-41d8-97c3-9aabbdd0f5b4",
       "display": "Abgabedatensatz"
     },
@@ -57,6 +52,11 @@
       "type": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle",
       "reference": "160.123.456.789.123.58",
       "display": "Quittung"
+    },
+    {
+      "type": "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle",
+      "reference": "urn:uuid:0428d416-149e-48a4-977c-394887b3d85c",
+      "display": "E-Rezept"
     }
   ],
   "code": {

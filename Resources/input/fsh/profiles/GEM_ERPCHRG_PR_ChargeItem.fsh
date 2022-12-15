@@ -54,7 +54,7 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * supportingInformation[receipt].type 1..1
 * supportingInformation[prescriptionItem].type 1..1
 
-* supportingInformation[dispenseItem].type = $DAV_PR_ERP_Abgabeinformationen (exactly)
+* supportingInformation[dispenseItem].type = $DAV-PKV-PR-ERP-AbgabedatenBundle (exactly)
 * supportingInformation[receipt].type = $GEM_ERP_PR_Bundle (exactly)
 * supportingInformation[prescriptionItem].type = $KBV_PR_ERP_Bundle (exactly)
 
@@ -83,6 +83,9 @@ Usage: #example
 * enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id" (exactly)
 * enterer.identifier.value = "606358757"
 * enteredDate = "2021-06-01T07:13:00+05:00"
-* supportingInformation[prescriptionItem] = Reference(urn:uuid:0428d416-149e-48a4-977c-394887b3d85c) "E-Rezept"
 * supportingInformation[dispenseItem] = Reference(72bd741c-7ad8-41d8-97c3-9aabbdd0f5b4) "Abgabedatensatz"
+* supportingInformation[dispenseItem].type = $DAV-PKV-PR-ERP-AbgabedatenBundle
 * supportingInformation[receipt] = Reference(160.123.456.789.123.58) "Quittung"
+* supportingInformation[receipt].type = $GEM_ERP_PR_Bundle
+* supportingInformation[prescriptionItem] = Reference(urn:uuid:0428d416-149e-48a4-977c-394887b3d85c) "E-Rezept"
+* supportingInformation[prescriptionItem].type = $KBV_PR_ERP_Bundle

@@ -247,7 +247,7 @@
         "id": "ChargeItem.supportingInformation:dispenseItem.type",
         "path": "ChargeItem.supportingInformation.type",
         "min": 1,
-        "fixedUri": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen"
+        "fixedUri": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle"
       },
       {
         "id": "ChargeItem.supportingInformation:receipt",
