@@ -21,7 +21,7 @@ Id: GEM-ERPCHRG-PR-ChargeItem
     AccessCode 0..1
 * identifier[PrescriptionID] ^short = "Prescription Identifier"
 * identifier[PrescriptionID] ^definition = "The prescription identifier is the main identifier for all the ePrecscription related ressources and the whole prescription workflow. This identifier is genereted by the \"E-Rezept Fachdienst\" and must not be changed manually."
-* identifier[PrescriptionID].system = $GEM_ERP_PR_PrescriptionId (exactly)
+* identifier[PrescriptionID].system = $GEM_ERP_NS_PrescriptionId (exactly)
 * identifier[PrescriptionID].system 1..1
 * identifier[PrescriptionID].value 1..1
 * identifier[AccessCode] ^short = "AccessCode Identifier"
@@ -72,7 +72,7 @@ Usage: #example
 * extension[GEM_ERPCHRG_EX_MarkingFlag].extension[subsidy].valueBoolean = false
 * extension[GEM_ERPCHRG_EX_MarkingFlag].extension[taxOffice].url = "taxOffice"
 * extension[GEM_ERPCHRG_EX_MarkingFlag].extension[taxOffice].valueBoolean = false
-* identifier[PrescriptionID].system = $GEM_ERP_PR_PrescriptionId
+* identifier[PrescriptionID].system = $GEM_ERP_NS_PrescriptionId
 * identifier[PrescriptionID].value = "160.123.456.789.123.58"
 * identifier[AccessCode].system = $GEM_ERP_PR_AccessCode
 * identifier[AccessCode].value = "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
