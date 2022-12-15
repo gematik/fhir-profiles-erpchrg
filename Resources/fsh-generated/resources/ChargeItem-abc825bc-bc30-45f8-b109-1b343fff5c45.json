@@ -49,7 +49,7 @@
       "display": "E-Rezept"
     },
     {
-      "type": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen",
+      "type": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle",
       "reference": "72bd741c-7ad8-41d8-97c3-9aabbdd0f5b4",
       "display": "Abgabedatensatz"
     },

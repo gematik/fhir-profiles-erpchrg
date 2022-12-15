@@ -54,7 +54,7 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * supportingInformation[receipt].type 1..1
 * supportingInformation[prescriptionItem].type 1..1
 
-* supportingInformation[dispenseItem].type = $DAV_PR_ERP_Abgabeinformationen (exactly)
+* supportingInformation[dispenseItem].type = $DAV_PR_ERP_AbgabedatenBundle (exactly)
 * supportingInformation[receipt].type = $GEM_ERP_PR_Bundle (exactly)
 * supportingInformation[prescriptionItem].type = $KBV_PR_ERP_Bundle (exactly)
 
