@@ -40,28 +40,39 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * enterer.identifier 1..
 * enterer.identifier only $identifier-telematik-id
 
-* supportingInformation 0..3 MS
+* supportingInformation 1..4 MS
 * supportingInformation ^slicing.discriminator.type = #value
 * supportingInformation ^slicing.discriminator.path = "type"
 * supportingInformation ^slicing.rules = #closed
 * supportingInformation ^definition = "holds references to the 3 relevant documents [prescription, receipt, dispensationInformation]"
 * supportingInformation contains
-    prescriptionItem 0..1 and
-    dispenseItem 0..1 and
-    receipt 0..1
+    prescriptionItemBundle 0..1 and
+    dispenseItemBinary 0..1 and
+    dispenseItemBundle 0..1 and
+    receiptBundle 0..1
 
-* supportingInformation[dispenseItem].type 1..1
-* supportingInformation[receipt].type 1..1
-* supportingInformation[prescriptionItem].type 1..1
+* supportingInformation[dispenseItemBundle].type 1..1
+* supportingInformation[dispenseItemBinary].type 1..1
+* supportingInformation[receiptBundle].type 1..1
+* supportingInformation[prescriptionItemBundle].type 1..1
 
-* supportingInformation[dispenseItem].type = $DAV-PKV-PR-ERP-AbgabedatenBundle (exactly)
-* supportingInformation[receipt].type = $GEM_ERP_PR_Bundle (exactly)
-* supportingInformation[prescriptionItem].type = $KBV_PR_ERP_Bundle (exactly)
+* supportingInformation[dispenseItemBundle].type = $DAV-PKV-PR-ERP-AbgabedatenBundle (exactly)
+* supportingInformation[dispenseItemBinary].type = "Binary" (exactly)
+* supportingInformation[receiptBundle].type = $GEM_ERP_PR_Bundle (exactly)
+* supportingInformation[prescriptionItemBundle].type = $KBV_PR_ERP_Bundle (exactly)
 
 
-Instance: ChargeItemExample
+Instance: DispenseItemBinaryExample
+InstanceOf: Binary
+Usage: #inline
+* id = "c8720f99-6641-432d-94be-d49eaa164755"
+* contentType = #application/pkcs7-mime
+* data = "bWVycnkgY2hyaXN0bWFz"
+
+
+Instance: ChargeItemExampleBundles
 InstanceOf: GEM_ERPCHRG_PR_ChargeItem
-Title:   "ChargeItem completed by Fachdienst"
+Title:   "ChargeItem with Bundles completed by Fachdienst"
 Usage: #example
 * id = "abc825bc-bc30-45f8-b109-1b343fff5c45"
 * meta.profile[+] = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0"
@@ -81,11 +92,32 @@ Usage: #example
 * subject.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
 * subject.identifier.value = "X234567890"
 * enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id" (exactly)
-* enterer.identifier.value = "606358757"
-* enteredDate = "2021-06-01T07:13:00+05:00"
-* supportingInformation[dispenseItem] = Reference(72bd741c-7ad8-41d8-97c3-9aabbdd0f5b4) "Abgabedatensatz"
-* supportingInformation[dispenseItem].type = $DAV-PKV-PR-ERP-AbgabedatenBundle
-* supportingInformation[receipt] = Reference(160.123.456.789.123.58) "Quittung"
-* supportingInformation[receipt].type = $GEM_ERP_PR_Bundle
-* supportingInformation[prescriptionItem] = Reference(urn:uuid:0428d416-149e-48a4-977c-394887b3d85c) "E-Rezept"
-* supportingInformation[prescriptionItem].type = $KBV_PR_ERP_Bundle
+* enterer.identifier.value = "3-15.2.1456789123.191"
+* enteredDate = "2022-12-16T06:13:00+05:00"
+* supportingInformation[dispenseItemBundle] = Reference(72bd741c-7ad8-41d8-97c3-9aabbdd0f5b4) "Abgabedatensatz"
+* supportingInformation[dispenseItemBundle].type = $DAV-PKV-PR-ERP-AbgabedatenBundle
+* supportingInformation[receiptBundle] = Reference(160.123.456.789.123.58) "Quittung"
+* supportingInformation[receiptBundle].type = $GEM_ERP_PR_Bundle
+* supportingInformation[prescriptionItemBundle] = Reference(urn:uuid:0428d416-149e-48a4-977c-394887b3d85c) "E-Rezept"
+* supportingInformation[prescriptionItemBundle].type = $KBV_PR_ERP_Bundle
+
+Instance: ChargeItemExampleBinary
+InstanceOf: GEM_ERPCHRG_PR_ChargeItem
+Title:   "ChargeItem with contained Binary to Fachdienst"
+Usage: #example
+* meta.profile[+] = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0"
+* contained[+] = DispenseItemBinaryExample
+* identifier[PrescriptionID].system = $GEM_ERP_NS_PrescriptionId
+* identifier[PrescriptionID].value = "160.123.456.789.123.58"
+* identifier[AccessCode].system = $GEM_ERP_PR_AccessCode
+* identifier[AccessCode].value = "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
+* status = #billable
+* code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
+* subject.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* subject.identifier.value = "X234567890"
+* enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id" (exactly)
+* enterer.identifier.value = "3-15.2.1456789123.191"
+* enteredDate = "2022-12-16T07:13:00+05:00"
+* supportingInformation[dispenseItemBinary].reference = "#c8720f99-6641-432d-94be-d49eaa164755"
+* supportingInformation[dispenseItemBinary].display = "DispenseItemBinaryExample"
+* supportingInformation[dispenseItemBinary].type = "Binary"
