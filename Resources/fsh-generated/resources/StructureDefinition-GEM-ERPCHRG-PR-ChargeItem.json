@@ -220,44 +220,58 @@
           "rules": "closed"
         },
         "definition": "holds references to the 3 relevant documents [prescription, receipt, dispensationInformation]",
-        "max": "3",
+        "min": 1,
+        "max": "4",
         "mustSupport": true
       },
       {
-        "id": "ChargeItem.supportingInformation:prescriptionItem",
+        "id": "ChargeItem.supportingInformation:prescriptionItemBundle",
         "path": "ChargeItem.supportingInformation",
-        "sliceName": "prescriptionItem",
+        "sliceName": "prescriptionItemBundle",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "ChargeItem.supportingInformation:prescriptionItem.type",
+        "id": "ChargeItem.supportingInformation:prescriptionItemBundle.type",
         "path": "ChargeItem.supportingInformation.type",
         "min": 1,
         "fixedUri": "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle"
       },
       {
-        "id": "ChargeItem.supportingInformation:dispenseItem",
+        "id": "ChargeItem.supportingInformation:dispenseItemBinary",
         "path": "ChargeItem.supportingInformation",
-        "sliceName": "dispenseItem",
+        "sliceName": "dispenseItemBinary",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "ChargeItem.supportingInformation:dispenseItem.type",
+        "id": "ChargeItem.supportingInformation:dispenseItemBinary.type",
+        "path": "ChargeItem.supportingInformation.type",
+        "min": 1,
+        "fixedUri": "Binary"
+      },
+      {
+        "id": "ChargeItem.supportingInformation:dispenseItemBundle",
+        "path": "ChargeItem.supportingInformation",
+        "sliceName": "dispenseItemBundle",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ChargeItem.supportingInformation:dispenseItemBundle.type",
         "path": "ChargeItem.supportingInformation.type",
         "min": 1,
         "fixedUri": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle"
       },
       {
-        "id": "ChargeItem.supportingInformation:receipt",
+        "id": "ChargeItem.supportingInformation:receiptBundle",
         "path": "ChargeItem.supportingInformation",
-        "sliceName": "receipt",
+        "sliceName": "receiptBundle",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "ChargeItem.supportingInformation:receipt.type",
+        "id": "ChargeItem.supportingInformation:receiptBundle.type",
         "path": "ChargeItem.supportingInformation.type",
         "min": 1,
         "fixedUri": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle"

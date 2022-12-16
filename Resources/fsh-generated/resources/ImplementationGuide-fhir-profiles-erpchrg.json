@@ -137,9 +137,16 @@
       },
       {
         "reference": {
+          "reference": "ChargeItem/ChargeItemExampleBinary"
+        },
+        "name": "ChargeItem with contained Binary to Fachdienst",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ChargeItem/abc825bc-bc30-45f8-b109-1b343fff5c45"
         },
-        "name": "ChargeItem completed by Fachdienst",
+        "name": "ChargeItem with Bundles completed by Fachdienst",
         "exampleBoolean": true
       },
       {
