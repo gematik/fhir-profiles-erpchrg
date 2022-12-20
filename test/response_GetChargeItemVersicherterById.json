@@ -36,10 +36,12 @@
                         ]
                     }
                 ],
-                "identifier": [{
-                    "system": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId",
-                    "value": "200.086.824.605.539.20"
-                }],
+                "identifier": [
+                    {
+                        "system": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId",
+                        "value": "200.086.824.605.539.20"
+                    }
+                ],
                 "status": "billable",
                 "code": {
                     "coding": [
@@ -600,10 +602,10 @@
                     ],
                     "tag": [
                         {
-                            "display": "Beispiel RezeptAbgabedatenPKV Bundle (FAM + Noctu + Rezept�nderung)"
+                            "display": "Beispiel RezeptAbgabedatenPKV Bundle (FAM + Noctu + Rezeptänderung)"
                         },
                         {
-                            "display": "ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gew�hrleistet werden. Wir sind jederzeit dankbar f�r Hinweise auf Fehler oder f�r Verbesserungsvorschl�ge."
+                            "display": "ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gewährleistet werden. Wir sind jederzeit dankbar f�r Hinweise auf Fehler oder f�r Verbesserungsvorschl�ge."
                         }
                     ]
                 },
@@ -827,7 +829,7 @@
                                             "extension": [
                                                 {
                                                     "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz",
-                                                    "valueDecimal": 19
+                                                    "valueDecimal": 19.00
                                                 },
                                                 {
                                                     "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter",
@@ -847,7 +849,7 @@
                                                             "url": "Kostenbetrag",
                                                             "valueMoney": {
                                                                 "currency": "EUR",
-                                                                "value": 0
+                                                                "value": 0.00
                                                             }
                                                         }
                                                     ]
@@ -877,7 +879,7 @@
                                             "extension": [
                                                 {
                                                     "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz",
-                                                    "valueDecimal": 19
+                                                    "valueDecimal": 19.00
                                                 },
                                                 {
                                                     "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter",
@@ -897,7 +899,7 @@
                                                             "url": "Kostenbetrag",
                                                             "valueMoney": {
                                                                 "currency": "EUR",
-                                                                "value": 0
+                                                                "value": 0.00
                                                             }
                                                         }
                                                     ]
@@ -905,7 +907,7 @@
                                             ],
                                             "amount": {
                                                 "currency": "EUR",
-                                                "value": 2.5
+                                                "value": 2.50
                                             },
                                             "factor": 1
                                         }
@@ -959,7 +961,7 @@
                                         "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Gesamtzuzahlung",
                                         "valueMoney": {
                                             "currency": "EUR",
-                                            "value": 0
+                                            "value": 0.00
                                         }
                                     }
                                 ],
@@ -979,8 +981,11 @@
                     "who": {
                         "reference": "https://pharmacy-konn/Device/1"
                     },
-                    "onBehalf": {
-                        "reference": "https://erp.zentral.erp.splitdns.ti-dienste.de/Device/1"
+                    "onBehalfOf": {
+                        "identifier": {
+                            "system": "https://gematik.de/fhir/sid/telematik-id",
+                            "value": "3-SMC-B-Testkarte-883110000129070"
+                        }
                     },
                     "sigFormat": "application/pkcs7-mime",
                     "data": "dGhpcyBibG9iIGlzIHNuaXBwZWQ="
