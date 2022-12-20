@@ -128,18 +128,18 @@ Usage: #example
 Instance: Response_App_GETChargeItemById
 InstanceOf: Bundle
 Usage: #example
-* id = "200e3c55-b154-4335-a0ec-65addd39a3b6-1"
+* id = "Response-App-GETChargeItemById"
 * meta.lastUpdated = "2021-09-02T11:38:42.557+00:00"
 * type = #searchset
 * total = 4
 * entry[0].fullUrl = "https://prescriptionserver.telematik/ChargeItem/abc825bc-bc30-45f8-b109-1b343fff5c45"
 * entry[=].resource = App-ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45
 * entry[+].fullUrl = "https://prescriptionserver.telematik/Bundle/414ca393-dde3-4082-9a3b-3752e629e4aa"
-* entry[=].resource = PrescriptionBundle-for-200e3c55-b154-4335-a0ec-65addd39a3b6
+* entry[=].resource = PrescriptionBundleExample
 * entry[+].fullUrl = "https://prescriptionserver.telematik/Bundle/f548dde3-a319-486b-8624-6176ff41ad90"
-* entry[=].resource = AbgabedatenBundle-for-200e3c55-b154-4335-a0ec-65addd39a3b6
+* entry[=].resource = AbgabedatenBundleExample
 * entry[+].fullUrl = "https://prescriptionserver.telematik/Bundle/dffbfd6a-5712-4798-bdc8-07201eb77ab8"
-* entry[=].resource = QuittungsBundle-for-200e3c55-b154-4335-a0ec-65addd39a3b6
+* entry[=].resource = QuittungsBundleExample
 
 Instance: App-ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45
 InstanceOf: ChargeItem
@@ -170,14 +170,14 @@ Usage: #inline
 Instance: Response_Apotheker_GETChargeItemById
 InstanceOf: Bundle
 Usage: #example
-* id = "200e3c55-b154-4335-a0ec-65addd39a3b6-2"
+* id = "Response-Apotheker-GETChargeItemById"
 * meta.lastUpdated = "2021-09-02T11:38:42.557+00:00"
 * type = #searchset
 * total = 2
 * entry[0].fullUrl = "https://prescriptionserver.telematik/ChargeItem/abc825bc-bc30-45f8-b109-1b343fff5c45"
 * entry[=].resource = Apotheker-ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45
 * entry[+].fullUrl = "https://prescriptionserver.telematik/Bundle/f548dde3-a319-486b-8624-6176ff41ad90"
-* entry[=].resource = AbgabedatenBundle-for-200e3c55-b154-4335-a0ec-65addd39a3b6
+* entry[=].resource = AbgabedatenBundleExample
 
 Instance: Apotheker-ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45
 InstanceOf: ChargeItem
@@ -203,7 +203,7 @@ Usage: #inline
 
 /*******************************************************/
 
-Instance: PrescriptionBundle-for-200e3c55-b154-4335-a0ec-65addd39a3b6
+Instance: PrescriptionBundleExample
 InstanceOf: Bundle
 Usage: #inline
 * id = "414ca393-dde3-4082-9a3b-3752e629e4aa"
@@ -357,7 +357,7 @@ Usage: #inline
 * signature.sigFormat = #application/pkcs7-mime
 * signature.data = "dGhpcyBibG9iIGlzIHNuaXBwZWQ="
 
-Instance: AbgabedatenBundle-for-200e3c55-b154-4335-a0ec-65addd39a3b6
+Instance: AbgabedatenBundleExample
 InstanceOf: Bundle
 Usage: #inline
 * id = "f548dde3-a319-486b-8624-6176ff41ad90"
@@ -472,7 +472,7 @@ Usage: #inline
 * signature.sigFormat = #application/pkcs7-mime
 * signature.data = "dGhpcyBibG9iIGlzIHNuaXBwZWQ="
 
-Instance: QuittungsBundle-for-200e3c55-b154-4335-a0ec-65addd39a3b6
+Instance: QuittungsBundleExample
 InstanceOf: Bundle
 Usage: #inline
 * id = "dffbfd6a-5712-4798-bdc8-07201eb77ab8"
