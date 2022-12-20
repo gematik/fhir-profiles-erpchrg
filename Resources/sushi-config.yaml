@@ -4,6 +4,7 @@ name: Abrechnungsinformationen des E-Rezeptes für den Patienten
 title: ePrescription patient receipt definition
 description: German fhir profiles on ePrescription patient receipt
 fhirVersion: 4.0.1
+FSHOnly: true
 applyExtensionMetadataToRoot: false
 status: draft
 version: "1.0"
