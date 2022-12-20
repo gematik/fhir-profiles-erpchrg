@@ -1,0 +1,340 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="4d8684f1-e379-4cb2-adcb-41ab1a543206"/>
+    <meta>
+        <lastUpdated value="2022-06-14T13:54:15.203+00:00"/>
+    </meta>
+    <type value="searchset"/>
+    <total value="2"/>
+    <link>
+        <relation value="self" />
+        <url value="https://prescriptionserver.telematik/ChargeItem/abc825bc-bc30-45f8-b109-1b343fff5c45?ac=777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea" />
+    </link>
+    <entry>
+        <fullUrl value="https://prescriptionserver.telematik/ChargeItem/abc825bc-bc30-45f8-b109-1b343fff5c45"/>
+        <resource>
+            <ChargeItem xmlns="http://hl7.org/fhir">
+                <id value="abc825bc-bc30-45f8-b109-1b343fff5c45" />
+                <meta>
+                    <profile value="https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0" />
+                </meta>
+                <identifier>
+                    <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId" />
+                    <value value="200.100.000.000.082.87" />
+                </identifier>
+                <identifier>
+                    <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_AccessCode" />
+                    <value value="777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea" />
+                </identifier>
+                <status value="billable" />
+                <code>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason" />
+                        <code value="not-applicable" />
+                    </coding>
+                </code>
+                <subject>
+                    <identifier>
+                        <system value="http://fhir.de/sid/gkv/kvid-10"/>
+                        <value value="X234567890" />
+                        <assigner>
+                            <display value="Name einer privaten Krankenversicherung" />
+                        </assigner>
+                    </identifier>
+                </subject>
+                <enterer>
+                    <identifier>
+                        <system value="https://gematik.de/fhir/sid/telematik-id" />
+                        <value value="3-15.2.1456789123.191" />
+                    </identifier>
+                </enterer>
+                <enteredDate value="2021-06-01T07:13:00+05:00" />
+                <supportingInformation>
+                    <reference value="Bundle/a5142020-7b59-4674-9b02-08f68c583610"/>
+                    <display value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle"/>
+                </supportingInformation>
+            </ChargeItem>
+        </resource>
+        <search>
+            <mode value="match"/>
+        </search>
+    </entry>
+    <entry>
+        <fullUrl value="https://prescriptionserver.telematik/Bundle/a5142020-7b59-4674-9b02-08f68c583610" />
+        <resource>
+            <Bundle xmlns="http://hl7.org/fhir">
+                <id value="a5142020-7b59-4674-9b02-08f68c583610" />
+                <meta>
+                    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle|1.1" />
+                    <tag>
+                        <display value="Beispiel RezeptAbgabedatenPKV Bundle (FAM + Noctu + Rezept&#228;nderung)" />
+                    </tag>
+                    <tag>
+                        <display value="ACHTUNG! Der fachlich korrekte Inhalt der Beispielinstanz kann nicht gew&#228;hrleistet werden. Wir sind jederzeit dankbar f&#252;r Hinweise auf Fehler oder f&#252;r Verbesserungsvorschl&#228;ge." />
+                    </tag>
+                </meta>
+                <identifier>
+                    <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId" />
+                    <value value="200.100.000.000.082.87" />
+                </identifier>
+                <type value="document" />
+                <timestamp value="2022-03-25T23:40:00Z" />
+                <entry>
+                    <fullUrl value="urn:uuid:4dc5f425-b9b6-4e39-9166-42668ead6c86" />
+                    <resource>
+                        <Composition>
+                            <id value="4dc5f425-b9b6-4e39-9166-42668ead6c86" />
+                            <meta>
+                                <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenComposition|1.1" />
+                            </meta>
+                            <status value="final" />
+                            <type>
+                                <coding>
+                                    <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-CompositionTypes" />
+                                    <code value="ERezeptAbgabedaten" />
+                                </coding>
+                            </type>
+                            <date value="2022-03-25T23:40:00Z" />
+                            <author>
+                                <reference value="urn:uuid:1fa57d53-812b-4cab-a42e-94a12481108a" />
+                            </author>
+                            <title value="ERezeptAbgabedaten" />
+                            <section>
+                                <title value="Abgabeinformationen" />
+                                <entry>
+                                    <reference value="urn:uuid:37a647b8-cb89-491a-af0f-f9bffc2b386c" />
+                                </entry>
+                            </section>
+                            <section>
+                                <title value="Apotheke" />
+                                <entry>
+                                    <reference value="urn:uuid:1fa57d53-812b-4cab-a42e-94a12481108a" />
+                                </entry>
+                            </section>
+                        </Composition>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:1fa57d53-812b-4cab-a42e-94a12481108a" />
+                    <resource>
+                        <Organization>
+                            <id value="1fa57d53-812b-4cab-a42e-94a12481108a" />
+                            <meta>
+                                <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-Apotheke|1.1" />
+                            </meta>
+                            <identifier>
+                                <system value="http://fhir.de/sid/arge-ik/iknr" />
+                                <value value="123456789" />
+                            </identifier>
+                            <name value="Adler-Apotheke" />
+                            <address>
+                                <type value="physical" />
+                                <line value="Taunusstra&#223;e 89">
+                                    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                                        <valueString value="Taunusstra&#223;e" />
+                                    </extension>
+                                    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                                        <valueString value="89" />
+                                    </extension>
+                                </line>
+                                <city value="Langen" />
+                                <postalCode value="63225" />
+                                <country value="D" />
+                            </address>
+                        </Organization>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:37a647b8-cb89-491a-af0f-f9bffc2b386c" />
+                    <resource>
+                        <MedicationDispense>
+                            <id value="37a647b8-cb89-491a-af0f-f9bffc2b386c" />
+                            <meta>
+                                <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-Abgabeinformationen|1.1" />
+                            </meta>
+                            <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Abrechnungszeilen">
+                                <valueReference>
+                                    <reference value="urn:uuid:8a99bfa5-f7aa-4741-99d8-f1abbd301ae1" />
+                                </valueReference>
+                            </extension>
+                            <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-EX-ERP-AbrechnungsTyp">
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-PKV-CS-ERP-AbrechnungsTyp" />
+                                        <code value="1" />
+                                    </coding>
+                                </valueCodeableConcept>
+                            </extension>
+                            <status value="completed" />
+                            <medicationCodeableConcept>
+                                <coding>
+                                    <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason" />
+                                    <code value="not-applicable" />
+                                </coding>
+                            </medicationCodeableConcept>
+                            <performer>
+                                <actor>
+                                    <reference value="urn:uuid:1fa57d53-812b-4cab-a42e-94a12481108a" />
+                                </actor>
+                            </performer>
+                            <authorizingPrescription>
+                                <identifier>
+                                    <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId" />
+                                    <value value="200.100.000.000.082.87" />
+                                </identifier>
+                            </authorizingPrescription>
+                            <type>
+                                <coding>
+                                    <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-MedicationDispenseTyp" />
+                                    <code value="Abgabeinformationen" />
+                                </coding>
+                            </type>
+                            <whenHandedOver value="2022-03-25" />
+                            <substitution>
+                                <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Rezeptaenderung">
+                                    <extension url="ArtRezeptaenderung">
+                                        <valueCodeableConcept>
+                                            <coding>
+                                                <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-PKV-CS-ERP-ArtRezeptaenderung" />
+                                                <code value="21" />
+                                            </coding>
+                                        </valueCodeableConcept>
+                                    </extension>
+                                    <extension url="RueckspracheArzt">
+                                        <valueCodeableConcept>
+                                            <coding>
+                                                <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-RueckspracheArzt" />
+                                                <code value="2" />
+                                            </coding>
+                                        </valueCodeableConcept>
+                                    </extension>
+                                </extension>
+                                <wasSubstituted value="true" />
+                            </substitution>
+                        </MedicationDispense>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:8a99bfa5-f7aa-4741-99d8-f1abbd301ae1" />
+                    <resource>
+                        <Invoice>
+                            <id value="8a99bfa5-f7aa-4741-99d8-f1abbd301ae1" />
+                            <meta>
+                                <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-Abrechnungszeilen|1.1" />
+                            </meta>
+                            <status value="issued" />
+                            <type>
+                                <coding>
+                                    <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-InvoiceTyp" />
+                                    <code value="Abrechnungszeilen" />
+                                </coding>
+                            </type>
+                            <lineItem>
+                                <sequence value="1" />
+                                <chargeItemCodeableConcept>
+                                    <coding>
+                                        <system value="http://fhir.de/CodeSystem/ifa/pzn" />
+                                        <code value="11514676" />
+                                    </coding>
+                                </chargeItemCodeableConcept>
+                                <priceComponent>
+                                    <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz">
+                                        <valueDecimal value="19.00" />
+                                    </extension>
+                                    <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter">
+                                        <extension url="Kategorie">
+                                            <valueCodeableConcept>
+                                                <coding>
+                                                    <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-PKV-CS-ERP-KostenVersicherterKategorie" />
+                                                    <code value="0" />
+                                                </coding>
+                                            </valueCodeableConcept>
+                                        </extension>
+                                        <extension url="Kostenbetrag">
+                                            <valueMoney>
+                                                <value value="0.00" />
+                                                <currency value="EUR" />
+                                            </valueMoney>
+                                        </extension>
+                                    </extension>
+                                    <type value="informational" />
+                                    <factor value="2" />
+                                    <amount>
+                                        <value value="48.98" />
+                                        <currency value="EUR" />
+                                    </amount>
+                                </priceComponent>
+                            </lineItem>
+                            <lineItem>
+                                <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Zusatzattribute">
+                                    <extension url="ZusatzattributAbgabeNoctu">
+                                        <extension url="Gruppe">
+                                            <valueCodeableConcept>
+                                                <coding>
+                                                    <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-CS-ERP-ZusatzattributGruppe" />
+                                                    <code value="11" />
+                                                </coding>
+                                            </valueCodeableConcept>
+                                        </extension>
+                                        <extension url="DatumUhrzeit">
+                                            <valueDateTime value="2022-03-25T23:30:00.0Z" />
+                                        </extension>
+                                        <extension url="Schluessel">
+                                            <valueBoolean value="true" />
+                                        </extension>
+                                    </extension>
+                                </extension>
+                                <sequence value="2" />
+                                <chargeItemCodeableConcept>
+                                    <coding>
+                                        <system value="http://fhir.de/CodeSystem/ifa/pzn" />
+                                        <code value="02567018" />
+                                    </coding>
+                                </chargeItemCodeableConcept>
+                                <priceComponent>
+                                    <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz">
+                                        <valueDecimal value="19.00" />
+                                    </extension>
+                                    <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter">
+                                        <extension url="Kategorie">
+                                            <valueCodeableConcept>
+                                                <coding>
+                                                    <system value="http://fhir.abda.de/eRezeptAbgabedaten/CodeSystem/DAV-PKV-CS-ERP-KostenVersicherterKategorie" />
+                                                    <code value="0" />
+                                                </coding>
+                                            </valueCodeableConcept>
+                                        </extension>
+                                        <extension url="Kostenbetrag">
+                                            <valueMoney>
+                                                <value value="0.00" />
+                                                <currency value="EUR" />
+                                            </valueMoney>
+                                        </extension>
+                                    </extension>
+                                    <type value="informational" />
+                                    <factor value="1" />
+                                    <amount>
+                                        <value value="2.50" />
+                                        <currency value="EUR" />
+                                    </amount>
+                                </priceComponent>
+                            </lineItem>
+                            <totalGross>
+                                <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Gesamtzuzahlung">
+                                    <valueMoney>
+                                        <value value="0.00" />
+                                        <currency value="EUR" />
+                                    </valueMoney>
+                                </extension>
+                                <value value="51.48" />
+                                <currency value="EUR" />
+                            </totalGross>
+                        </Invoice>
+                    </resource>
+                </entry>
+            </Bundle>
+        </resource>
+        <search>
+            <mode value="include"/>
+        </search>
+    </entry>
+</Bundle>

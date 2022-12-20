@@ -13,7 +13,7 @@
       "value": "160.123.456.789.123.58"
     },
     {
-      "system": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AccessCode",
+      "system": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_AccessCode",
       "value": "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
     }
   ],
@@ -25,9 +25,8 @@
   },
   "supportingInformation": [
     {
-      "type": "Binary",
-      "reference": "#c8720f99-6641-432d-94be-d49eaa164755",
-      "display": "DispenseItemBinaryExample"
+      "display": "Binary",
+      "reference": "#c8720f99-6641-432d-94be-d49eaa164755"
     }
   ],
   "contained": [
