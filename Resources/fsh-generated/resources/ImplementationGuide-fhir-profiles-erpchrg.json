@@ -57,6 +57,12 @@
       "version": "1.3.0",
       "uri": "http://fhir.org/packages/kbv.basis/ImplementationGuide/kbv.basis",
       "id": "kbv_basis"
+    },
+    {
+      "packageId": "de.abda.erezeptabgabedatenpkv",
+      "version": "1.1.0-rc12",
+      "uri": "http://fhir.org/packages/de.abda.erezeptabgabedatenpkv/ImplementationGuide/de.abda.erezeptabgabedatenpkv",
+      "id": "de_abda_erezeptabgabedatenpkv"
     }
   ],
   "definition": {
