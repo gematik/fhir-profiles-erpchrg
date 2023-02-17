@@ -904,7 +904,7 @@
                       ],
                       "amount": {
                         "currency": "EUR",
-                        "value": 2.5
+                        "value": 2.50
                       },
                       "factor": 1
                     }
