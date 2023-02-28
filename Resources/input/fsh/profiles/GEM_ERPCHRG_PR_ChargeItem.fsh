@@ -130,6 +130,7 @@ Usage: #example
 Dieser Block ist auskommentiert, da derzeit SUSHI noch einen Fehler enthält. Runde Dezimalwerte werden gerundet. Somit wird aus dem MwSteuersatz 19.00 -> 19
 Die korrigierten Beispiele liegen unter /corrected_decimal_values_bundles
 Falls Änderungen an den Beispielen geschehen sollen sind diese zu generieren -> korrigieren und dann in corrected_decimal_values_bundles zu kopieren.
+https://github.com/FHIR/sushi/issues/1215
 
 Instance: Response_App_GETChargeItemById
 InstanceOf: Bundle
@@ -179,6 +180,7 @@ Usage: #inline
 Dieser Block ist auskommentiert, da derzeit SUSHI noch einen Fehler enthält. Runde Dezimalwerte werden gerundet. Somit wird aus dem MwSteuersatz 19.00 -> 19
 Die korrigierten Beispiele liegen unter /corrected_decimal_values_bundles
 Falls Änderungen an den Beispielen geschehen sollen sind diese zu generieren -> korrigieren und dann in corrected_decimal_values_bundles zu kopieren.
+https://github.com/FHIR/sushi/issues/1215
 
 Instance: Response_Apotheker_GETChargeItemById
 InstanceOf: Bundle
