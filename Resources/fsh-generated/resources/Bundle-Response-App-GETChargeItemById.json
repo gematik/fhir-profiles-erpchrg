@@ -341,18 +341,14 @@
                       }
                     ]
                   },
-                  "given": [
-                    "Sahra"
-                  ]
+                  "given": ["Sahra"]
                 }
               ],
               "birthDate": "1970-12-24",
               "address": [
                 {
                   "type": "both",
-                  "line": [
-                    "Berliner Straße 1"
-                  ],
+                  "line": ["Berliner Straße 1"],
                   "_line": [
                     {
                       "extension": [
@@ -410,9 +406,7 @@
                       }
                     ]
                   },
-                  "given": [
-                    "Ben"
-                  ]
+                  "given": ["Ben"]
                 }
               ],
               "qualification": [
@@ -478,10 +472,7 @@
               "address": [
                 {
                   "type": "both",
-                  "line": [
-                    "Herbert-Lewin-Platz 2",
-                    "Erdgeschoss"
-                  ],
+                  "line": ["Herbert-Lewin-Platz 2", "Erdgeschoss"],
                   "_line": [
                     {
                       "extension": [
@@ -678,9 +669,7 @@
               "address": [
                 {
                   "type": "physical",
-                  "line": [
-                    "Taunusstraße 89"
-                  ],
+                  "line": ["Taunusstraße 89"],
                   "_line": [
                     {
                       "extension": [
@@ -826,7 +815,7 @@
                       "extension": [
                         {
                           "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz",
-                          "valueDecimal": 19.01
+                          "valueDecimal": 19.0
                         },
                         {
                           "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter",
@@ -846,7 +835,7 @@
                               "url": "Kostenbetrag",
                               "valueMoney": {
                                 "currency": "EUR",
-                                "value": 0.01
+                                "value": 0.0
                               }
                             }
                           ]
@@ -876,7 +865,7 @@
                       "extension": [
                         {
                           "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-MwStSatz",
-                          "valueDecimal": 19.01
+                          "valueDecimal": 19.0
                         },
                         {
                           "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-KostenVersicherter",
@@ -896,7 +885,7 @@
                               "url": "Kostenbetrag",
                               "valueMoney": {
                                 "currency": "EUR",
-                                "value": 0.01
+                                "value": 0.0
                               }
                             }
                           ]
@@ -904,7 +893,7 @@
                       ],
                       "amount": {
                         "currency": "EUR",
-                        "value": 2.50
+                        "value": 2.5
                       },
                       "factor": 1
                     }
@@ -958,7 +947,7 @@
                     "url": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Gesamtzuzahlung",
                     "valueMoney": {
                       "currency": "EUR",
-                      "value": 0.01
+                      "value": 0.0
                     }
                   }
                 ],
