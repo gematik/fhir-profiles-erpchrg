@@ -125,6 +125,13 @@ Usage: #example
 * supportingInformation[dispenseItemBinary].display = "Binary"
 
 /*******************************************************/
+/*
+
+Dieser Block ist auskommentiert, da derzeit SUSHI noch einen Fehler enthält. Runde Dezimalwerte werden gerundet. Somit wird aus dem MwSteuersatz 19.00 -> 19
+Die korrigierten Beispiele liegen unter /corrected_decimal_values_bundles
+Falls Änderungen an den Beispielen geschehen sollen sind diese zu generieren -> korrigieren und dann in corrected_decimal_values_bundles zu kopieren.
+https://github.com/FHIR/sushi/issues/1215
+
 Instance: Response_App_GETChargeItemById
 InstanceOf: Bundle
 Usage: #example
@@ -140,6 +147,8 @@ Usage: #example
 * entry[=].resource = AbgabedatenBundleExample
 * entry[+].fullUrl = "https://prescriptionserver.telematik/Bundle/dffbfd6a-5712-4798-bdc8-07201eb77ab8"
 * entry[=].resource = QuittungsBundleExample
+
+*/
 
 Instance: App-ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45
 InstanceOf: ChargeItem
@@ -166,6 +175,12 @@ Usage: #inline
 * supportingInformation[+] = Reference(Bundle/dffbfd6a-5712-4798-bdc8-07201eb77ab8) "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle"
 
 /*******************************************************/
+/*
+
+Dieser Block ist auskommentiert, da derzeit SUSHI noch einen Fehler enthält. Runde Dezimalwerte werden gerundet. Somit wird aus dem MwSteuersatz 19.00 -> 19
+Die korrigierten Beispiele liegen unter /corrected_decimal_values_bundles
+Falls Änderungen an den Beispielen geschehen sollen sind diese zu generieren -> korrigieren und dann in corrected_decimal_values_bundles zu kopieren.
+https://github.com/FHIR/sushi/issues/1215
 
 Instance: Response_Apotheker_GETChargeItemById
 InstanceOf: Bundle
@@ -200,7 +215,7 @@ Usage: #inline
 * enterer.identifier.value = "3-SMC-B-Testkarte-883110000095957"
 * enteredDate = "2021-06-01T07:13:00+05:00"
 * supportingInformation[0] = Reference(Bundle/f548dde3-a319-486b-8624-6176ff41ad90) "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle"
-
+*/
 /*******************************************************/
 
 Instance: PrescriptionBundleExample

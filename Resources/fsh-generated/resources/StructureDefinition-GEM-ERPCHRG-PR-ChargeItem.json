@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "GEM-ERPCHRG-PR-ChargeItem",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Financial.General"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem",
   "version": "1.0",
   "name": "GEM_ERPCHRG_PR_ChargeItem",
