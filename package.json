@@ -1,7 +1,7 @@
 {
-  "name": "project",
-  "version": "0.1.0",
-  "description": "Put a description here",
+  "name": "fhir-profiles-erpchrg",
+  "version": "1.0.1",
+  "description": "German fhir profiles on ePrescription patient receipt",
   "fhirVersions": [
     "4.0.1"
   ],
@@ -10,6 +10,6 @@
     "hl7.fhir.r4.core": "4.0.1",
     "kbv.ita.for": "1.1.0",
     "kbv.basis": "1.3.0",
-    "de.gematik.erezept-workflow.r4": "1.2.0"
+    "de.gematik.erezept-workflow.r4": "1.2.1"
   }
 }
