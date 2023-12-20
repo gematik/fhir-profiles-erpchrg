@@ -19,4 +19,5 @@ dependencies:
   hl7.fhir.r4.core: 4.0.1
   de.gematik.erezept-workflow.r4: 1.2.x
   kbv.ita.for: 1.1.0
+  kbv.ita.erp: 1.1.x
   de.abda.erezeptabgabedatenpkv: 1.2.0
