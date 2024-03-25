@@ -113,11 +113,6 @@
         ]
       },
       {
-        "id": "Consent.dateTime",
-        "path": "Consent.dateTime",
-        "min": 1
-      },
-      {
         "id": "Consent.policyRule",
         "path": "Consent.policyRule",
         "mustSupport": true,
