@@ -13,10 +13,9 @@ Id: GEM-ERPCHRG-PR-Consent
 * patient.identifier 1..1
 * patient.identifier only $identifier-pkv or $identifier-kvid-10
 * patient.identifier.assigner.display 0..1
-* dateTime 1..
 * policyRule MS
 * policyRule from http://terminology.hl7.org/ValueSet/v3-ActCode
-
+* dateTime ^comment = "dateTime wird vom E-Rezept-Fachdienst zu dem Zeitpunkt gesetzt, an dem die Consent Ressource hochgeladen wird."
 
 
 Instance: ChargeItemConsent
