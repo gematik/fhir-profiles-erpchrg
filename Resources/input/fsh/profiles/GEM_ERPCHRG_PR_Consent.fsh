@@ -15,7 +15,7 @@ Id: GEM-ERPCHRG-PR-Consent
 * patient.identifier.assigner.display 0..1
 * policyRule MS
 * policyRule from http://terminology.hl7.org/ValueSet/v3-ActCode
-
+// Die Kardinalität von dateTime soll auf 0..1 offen bleiben, da der E-Rezept-Fachdienst den Zeitpunkt der Zustimmung beim Hochladen erfasst.
 
 
 Instance: ChargeItemConsent
