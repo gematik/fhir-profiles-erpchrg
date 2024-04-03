@@ -1,9 +1,13 @@
-RuleSet: Meta (profileName)
+// General rule for to handle versions for all structure definitions
+RuleSet: Versioning
 * ^status = #draft
+* ^version = "1.0"
+
+RuleSet: Meta (profileName)
+* insert Versioning
 * ^experimental = false
 * ^publisher = "gematik GmbH"
 * ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/{profileName}"
-* ^version = "1.0"
 
 RuleSet: MetaProfile (profileName)
 * meta 1..1
@@ -14,7 +18,6 @@ RuleSet: MetaProfile (profileName)
 * meta.security 0..0
 
 RuleSet: Meta-Inst
-* status = #draft
+* insert Versioning
 * experimental = false
-* version = "1.0"
 * publisher = "gematik GmbH"
