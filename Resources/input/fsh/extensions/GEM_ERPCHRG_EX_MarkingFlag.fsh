@@ -1,8 +1,6 @@
 Extension: GEM_ERPCHRG_EX_MarkingFlag
 Id: GEM-ERPCHRG-EX-MarkingFlag
-* ^url = $GEM_ERPCHRG_EX_MarkingFlag_URL
-* ^version = "1.0"
-* ^status = #draft
+* insert Meta (GEM_ERPCHRG_EX_MarkingFlag)
 * ^context.type = #element
 * ^context.expression = "ChargeItem"
 * . ^short = "Options for submitted ChargeItem"

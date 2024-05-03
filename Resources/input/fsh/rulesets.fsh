@@ -1,6 +1,6 @@
 // General rule for to handle versions for all structure definitions
 RuleSet: Versioning
-* ^status = #draft
+* ^status = #active
 * ^version = "1.0"
 
 RuleSet: Meta (profileName)
@@ -21,3 +21,19 @@ RuleSet: Meta-Inst
 * insert Versioning
 * experimental = false
 * publisher = "gematik GmbH"
+
+RuleSet: CodeSystem(name)
+* ^url = "https://gematik.de/fhir/erpchrg/CodeSystem/{name}"
+* insert Versioning
+* ^publisher = "gematik GmbH"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "http://www.gematik.de"
+* ^copyright = "gematik GmbH"
+* ^caseSensitive = true
+
+RuleSet: ValueSet(name)
+* ^url = "https://gematik.de/fhir/erpchrg/ValueSet/{name}"
+* insert Versioning
+* ^publisher = "gematik GmbH"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "http://www.gematik.de"
