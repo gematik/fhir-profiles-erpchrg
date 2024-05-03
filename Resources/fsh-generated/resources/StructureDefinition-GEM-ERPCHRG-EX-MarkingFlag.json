@@ -4,7 +4,9 @@
   "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag",
   "version": "1.0",
   "name": "GEM_ERPCHRG_EX_MarkingFlag",
-  "status": "draft",
+  "status": "active",
+  "experimental": false,
+  "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
