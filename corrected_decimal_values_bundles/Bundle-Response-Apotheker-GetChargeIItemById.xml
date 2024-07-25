@@ -6,7 +6,7 @@
     <type value="searchset" />
     <total value="2" />
     <entry>
-        <fullUrl value="https://prescriptionserver.telematik/ChargeItem/abc825bc-bc30-45f8-b109-1b343fff5c45" />
+        <fullUrl value="https://prescriptionserver.telematik/ChargeItem/Apotheker-ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45" />
         <resource>
             <ChargeItem>
                 <id value="Apotheker-ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45" />
