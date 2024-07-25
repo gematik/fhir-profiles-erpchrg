@@ -84,7 +84,6 @@
           {
             "code": "Identifier",
             "profile": [
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Identifier_PkvID_10",
               "http://fhir.de/StructureDefinition/identifier-kvid-10"
             ]
           }

@@ -15,7 +15,7 @@ Description: "Ressource used for the communication to reply to a change request 
 * received MS
 * recipient 1..1
 * recipient.identifier 1..1
-* recipient.identifier only $identifier-pkv or $identifier-kvid-10
+* recipient.identifier only $sd-identifier-kvid-10
 * recipient.identifier.assigner.display 0..1
 * sender 1..1
 * sender.identifier 1..1
@@ -50,7 +50,7 @@ Usage: #example
 * status = #unknown
 * sender.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * sender.identifier.value = "3-SMC-B-Testkarte-883110000123465"
-* recipient[+].identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* recipient[+].identifier.system = $identifier-kvid-10
 * recipient[=].identifier.value = "X234567890"
 * sent = "2022-07-04T13:46:30.128+02:00"
 * payload.contentString = "Erledigt."

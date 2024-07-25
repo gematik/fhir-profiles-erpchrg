@@ -7,6 +7,26 @@
     ]
   },
   "status": "active",
+  "patient": {
+    "identifier": {
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code": "KVZ10"
+          }
+        ]
+      },
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "value": "X234567890",
+      "assigner": {
+        "identifier": {
+          "system": "http://fhir.de/sid/arge-ik/iknr",
+          "value": "168140950"
+        }
+      }
+    }
+  },
   "scope": {
     "coding": [
       {
@@ -27,26 +47,6 @@
       ]
     }
   ],
-  "patient": {
-    "identifier": {
-      "type": {
-        "coding": [
-          {
-            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
-            "code": "PKV"
-          }
-        ]
-      },
-      "system": "http://fhir.de/sid/pkv/kvid-10",
-      "value": "X234567890",
-      "assigner": {
-        "identifier": {
-          "system": "http://fhir.de/sid/arge-ik/iknr",
-          "value": "168140950"
-        }
-      }
-    }
-  },
   "dateTime": "2022-06-01T07:13:00+05:00",
   "policyRule": {
     "coding": [

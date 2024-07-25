@@ -38,7 +38,7 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * code.coding.code = #not-applicable (exactly)
 
 * subject.identifier 1..
-* subject.identifier only $identifier-kvid-10 or $identifier-pkv
+* subject.identifier only $sd-identifier-kvid-10
 * subject.identifier.assigner.display 0..1
 * enterer ^short = "Pharmacy that initially provided the Abgabedaten in ChargeItem"
 * enterer.identifier 1..
@@ -95,7 +95,7 @@ Usage: #example
 * identifier[AccessCode].value = "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
 * status = #billable
 * code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
-* subject.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* subject.identifier.system = $identifier-kvid-10
 * subject.identifier.value = "X234567890"
 * enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * enterer.identifier.value = "3-15.2.1456789123.191"
@@ -119,7 +119,7 @@ Usage: #example
 * identifier[AccessCode].value = "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
 * status = #billable
 * code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
-* subject.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* subject.identifier.system = $identifier-kvid-10
 * subject.identifier.value = "X234567890"
 * enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * enterer.identifier.value = "3-15.2.1456789123.191"
@@ -168,7 +168,7 @@ Usage: #inline
 * identifier.value = "200.086.824.605.539.20"
 * status = #billable
 * code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
-* subject.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* subject.identifier.system = $identifier-kvid-10
 * subject.identifier.value = "X234567890"
 * enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * enterer.identifier.value = "3-SMC-B-Testkarte-883110000095957"
@@ -212,7 +212,7 @@ Usage: #inline
 * identifier.value = "200.086.824.605.539.20"
 * status = #billable
 * code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
-* subject.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* subject.identifier.system = $identifier-kvid-10
 * subject.identifier.value = "X234567890"
 * enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * enterer.identifier.value = "3-SMC-B-Testkarte-883110000095957"

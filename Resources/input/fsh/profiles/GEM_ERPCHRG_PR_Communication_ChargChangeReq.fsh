@@ -21,7 +21,7 @@ Description: "Ressource used for the communication of Change Request on an exist
 * recipient.identifier only IdentifierTelematikId
 * sender MS
 * sender.identifier 1..1
-* sender.identifier only $identifier-kvid-10 or $identifier-pkv
+* sender.identifier only $sd-identifier-kvid-10
 * payload 0..1
 * payload.content[x] only string
 
@@ -53,7 +53,7 @@ Usage: #example
 * status = #unknown
 * recipient[+].identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * recipient[=].identifier.value = "3-SMC-B-Testkarte-883110000123465"
-* sender.identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* sender.identifier.system = $identifier-kvid-10
 * sender.identifier.value = "X234567890"
 * sent = "2020-07-04T13:43:30.128+02:00"
 * payload.contentString = "Bitte meinen Namen in Günther ändern, Waltraud ist falsch."

@@ -11,7 +11,7 @@ Id: GEM-ERPCHRG-PR-Consent
 * category from GEM_ERPCHRG_VS_ConsentType (extensible)
 * patient 1..
 * patient.identifier 1..1
-* patient.identifier only $identifier-pkv or $identifier-kvid-10
+* patient.identifier only $sd-identifier-kvid-10
 * patient.identifier.assigner.display 0..1
 * dateTime 1..
 * policyRule MS
@@ -29,8 +29,8 @@ Usage: #example
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
 * category = https://gematik.de/fhir/erpchrg/CodeSystem/GEM_ERPCHRG_CS_ConsentType#CHARGCONS "Consent for saving electronic charge item"
 * patient[+].identifier.type.coding[+].system = "http://fhir.de/CodeSystem/identifier-type-de-basis"
-* patient[=].identifier.type.coding[=].code = #PKV
-* patient[=].identifier.system = "http://fhir.de/sid/pkv/kvid-10"
+* patient[=].identifier.type.coding[=].code = #KVZ10
+* patient[=].identifier.system = $identifier-kvid-10
 * patient[=].identifier.value = "X234567890"
 * patient[=].identifier.assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * patient[=].identifier.assigner.identifier.value = "168140950"
