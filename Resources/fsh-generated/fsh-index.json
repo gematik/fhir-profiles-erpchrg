@@ -3,17 +3,17 @@
     "outputFile": "ChargeItem-ChargeItemExampleBinary.json",
     "fshName": "ChargeItemExampleBinary",
     "fshType": "Instance",
-    "fshFile": "profiles/GEM_ERPCHRG_PR_ChargeItem.fsh",
-    "startLine": 110,
-    "endLine": 128
+    "fshFile": "examples/Example_ChargeItem.fsh",
+    "startLine": 32,
+    "endLine": 50
   },
   {
     "outputFile": "ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45.json",
     "fshName": "ChargeItemExampleBundles",
     "fshType": "Instance",
-    "fshFile": "profiles/GEM_ERPCHRG_PR_ChargeItem.fsh",
-    "startLine": 79,
-    "endLine": 108
+    "fshFile": "examples/Example_ChargeItem.fsh",
+    "startLine": 1,
+    "endLine": 30
   },
   {
     "outputFile": "CodeSystem-GEM-ERPCHRG-CS-ConsentType.json",

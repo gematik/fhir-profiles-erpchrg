@@ -5,7 +5,7 @@ Dieser Block ist auskommentiert, da derzeit SUSHI noch einen Fehler enthält. Ru
 Die korrigierten Beispiele liegen unter /corrected_decimal_values_bundles
 Falls Änderungen an den Beispielen geschehen sollen sind diese zu generieren -> korrigieren und dann in corrected_decimal_values_bundles zu kopieren.
 https://github.com/FHIR/sushi/issues/1215
-*/
+
 Instance: Response_App_GETChargeItemById
 InstanceOf: Bundle
 Usage: #example
@@ -21,3 +21,5 @@ Usage: #example
 * entry[=].resource = AbgabedatenBundleExample
 * entry[+].fullUrl = "https://prescriptionserver.telematik/Bundle/dffbfd6a-5712-4798-bdc8-07201eb77ab8"
 * entry[=].resource = QuittungsBundleExample
+
+*/
