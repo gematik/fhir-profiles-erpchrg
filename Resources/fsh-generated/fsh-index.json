@@ -4,16 +4,16 @@
     "fshName": "ChargeItemExampleBinary",
     "fshType": "Instance",
     "fshFile": "profiles/GEM_ERPCHRG_PR_ChargeItem.fsh",
-    "startLine": 107,
-    "endLine": 125
+    "startLine": 110,
+    "endLine": 128
   },
   {
     "outputFile": "ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45.json",
     "fshName": "ChargeItemExampleBundles",
     "fshType": "Instance",
     "fshFile": "profiles/GEM_ERPCHRG_PR_ChargeItem.fsh",
-    "startLine": 76,
-    "endLine": 105
+    "startLine": 79,
+    "endLine": 108
   },
   {
     "outputFile": "CodeSystem-GEM-ERPCHRG-CS-ConsentType.json",
@@ -69,7 +69,7 @@
     "fshType": "Extension",
     "fshFile": "extensions/GEM_ERPCHRG_EX_MarkingFlag.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-ChargeItem.json",
@@ -77,7 +77,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/GEM_ERPCHRG_PR_ChargeItem.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 68
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReply.json",
