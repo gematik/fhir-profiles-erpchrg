@@ -3,11 +3,14 @@ Parent: ChargeItem
 Id: GEM-ERPCHRG-PR-ChargeItem
 * insert Meta (GEM_ERPCHRG_PR_ChargeItem)
 * insert MetaProfile (GEM_ERPCHRG_PR_ChargeItem)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed
+
 * extension contains
-    $GEM_ERPCHRG_EX_MarkingFlag_URL named markingFlag 0..1 MS
+    GEM_ERPCHRG_EX_MarkingFlag named markingFlag 0..1 MS
+    
 * extension[markingFlag] ^short = "Flag list whether submitted Abrechnungsinformationen for PKV, Taxes, Subsidy"
 * extension[markingFlag].extension ^slicing.discriminator.type = #value
 * extension[markingFlag].extension ^slicing.discriminator.path = "url"
@@ -79,13 +82,13 @@ Title:   "ChargeItem with Bundles completed by Fachdienst"
 Usage: #example
 * id = "abc825bc-bc30-45f8-b109-1b343fff5c45"
 * meta.profile[+] = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0"
-* extension[GEM_ERPCHRG_EX_MarkingFlag].url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
-* extension[GEM_ERPCHRG_EX_MarkingFlag].extension[insuranceProvider].url = "insuranceProvider"
-* extension[GEM_ERPCHRG_EX_MarkingFlag].extension[insuranceProvider].valueBoolean = false
-* extension[GEM_ERPCHRG_EX_MarkingFlag].extension[subsidy].url = "subsidy"
-* extension[GEM_ERPCHRG_EX_MarkingFlag].extension[subsidy].valueBoolean = false
-* extension[GEM_ERPCHRG_EX_MarkingFlag].extension[taxOffice].url = "taxOffice"
-* extension[GEM_ERPCHRG_EX_MarkingFlag].extension[taxOffice].valueBoolean = false
+* extension[markingFlag].url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
+* extension[markingFlag].extension[insuranceProvider].url = "insuranceProvider"
+* extension[markingFlag].extension[insuranceProvider].valueBoolean = false
+* extension[markingFlag].extension[subsidy].url = "subsidy"
+* extension[markingFlag].extension[subsidy].valueBoolean = false
+* extension[markingFlag].extension[taxOffice].url = "taxOffice"
+* extension[markingFlag].extension[taxOffice].valueBoolean = false
 * identifier[PrescriptionID].system = $GEM_ERP_NS_PrescriptionId
 * identifier[PrescriptionID].value = "160.123.456.789.123.58"
 * identifier[AccessCode].system = $GEM_ERP_NS_AccessCode

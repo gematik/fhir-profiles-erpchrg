@@ -64,15 +64,6 @@
       {
         "id": "Extension.extension:insuranceProvider.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "closed"
-        },
         "short": "true = submitted to insurance provider",
         "type": [
           {
@@ -102,15 +93,6 @@
       {
         "id": "Extension.extension:subsidy.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "closed"
-        },
         "short": "true = submitted to aid organization",
         "type": [
           {
@@ -140,15 +122,6 @@
       {
         "id": "Extension.extension:taxOffice.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "closed"
-        },
         "short": "true = submitted to tax office",
         "type": [
           {
