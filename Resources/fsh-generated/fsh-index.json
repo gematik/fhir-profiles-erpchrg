@@ -27,41 +27,41 @@
     "outputFile": "Communication-3bbc2209-9c23-4553-986e-a5c9f69a39fb.json",
     "fshName": "Communication_ChargChangeReply_Gkv",
     "fshType": "Instance",
-    "fshFile": "profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReply.fsh",
-    "startLine": 26,
-    "endLine": 40
+    "fshFile": "examples/Example_Communication_ChargChangeReply.fsh",
+    "startLine": 1,
+    "endLine": 15
   },
   {
     "outputFile": "Communication-7bbc2209-9c23-4553-986e-a5c9f69a39fp.json",
     "fshName": "Communication_ChargChangeReply_Pkv",
     "fshType": "Instance",
-    "fshFile": "profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReply.fsh",
-    "startLine": 42,
-    "endLine": 56
+    "fshFile": "examples/Example_Communication_ChargChangeReply.fsh",
+    "startLine": 17,
+    "endLine": 31
   },
   {
     "outputFile": "Communication-b4cf7f71-3ade-40ab-97a9-929f95af29f2.json",
     "fshName": "Communication_ChargChangeRequest_Gkv",
     "fshType": "Instance",
-    "fshFile": "profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReq.fsh",
-    "startLine": 28,
-    "endLine": 42
+    "fshFile": "examples/Example_Communication_ChargChangeRequest.fsh",
+    "startLine": 1,
+    "endLine": 15
   },
   {
     "outputFile": "Communication-b4cf7f71-3ade-40ab-97a9-929f95af29fp.json",
     "fshName": "Communication_ChargChangeRequest_Pkv",
     "fshType": "Instance",
-    "fshFile": "profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReq.fsh",
-    "startLine": 45,
-    "endLine": 59
+    "fshFile": "examples/Example_Communication_ChargChangeRequest.fsh",
+    "startLine": 18,
+    "endLine": 32
   },
   {
     "outputFile": "Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.json",
     "fshName": "ChargeItemConsent",
     "fshType": "Instance",
-    "fshFile": "profiles/GEM_ERPCHRG_PR_Consent.fsh",
-    "startLine": 22,
-    "endLine": 38
+    "fshFile": "examples/Example_Consent.fsh",
+    "startLine": 1,
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json",
