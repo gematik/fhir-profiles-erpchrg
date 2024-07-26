@@ -1,5 +1,5 @@
 {
-  "updated": "2024-07-24T11:23:10.150427+02:00",
+  "updated": "2024-07-25T09:10:41.378308+02:00",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "de.basisprofil.r4": "1.5.0",
@@ -9,7 +9,9 @@
     "kbv.ita.for": "1.1.0",
     "de.gematik.epa.medication": "1.0.2",
     "de.gematik.fhir.directory": "0.11.8",
-    "de.ihe-d.terminology": "3.0.0"
+    "de.ihe-d.terminology": "3.0.0",
+    "de.abda.eRezeptAbgabedatenPKV": "1.3.0-rc",
+    "de.abda.erezeptabgabedatenbasis": "1.4.1"
   },
   "missing": {}
 }

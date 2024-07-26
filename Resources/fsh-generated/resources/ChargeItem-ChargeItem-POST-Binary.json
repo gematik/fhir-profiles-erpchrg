@@ -1,6 +1,6 @@
 {
   "resourceType": "ChargeItem",
-  "id": "abc825bc-bc30-45f8-b109-1b343fff5c45",
+  "id": "ChargeItem-POST-Binary",
   "meta": {
     "profile": [
       "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0"
@@ -23,25 +23,6 @@
       "value": "X234567890"
     }
   },
-  "extension": [
-    {
-      "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag",
-      "extension": [
-        {
-          "url": "insuranceProvider",
-          "valueBoolean": false
-        },
-        {
-          "url": "subsidy",
-          "valueBoolean": false
-        },
-        {
-          "url": "taxOffice",
-          "valueBoolean": false
-        }
-      ]
-    }
-  ],
   "enterer": {
     "identifier": {
       "system": "https://gematik.de/fhir/sid/telematik-id",
@@ -50,16 +31,16 @@
   },
   "supportingInformation": [
     {
-      "display": "http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle",
-      "reference": "Bundle/72bd741c-7ad8-41d8-97c3-9aabbdd0f5b4"
-    },
+      "display": "Binary",
+      "reference": "#c8720f99-6641-432d-94be-d49eaa164755"
+    }
+  ],
+  "contained": [
     {
-      "display": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle",
-      "reference": "Bundle/160.123.456.789.123.58"
-    },
-    {
-      "display": "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle",
-      "reference": "Bundle/0428d416-149e-48a4-977c-394887b3d85c"
+      "resourceType": "Binary",
+      "id": "c8720f99-6641-432d-94be-d49eaa164755",
+      "contentType": "application/pkcs7-mime",
+      "data": "bWVycnkgY2hyaXN0bWFz"
     }
   ],
   "code": {
@@ -70,5 +51,5 @@
       }
     ]
   },
-  "enteredDate": "2022-12-16T06:13:00+05:00"
+  "enteredDate": "2022-12-16T07:13:00+05:00"
 }

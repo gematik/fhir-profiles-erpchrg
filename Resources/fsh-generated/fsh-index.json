@@ -1,19 +1,19 @@
 [
   {
-    "outputFile": "ChargeItem-ChargeItemExampleBinary.json",
-    "fshName": "ChargeItemExampleBinary",
-    "fshType": "Instance",
-    "fshFile": "examples/Example_ChargeItem.fsh",
-    "startLine": 32,
-    "endLine": 50
-  },
-  {
-    "outputFile": "ChargeItem-abc825bc-bc30-45f8-b109-1b343fff5c45.json",
-    "fshName": "ChargeItemExampleBundles",
+    "outputFile": "ChargeItem-ChargeItem-GET-Completed.json",
+    "fshName": "ChargeItem-GET-Completed",
     "fshType": "Instance",
     "fshFile": "examples/Example_ChargeItem.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 29
+  },
+  {
+    "outputFile": "ChargeItem-ChargeItem-POST-Binary.json",
+    "fshName": "ChargeItem-POST-Binary",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_ChargeItem.fsh",
+    "startLine": 31,
+    "endLine": 49
   },
   {
     "outputFile": "CodeSystem-GEM-ERPCHRG-CS-ConsentType.json",
