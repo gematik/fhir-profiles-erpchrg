@@ -1,12 +1,12 @@
 Output File                                                             Name                                           Type        FSH File                                                    Lines
 ChargeItem-ChargeItem-GET-Completed.json                                ChargeItem-GET-Completed                       Instance    examples/Example_ChargeItem.fsh                             1 - 29
-ChargeItem-ChargeItem-POST-Binary.json                                  ChargeItem-POST-Binary                         Instance    examples/Example_ChargeItem.fsh                             31 - 49
+ChargeItem-ChargeItem-POST-Binary.json                                  ChargeItem-POST-Binary                         Instance    examples/Example_ChargeItem.fsh                             31 - 50
 CodeSystem-GEM-ERPCHRG-CS-ConsentType.json                              GEM_ERPCHRG_CS_ConsentType                     CodeSystem  codesystems/GEM_ERPCHRG_CS_ConsentType.fsh                  1 - 7
 Communication-3bbc2209-9c23-4553-986e-a5c9f69a39fb.json                 Communication_ChargChangeReply_Gkv             Instance    examples/Example_Communication_ChargChangeReply.fsh         1 - 15
 Communication-7bbc2209-9c23-4553-986e-a5c9f69a39fp.json                 Communication_ChargChangeReply_Pkv             Instance    examples/Example_Communication_ChargChangeReply.fsh         17 - 31
 Communication-b4cf7f71-3ade-40ab-97a9-929f95af29f2.json                 Communication_ChargChangeRequest_Gkv           Instance    examples/Example_Communication_ChargChangeRequest.fsh       1 - 15
 Communication-b4cf7f71-3ade-40ab-97a9-929f95af29fp.json                 Communication_ChargChangeRequest_Pkv           Instance    examples/Example_Communication_ChargChangeRequest.fsh       18 - 32
-Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.json                       ChargeItemConsent                              Instance    examples/Example_Consent.fsh                                1 - 17
+Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.json                       ChargeItemConsent                              Instance    examples/Example_Consent.fsh                                1 - 16
 StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json                     GEM_ERPCHRG_EX_MarkingFlag                     Extension   extensions/GEM_ERPCHRG_EX_MarkingFlag.fsh                   1 - 37
 StructureDefinition-GEM-ERPCHRG-PR-ChargeItem.json                      GEM_ERPCHRG_PR_ChargeItem                      Profile     profiles/GEM_ERPCHRG_PR_ChargeItem.fsh                      1 - 68
 StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReply.json  GEM_ERPCHRG_PR_Communication_ChargChangeReply  Profile     profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReply.fsh  1 - 24

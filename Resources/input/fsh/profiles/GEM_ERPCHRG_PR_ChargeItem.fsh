@@ -38,11 +38,11 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * code.coding.code = #not-applicable (exactly)
 
 * subject.identifier 1..
-* subject.identifier only $sd-identifier-kvid-10
+* subject.identifier only IdentifierKvid10 or KBV_PR_FOR_Identifier_PkvID_10
 * subject.identifier.assigner.display 0..1
 * enterer ^short = "Pharmacy that initially provided the Abgabedaten in ChargeItem"
 * enterer.identifier 1..
-* enterer.identifier only $identifier-telematik-id
+* enterer.identifier only IdentifierTelematikId
 
 * supportingInformation 1..4 MS
 * supportingInformation ^slicing.discriminator.type = #value

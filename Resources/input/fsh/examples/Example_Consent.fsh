@@ -7,9 +7,8 @@ Usage: #example
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
 * category = https://gematik.de/fhir/erpchrg/CodeSystem/GEM_ERPCHRG_CS_ConsentType#CHARGCONS "Consent for saving electronic charge item"
-* patient[+].identifier.type.coding[+].system = "http://fhir.de/CodeSystem/identifier-type-de-basis"
-* patient[=].identifier.type.coding[=].code = #KVZ10
-* patient[=].identifier.system = $identifier-kvid-10
+* patient[+].identifier.type.coding = http://fhir.de/CodeSystem/identifier-type-de-basis#PKV
+* patient[=].identifier.system = $identifier-pkv
 * patient[=].identifier.value = "X234567890"
 * patient[=].identifier.assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * patient[=].identifier.assigner.identifier.value = "168140950"

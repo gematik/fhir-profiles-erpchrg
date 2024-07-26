@@ -3,7 +3,8 @@ fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
 
-version: "1.0.4-rc1"
+version: "1.0.4-rc2"
 dependencies:
   hl7.fhir.r4.core: 4.0.1
-  de.basisprofil.r4: 1.5.0
+  de.basisprofil.r4: 1.3.2
+  kbv.ita.for: 1.1.0

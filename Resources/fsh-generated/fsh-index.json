@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "examples/Example_ChargeItem.fsh",
     "startLine": 31,
-    "endLine": 49
+    "endLine": 50
   },
   {
     "outputFile": "CodeSystem-GEM-ERPCHRG-CS-ConsentType.json",
@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "examples/Example_Consent.fsh",
     "startLine": 1,
-    "endLine": 17
+    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json",
