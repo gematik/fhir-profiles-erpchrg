@@ -8,13 +8,6 @@
   "experimental": false,
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [
@@ -71,15 +64,6 @@
       {
         "id": "Extension.extension:insuranceProvider.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "closed"
-        },
         "short": "true = submitted to insurance provider",
         "type": [
           {
@@ -109,15 +93,6 @@
       {
         "id": "Extension.extension:subsidy.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "closed"
-        },
         "short": "true = submitted to aid organization",
         "type": [
           {
@@ -147,15 +122,6 @@
       {
         "id": "Extension.extension:taxOffice.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "closed"
-        },
         "short": "true = submitted to tax office",
         "type": [
           {

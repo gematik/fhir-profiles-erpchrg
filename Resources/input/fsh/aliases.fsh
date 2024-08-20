@@ -1,6 +1,6 @@
-Alias: $identifier-telematik-id = http://fhir.de/StructureDefinition/identifier-telematik-id
-Alias: $identifier-pkv = https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Identifier_PkvID_10
-Alias: $identifier-kvid-10 = http://fhir.de/StructureDefinition/identifier-kvid-10
+Alias: $identifier-telematik-id = https://gematik.de/fhir/sid/telematik-id
+Alias: $identifier-pkv = http://fhir.de/sid/pkv/kvid-10
+Alias: $identifier-kvid-10 = http://fhir.de/sid/gkv/kvid-10
 
 Alias: $DAV-PKV-PR-ERP-AbgabedatenBundle = http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle
 

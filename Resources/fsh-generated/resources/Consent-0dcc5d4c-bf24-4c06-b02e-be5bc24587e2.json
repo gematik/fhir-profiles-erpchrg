@@ -32,8 +32,8 @@
       "type": {
         "coding": [
           {
-            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
-            "code": "PKV"
+            "code": "PKV",
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
           }
         ]
       },

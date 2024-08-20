@@ -1,0 +1,114 @@
+[
+  {
+    "outputFile": "ChargeItem-ChargeItem-GET-Completed.json",
+    "fshName": "ChargeItem-GET-Completed",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_ChargeItem.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "ChargeItem-ChargeItem-POST-Binary.json",
+    "fshName": "ChargeItem-POST-Binary",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_ChargeItem.fsh",
+    "startLine": 31,
+    "endLine": 50
+  },
+  {
+    "outputFile": "CodeSystem-GEM-ERPCHRG-CS-ConsentType.json",
+    "fshName": "GEM_ERPCHRG_CS_ConsentType",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/GEM_ERPCHRG_CS_ConsentType.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "Communication-3bbc2209-9c23-4553-986e-a5c9f69a39fb.json",
+    "fshName": "Communication_ChargChangeReply_Gkv",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_Communication_ChargChangeReply.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Communication-7bbc2209-9c23-4553-986e-a5c9f69a39fp.json",
+    "fshName": "Communication_ChargChangeReply_Pkv",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_Communication_ChargChangeReply.fsh",
+    "startLine": 17,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Communication-b4cf7f71-3ade-40ab-97a9-929f95af29f2.json",
+    "fshName": "Communication_ChargChangeRequest_Gkv",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_Communication_ChargChangeRequest.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Communication-b4cf7f71-3ade-40ab-97a9-929f95af29fp.json",
+    "fshName": "Communication_ChargChangeRequest_Pkv",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_Communication_ChargChangeRequest.fsh",
+    "startLine": 18,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.json",
+    "fshName": "ChargeItemConsent",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_Consent.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json",
+    "fshName": "GEM_ERPCHRG_EX_MarkingFlag",
+    "fshType": "Extension",
+    "fshFile": "extensions/GEM_ERPCHRG_EX_MarkingFlag.fsh",
+    "startLine": 1,
+    "endLine": 37
+  },
+  {
+    "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-ChargeItem.json",
+    "fshName": "GEM_ERPCHRG_PR_ChargeItem",
+    "fshType": "Profile",
+    "fshFile": "profiles/GEM_ERPCHRG_PR_ChargeItem.fsh",
+    "startLine": 1,
+    "endLine": 68
+  },
+  {
+    "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReply.json",
+    "fshName": "GEM_ERPCHRG_PR_Communication_ChargChangeReply",
+    "fshType": "Profile",
+    "fshFile": "profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReply.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReq.json",
+    "fshName": "GEM_ERPCHRG_PR_Communication_ChargChangeReq",
+    "fshType": "Profile",
+    "fshFile": "profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReq.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-Consent.json",
+    "fshName": "GEM_ERPCHRG_PR_Consent",
+    "fshType": "Profile",
+    "fshFile": "profiles/GEM_ERPCHRG_PR_Consent.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-GEM-ERPCHRG-VS-ConsentType.json",
+    "fshName": "GEM_ERPCHRG_VS_ConsentType",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/GEM_ERPCHRG_VS_ConsentType.fsh",
+    "startLine": 1,
+    "endLine": 6
+  }
+]
