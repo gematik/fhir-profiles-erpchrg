@@ -7,7 +7,7 @@ Usage: #example
 * meta.tag.display = "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
 * basedOn.reference = "ChargeItem/a51520ec-0899-404f-bb97-fe7d461f90a8"
 * status = #unknown
-* sender.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* sender.identifier.system = $identifier-telematik-id
 * sender.identifier.value = "3-SMC-B-Testkarte-883110000123465"
 * recipient[+].identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * recipient[=].identifier.value = "X234567890"
@@ -23,7 +23,7 @@ Usage: #example
 * meta.tag.display = "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
 * basedOn.reference = "ChargeItem/a51520ec-0899-404f-bb97-fe7d461f90ap"
 * status = #unknown
-* sender.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* sender.identifier.system = $identifier-telematik-id
 * sender.identifier.value = "3-SMC-B-Testkarte-883110000123465"
 * recipient[+].identifier.system = $identifier-pkv
 * recipient[=].identifier.value = "X234567890"

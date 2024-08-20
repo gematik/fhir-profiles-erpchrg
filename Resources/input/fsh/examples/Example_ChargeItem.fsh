@@ -18,7 +18,7 @@ Usage: #example
 * code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
 * subject.identifier.system = $identifier-pkv
 * subject.identifier.value = "X234567890"
-* enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* enterer.identifier.system = $identifier-telematik-id
 * enterer.identifier.value = "3-15.2.1456789123.191"
 * enteredDate = "2022-12-16T06:13:00+05:00"
 * supportingInformation[dispenseItemBundle] = Reference(Bundle/72bd741c-7ad8-41d8-97c3-9aabbdd0f5b4)
@@ -43,7 +43,7 @@ Usage: #example
 * subject.identifier.system = $identifier-pkv
 * subject.identifier.value = "X234567890"
 * subject.identifier.type.coding = http://fhir.de/CodeSystem/identifier-type-de-basis#PKV
-* enterer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* enterer.identifier.system = $identifier-telematik-id
 * enterer.identifier.value = "3-15.2.1456789123.191"
 * enteredDate = "2022-12-16T07:13:00+05:00"
 * supportingInformation[dispenseItemBinary].reference = "#c8720f99-6641-432d-94be-d49eaa164755"
