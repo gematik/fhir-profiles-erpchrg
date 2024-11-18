@@ -25,7 +25,6 @@
   },
   "extension": [
     {
-      "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag",
       "extension": [
         {
           "url": "insuranceProvider",
@@ -39,7 +38,8 @@
           "url": "taxOffice",
           "valueBoolean": false
         }
-      ]
+      ],
+      "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
     }
   ],
   "enterer": {

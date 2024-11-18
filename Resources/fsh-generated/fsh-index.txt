@@ -1,6 +1,6 @@
 Output File                                                             Name                                           Type        FSH File                                                    Lines
-ChargeItem-ChargeItem-GET-Completed.json                                ChargeItem-GET-Completed                       Instance    examples/Example_ChargeItem.fsh                             1 - 28
-ChargeItem-ChargeItem-POST-Binary.json                                  ChargeItem-POST-Binary                         Instance    examples/Example_ChargeItem.fsh                             30 - 48
+ChargeItem-ChargeItem-GET-Completed.json                                ChargeItem-GET-Completed                       Instance    examples/Example_ChargeItem.fsh                             1 - 20
+ChargeItem-ChargeItem-POST-Binary.json                                  ChargeItem-POST-Binary                         Instance    examples/Example_ChargeItem.fsh                             22 - 40
 CodeSystem-GEM-ERPCHRG-CS-ConsentType.json                              GEM_ERPCHRG_CS_ConsentType                     CodeSystem  codesystems/GEM_ERPCHRG_CS_ConsentType.fsh                  1 - 7
 Communication-3bbc2209-9c23-4553-986e-a5c9f69a39fb.json                 Communication_ChargChangeReply_Gkv             Instance    examples/Example_Communication_ChargChangeReply.fsh         1 - 14
 Communication-7bbc2209-9c23-4553-986e-a5c9f69a39fp.json                 Communication_ChargChangeReply_Pkv             Instance    examples/Example_Communication_ChargChangeReply.fsh         16 - 29
