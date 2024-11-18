@@ -8,7 +8,7 @@ Communication-b4cf7f71-3ade-40ab-97a9-929f95af29f2.json                 Communic
 Communication-b4cf7f71-3ade-40ab-97a9-929f95af29fp.json                 Communication_ChargChangeRequest_Pkv           Instance    examples/Example_Communication_ChargChangeRequest.fsh       17 - 30
 Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.json                       ChargeItemConsent                              Instance    examples/Example_Consent.fsh                                1 - 15
 StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json                     GEM_ERPCHRG_EX_MarkingFlag                     Extension   extensions/GEM_ERPCHRG_EX_MarkingFlag.fsh                   1 - 37
-StructureDefinition-GEM-ERPCHRG-PR-ChargeItem.json                      GEM_ERPCHRG_PR_ChargeItem                      Profile     profiles/GEM_ERPCHRG_PR_ChargeItem.fsh                      1 - 68
+StructureDefinition-GEM-ERPCHRG-PR-ChargeItem.json                      GEM_ERPCHRG_PR_ChargeItem                      Profile     profiles/GEM_ERPCHRG_PR_ChargeItem.fsh                      1 - 71
 StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReply.json  GEM_ERPCHRG_PR_Communication_ChargChangeReply  Profile     profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReply.fsh  1 - 24
 StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReq.json    GEM_ERPCHRG_PR_Communication_ChargChangeReq    Profile     profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReq.fsh    1 - 22
 StructureDefinition-GEM-ERPCHRG-PR-Consent.json                         GEM_ERPCHRG_PR_Consent                         Profile     profiles/GEM_ERPCHRG_PR_Consent.fsh                         1 - 18

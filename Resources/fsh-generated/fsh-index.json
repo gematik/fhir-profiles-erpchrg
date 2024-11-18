@@ -77,7 +77,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/GEM_ERPCHRG_PR_ChargeItem.fsh",
     "startLine": 1,
-    "endLine": 68
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReply.json",
