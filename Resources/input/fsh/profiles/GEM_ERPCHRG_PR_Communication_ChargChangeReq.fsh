@@ -21,7 +21,7 @@ Description: "Ressource used for the communication of Change Request on an exist
 * recipient.identifier only IdentifierTelematikId
 * sender MS
 * sender.identifier 1..1
-* sender.identifier only IdentifierKvid10 or KBV_PR_FOR_Identifier_PkvID_10
+* sender.identifier only IdentifierKvid10
 * payload 0..1
 * payload.content[x] only string
 

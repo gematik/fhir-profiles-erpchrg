@@ -38,7 +38,7 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * code.coding.code = #not-applicable (exactly)
 
 * subject.identifier 1..
-* subject.identifier only IdentifierKvid10 or KBV_PR_FOR_Identifier_PkvID_10
+* subject.identifier only IdentifierKvid10
 * subject.identifier.assigner.display 0..1
 * enterer ^short = "Pharmacy that initially provided the Abgabedaten in ChargeItem"
 * enterer.identifier 1..

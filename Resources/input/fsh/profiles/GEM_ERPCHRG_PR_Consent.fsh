@@ -11,7 +11,7 @@ Id: GEM-ERPCHRG-PR-Consent
 * category from GEM_ERPCHRG_VS_ConsentType (extensible)
 * patient 1..
 * patient.identifier 1..1
-* patient.identifier only IdentifierKvid10 or KBV_PR_FOR_Identifier_PkvID_10
+* patient.identifier only IdentifierKvid10
 * patient.identifier.assigner.display 0..1
 * dateTime 1..
 * policyRule MS
