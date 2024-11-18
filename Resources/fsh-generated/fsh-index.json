@@ -5,15 +5,15 @@
     "fshType": "Instance",
     "fshFile": "examples/Example_ChargeItem.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 28
   },
   {
     "outputFile": "ChargeItem-ChargeItem-POST-Binary.json",
     "fshName": "ChargeItem-POST-Binary",
     "fshType": "Instance",
     "fshFile": "examples/Example_ChargeItem.fsh",
-    "startLine": 31,
-    "endLine": 50
+    "startLine": 30,
+    "endLine": 48
   },
   {
     "outputFile": "CodeSystem-GEM-ERPCHRG-CS-ConsentType.json",
@@ -29,15 +29,15 @@
     "fshType": "Instance",
     "fshFile": "examples/Example_Communication_ChargChangeReply.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 14
   },
   {
     "outputFile": "Communication-7bbc2209-9c23-4553-986e-a5c9f69a39fp.json",
     "fshName": "Communication_ChargChangeReply_Pkv",
     "fshType": "Instance",
     "fshFile": "examples/Example_Communication_ChargChangeReply.fsh",
-    "startLine": 17,
-    "endLine": 31
+    "startLine": 16,
+    "endLine": 29
   },
   {
     "outputFile": "Communication-b4cf7f71-3ade-40ab-97a9-929f95af29f2.json",
@@ -45,15 +45,15 @@
     "fshType": "Instance",
     "fshFile": "examples/Example_Communication_ChargChangeRequest.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 14
   },
   {
     "outputFile": "Communication-b4cf7f71-3ade-40ab-97a9-929f95af29fp.json",
     "fshName": "Communication_ChargChangeRequest_Pkv",
     "fshType": "Instance",
     "fshFile": "examples/Example_Communication_ChargChangeRequest.fsh",
-    "startLine": 18,
-    "endLine": 32
+    "startLine": 17,
+    "endLine": 30
   },
   {
     "outputFile": "Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.json",
@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "examples/Example_Consent.fsh",
     "startLine": 1,
-    "endLine": 16
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json",
@@ -93,7 +93,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReq.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-Consent.json",

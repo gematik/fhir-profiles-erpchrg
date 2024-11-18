@@ -3,7 +3,7 @@
   "id": "b4cf7f71-3ade-40ab-97a9-929f95af29f2",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq|1.0"
+      "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq|1.1"
     ],
     "tag": [
       {

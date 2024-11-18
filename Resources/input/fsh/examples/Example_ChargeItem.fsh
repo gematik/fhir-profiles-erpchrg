@@ -2,7 +2,6 @@ Instance: ChargeItem-GET-Completed
 InstanceOf: GEM_ERPCHRG_PR_ChargeItem
 Title:   "ChargeItem with Bundles completed by Fachdienst"
 Usage: #example
-* meta.profile[+] = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0"
 * extension[markingFlag].url = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag"
 * extension[markingFlag].extension[insuranceProvider].url = "insuranceProvider"
 * extension[markingFlag].extension[insuranceProvider].valueBoolean = false
@@ -32,7 +31,6 @@ Instance: ChargeItem-POST-Binary
 InstanceOf: GEM_ERPCHRG_PR_ChargeItem
 Title:   "ChargeItem with contained Binary to Fachdienst"
 Usage: #example
-* meta.profile[+] = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0"
 * contained[+] = DispenseItemBinaryExample
 * identifier[PrescriptionID].system = $GEM_ERP_NS_PrescriptionId
 * identifier[PrescriptionID].value = "160.123.456.789.123.58"

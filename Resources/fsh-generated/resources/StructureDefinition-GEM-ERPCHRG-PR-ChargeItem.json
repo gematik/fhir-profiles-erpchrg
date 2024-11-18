@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "GEM-ERPCHRG-PR-ChargeItem",
   "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem",
-  "version": "1.0",
+  "version": "1.1",
   "name": "GEM_ERPCHRG_PR_ChargeItem",
   "status": "active",
   "experimental": false,
@@ -35,7 +35,7 @@
         "path": "ChargeItem.meta.profile",
         "min": 1,
         "max": "1",
-        "fixedCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0"
+        "fixedCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.1"
       },
       {
         "id": "ChargeItem.meta.security",
