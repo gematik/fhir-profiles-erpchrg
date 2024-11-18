@@ -10,7 +10,7 @@
   "identifier": [
     {
       "system": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId",
-      "value": "160.123.456.789.123.58"
+      "value": "200.000.000.000.000.01"
     },
     {
       "system": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_AccessCode",
@@ -55,7 +55,7 @@
     },
     {
       "display": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Bundle",
-      "reference": "Bundle/160.123.456.789.123.58"
+      "reference": "Bundle/200.000.000.000.000.01"
     },
     {
       "display": "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle",
