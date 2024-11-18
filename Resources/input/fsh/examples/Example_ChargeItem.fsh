@@ -16,7 +16,7 @@ Usage: #example
 * identifier[AccessCode].value = "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
 * status = #billable
 * code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
-* subject.identifier.system = $identifier-pkv
+* subject.identifier.system = $identifier-kvid-10
 * subject.identifier.value = "X234567890"
 * enterer.identifier.system = $identifier-telematik-id
 * enterer.identifier.value = "3-15.2.1456789123.191"
@@ -40,7 +40,7 @@ Usage: #example
 * identifier[AccessCode].value = "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
 * status = #billable
 * code = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-applicable
-* subject.identifier.system = $identifier-pkv
+* subject.identifier.system = $identifier-kvid-10
 * subject.identifier.value = "X234567890"
 * subject.identifier.type.coding = http://fhir.de/CodeSystem/identifier-type-de-basis#PKV
 * enterer.identifier.system = $identifier-telematik-id

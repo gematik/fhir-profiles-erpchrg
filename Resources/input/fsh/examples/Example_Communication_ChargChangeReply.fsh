@@ -25,7 +25,7 @@ Usage: #example
 * status = #unknown
 * sender.identifier.system = $identifier-telematik-id
 * sender.identifier.value = "3-SMC-B-Testkarte-883110000123465"
-* recipient[+].identifier.system = $identifier-pkv
+* recipient[+].identifier.system = $identifier-kvid-10
 * recipient[=].identifier.value = "X234567890"
 * sent = "2022-07-04T13:46:30.128+02:00"
 * payload.contentString = "Erledigt."
