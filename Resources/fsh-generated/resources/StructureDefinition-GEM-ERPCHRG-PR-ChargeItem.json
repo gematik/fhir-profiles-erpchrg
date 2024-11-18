@@ -188,7 +188,6 @@
           "rules": "closed"
         },
         "definition": "holds references to the 3 relevant documents [prescription, receipt, dispensationInformation]",
-        "min": 1,
         "max": "4",
         "mustSupport": true
       },

@@ -44,7 +44,7 @@ Id: GEM-ERPCHRG-PR-ChargeItem
 * enterer.identifier 1..
 * enterer.identifier only IdentifierTelematikId
 
-* supportingInformation 1..4 MS
+* supportingInformation 0..4 MS
 * supportingInformation ^slicing.discriminator.type = #value
 * supportingInformation ^slicing.discriminator.path = "display"
 * supportingInformation ^slicing.rules = #closed
