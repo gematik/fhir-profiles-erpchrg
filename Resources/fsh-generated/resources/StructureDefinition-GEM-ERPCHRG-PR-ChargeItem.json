@@ -4,7 +4,7 @@
   "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem",
   "version": "1.1",
   "name": "GEM_ERPCHRG_PR_ChargeItem",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",

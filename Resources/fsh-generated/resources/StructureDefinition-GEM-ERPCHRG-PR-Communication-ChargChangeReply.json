@@ -5,7 +5,7 @@
   "version": "1.1",
   "name": "GEM_ERPCHRG_PR_Communication_ChargChangeReply",
   "title": "Reply on change Request on ChargeItem from pharmacy to Patient",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "publisher": "gematik GmbH",
   "description": "Ressource used for the communication to reply to a change request on a ChargeItem",

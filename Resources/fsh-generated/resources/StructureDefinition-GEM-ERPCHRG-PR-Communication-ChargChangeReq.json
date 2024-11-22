@@ -5,7 +5,7 @@
   "version": "1.1",
   "name": "GEM_ERPCHRG_PR_Communication_ChargChangeReq",
   "title": "Request for Modification on ChargeItem",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "publisher": "gematik GmbH",
   "description": "Ressource used for the communication of Change Request on an existing ChargeItem between patient and pharmacy",

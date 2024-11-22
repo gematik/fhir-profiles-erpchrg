@@ -4,7 +4,7 @@
   "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent",
   "version": "1.1",
   "name": "GEM_ERPCHRG_PR_Consent",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
