@@ -21,7 +21,12 @@
   "compose": {
     "include": [
       {
-        "system": "https://gematik.de/fhir/erpchrg/CodeSystem/GEM_ERPCHRG_CS_ConsentType"
+        "system": "https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_ConsentType",
+        "concept": [
+          {
+            "code": "CHARGCONS"
+          }
+        ]
       }
     ]
   }

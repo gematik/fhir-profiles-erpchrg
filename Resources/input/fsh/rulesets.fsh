@@ -9,10 +9,17 @@ RuleSet: Meta (profileName)
 * ^publisher = "gematik GmbH"
 * ^url = "https://gematik.de/fhir/erpchrg/StructureDefinition/{profileName}"
 
-RuleSet: MetaProfile (profileName)
+RuleSet: MetaProfile(profileName)
 * meta 1..1
 * meta.profile 1..1
 * meta.profile = "https://gematik.de/fhir/erpchrg/StructureDefinition/{profileName}|1.1" (exactly)
+* meta.versionId 0..0
+* meta.source 0..0
+* meta.security 0..0
+
+RuleSet: MetaProfileSlice(profileName, sliceName)
+* meta.profile contains {sliceName} 1..1
+* meta.profile[{sliceName}] = "https://gematik.de/fhir/erpchrg/StructureDefinition/{profileName}|1.1"
 * meta.versionId 0..0
 * meta.source 0..0
 * meta.security 0..0

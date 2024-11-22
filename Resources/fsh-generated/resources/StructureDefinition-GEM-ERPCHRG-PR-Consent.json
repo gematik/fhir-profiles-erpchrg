@@ -11,15 +11,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "Consent",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Consent",
+  "baseDefinition": "https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Consent",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Consent.meta",
-        "path": "Consent.meta",
-        "min": 1
-      },
       {
         "id": "Consent.meta.versionId",
         "path": "Consent.meta.versionId",
@@ -33,9 +28,15 @@
       {
         "id": "Consent.meta.profile",
         "path": "Consent.meta.profile",
+        "min": 2
+      },
+      {
+        "id": "Consent.meta.profile:consenttt",
+        "path": "Consent.meta.profile",
+        "sliceName": "consenttt",
         "min": 1,
         "max": "1",
-        "fixedCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.1"
+        "patternCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.1"
       },
       {
         "id": "Consent.meta.security",
@@ -43,64 +44,11 @@
         "max": "0"
       },
       {
-        "id": "Consent.status",
-        "path": "Consent.status",
-        "fixedCode": "active"
-      },
-      {
-        "id": "Consent.scope.coding.system",
-        "path": "Consent.scope.coding.system",
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/consentscope"
-      },
-      {
-        "id": "Consent.scope.coding.code",
-        "path": "Consent.scope.coding.code",
-        "fixedCode": "patient-privacy"
-      },
-      {
-        "id": "Consent.scope.coding.display",
-        "path": "Consent.scope.coding.display",
-        "fixedString": "Privacy Consent"
-      },
-      {
         "id": "Consent.category",
         "path": "Consent.category",
-        "max": "1",
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://gematik.de/fhir/erpchrg/ValueSet/GEM_ERPCHRG_VS_ConsentType"
-        }
-      },
-      {
-        "id": "Consent.patient",
-        "path": "Consent.patient",
-        "min": 1
-      },
-      {
-        "id": "Consent.patient.identifier",
-        "path": "Consent.patient.identifier",
-        "min": 1,
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Consent.dateTime",
-        "path": "Consent.dateTime",
-        "min": 1
-      },
-      {
-        "id": "Consent.policyRule",
-        "path": "Consent.policyRule",
-        "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActCode"
+          "valueSet": "https://gematik.de/fhir/erpchrg/ValueSet/GEM_ERPCHRG_VS_ConsentType"
         }
       }
     ]
