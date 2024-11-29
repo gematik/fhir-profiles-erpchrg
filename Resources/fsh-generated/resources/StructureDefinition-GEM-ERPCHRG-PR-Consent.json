@@ -46,9 +46,13 @@
       {
         "id": "Consent.category",
         "path": "Consent.category",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://gematik.de/fhir/erpchrg/ValueSet/GEM_ERPCHRG_VS_ConsentType"
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "CHARGCONS",
+              "system": "https://gematik.de/fhir/erp/CodeSystem/GEM_ERP_CS_ConsentType"
+            }
+          ]
         }
       }
     ]
