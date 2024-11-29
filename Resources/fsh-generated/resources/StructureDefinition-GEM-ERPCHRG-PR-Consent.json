@@ -31,9 +31,9 @@
         "min": 2
       },
       {
-        "id": "Consent.meta.profile:consenttt",
+        "id": "Consent.meta.profile:erpchrg-consent",
         "path": "Consent.meta.profile",
-        "sliceName": "consenttt",
+        "sliceName": "erpchrg-consent",
         "min": 1,
         "max": "1",
         "patternCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.1"
