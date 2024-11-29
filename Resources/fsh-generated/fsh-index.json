@@ -16,6 +16,14 @@
     "endLine": 40
   },
   {
+    "outputFile": "CodeSystem-GEM-ERPCHRG-CS-ConsentType.json",
+    "fshName": "GEM_ERPCHRG_CS_ConsentType",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem/GEM_ERPCHRG_CS_ConsentType.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
     "outputFile": "Communication-3bbc2209-9c23-4553-986e-a5c9f69a39fb.json",
     "fshName": "Communication_ChargChangeReply_Gkv",
     "fshType": "Instance",
@@ -92,6 +100,14 @@
     "fshName": "GEM_ERPCHRG_PR_Consent",
     "fshType": "Profile",
     "fshFile": "profiles/GEM_ERPCHRG_PR_Consent.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "ValueSet-GEM-ERPCHRG-VS-ConsentType.json",
+    "fshName": "GEM_ERPCHRG_VS_ConsentType",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/GEM_ERPCHRG_VS_ConsentType.fsh",
     "startLine": 1,
     "endLine": 6
   }

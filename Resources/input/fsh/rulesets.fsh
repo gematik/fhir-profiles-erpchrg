@@ -17,13 +17,6 @@ RuleSet: MetaProfile(profileName)
 * meta.source 0..0
 * meta.security 0..0
 
-RuleSet: MetaProfileSlice(profileName, sliceName)
-* meta.profile contains {sliceName} 1..1
-* meta.profile[{sliceName}] = "https://gematik.de/fhir/erpchrg/StructureDefinition/{profileName}|1.1"
-* meta.versionId 0..0
-* meta.source 0..0
-* meta.security 0..0
-
 RuleSet: Meta-Inst
 * insert Versioning
 * experimental = false

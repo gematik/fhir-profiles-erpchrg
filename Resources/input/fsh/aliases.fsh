@@ -8,3 +8,5 @@ Alias: $GEM_ERP_PR_Bundle = https://gematik.de/fhir/erp/StructureDefinition/GEM_
 Alias: $GEM_ERP_NS_AccessCode = https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_AccessCode
 Alias: $GEM_ERP_NS_PrescriptionId = https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId
 Alias: $KBV_PR_ERP_Bundle = https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle
+
+Alias: $cs-consent-scope = http://terminology.hl7.org/CodeSystem/consentscope
