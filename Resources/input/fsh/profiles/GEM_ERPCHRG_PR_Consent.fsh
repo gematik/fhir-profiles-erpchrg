@@ -18,7 +18,7 @@ Id: GEM-ERPCHRG-PR-Consent
     * assigner MS
     * assigner.identifier MS
     * assigner.identifier only IdentifierIknr
-* dateTime 1..1
+* dateTime MS
 
 * policyRule MS
 * policyRule from v3-ActCode
