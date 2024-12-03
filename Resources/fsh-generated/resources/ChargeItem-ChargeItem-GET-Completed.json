@@ -20,7 +20,7 @@
   "subject": {
     "identifier": {
       "system": "http://fhir.de/sid/gkv/kvid-10",
-      "value": "X234567890"
+      "value": "P987654321"
     }
   },
   "extension": [
@@ -45,7 +45,7 @@
   "enterer": {
     "identifier": {
       "system": "https://gematik.de/fhir/sid/telematik-id",
-      "value": "3-15.2.1456789123.191"
+      "value": "3-2-APO-XanthippeVeilchenblau01"
     }
   },
   "supportingInformation": [
@@ -70,5 +70,5 @@
       }
     ]
   },
-  "enteredDate": "2022-12-16T06:13:00+05:00"
+  "enteredDate": "2025-10-01T15:29:00.434+00:00"
 }

@@ -1,4 +1,4 @@
-Instance: Communication_ChargChangeReply_Gkv
+Instance: Communication_ChargChangeReply
 InstanceOf: GEM_ERPCHRG_PR_Communication_ChargChangeReply
 Title: "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
 Usage: #example
@@ -6,24 +6,7 @@ Usage: #example
 * meta.tag.display = "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
 * basedOn.reference = "ChargeItem/a51520ec-0899-404f-bb97-fe7d461f90a8"
 * status = #unknown
-* sender.identifier.system = $identifier-telematik-id
-* sender.identifier.value = "3-SMC-B-Testkarte-883110000123465"
-* recipient[+].identifier.system = "http://fhir.de/sid/gkv/kvid-10"
-* recipient[=].identifier.value = "X234567890"
-* sent = "2022-04-29T13:46:30.128+02:00"
-* payload.contentString = "Erledigt."
-
-Instance: Communication_ChargChangeReply_Pkv
-InstanceOf: GEM_ERPCHRG_PR_Communication_ChargChangeReply
-Title: "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
-Usage: #example
-* id = "7bbc2209-9c23-4553-986e-a5c9f69a39fp"
-* meta.tag.display = "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message"
-* basedOn.reference = "ChargeItem/a51520ec-0899-404f-bb97-fe7d461f90ap"
-* status = #unknown
-* sender.identifier.system = $identifier-telematik-id
-* sender.identifier.value = "3-SMC-B-Testkarte-883110000123465"
-* recipient[+].identifier.system = $identifier-kvid-10
-* recipient[=].identifier.value = "X234567890"
-* sent = "2022-07-04T13:46:30.128+02:00"
+* insert PKV_Identifier(recipient.identifier)
+* insert ApoTelematikID(sender.identifier)
+* insert DateTimeStamp(sent)
 * payload.contentString = "Erledigt."
