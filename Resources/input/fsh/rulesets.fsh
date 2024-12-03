@@ -37,3 +37,13 @@ RuleSet: ValueSet(name)
 * ^publisher = "gematik GmbH"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.gematik.de"
+
+// Dates for Examples (Date of actual release)
+RuleSet: Date(field)
+* {field} = "2025-10-01"
+
+RuleSet: DateTime(field)
+* {field} = "2025-10-01T15:29:00+00:00"
+
+RuleSet: DateTimeStamp(field)
+* {field} = "2025-10-01T15:29:00.434+00:00"

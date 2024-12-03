@@ -57,11 +57,11 @@
   },
   {
     "outputFile": "Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.json",
-    "fshName": "ChargeItemConsent",
+    "fshName": "ChargeItemConsent-Response",
     "fshType": "Instance",
     "fshFile": "examples/Example_Consent.fsh",
-    "startLine": 1,
-    "endLine": 14
+    "startLine": 16,
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json",
