@@ -16,14 +16,14 @@
     {
       "identifier": {
         "system": "https://gematik.de/fhir/sid/telematik-id",
-        "value": "3-SMC-B-Testkarte-883110000123465"
+        "value": "3-2-APO-XanthippeVeilchenblau01"
       }
     }
   ],
   "sender": {
     "identifier": {
       "system": "http://fhir.de/sid/gkv/kvid-10",
-      "value": "X234567890"
+      "value": "P987654321"
     }
   },
   "basedOn": [

@@ -4,7 +4,6 @@ Id: GEM-ERPCHRG-PR-Communication-ChargChangeReply
 Title: "Reply on change Request on ChargeItem from pharmacy to Patient"
 Description: "Ressource used for the communication to reply to a change request on a ChargeItem"
 * insert Meta(GEM_ERPCHRG_PR_Communication_ChargChangeReply)
-* ^abstract = true
 * insert MetaProfile(GEM_ERPCHRG_PR_Communication_ChargChangeReply)
 * basedOn 1..1
 * basedOn only Reference(GEM_ERPCHRG_PR_ChargeItem)

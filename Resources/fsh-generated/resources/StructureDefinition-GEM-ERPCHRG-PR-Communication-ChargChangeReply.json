@@ -11,7 +11,7 @@
   "description": "Ressource used for the communication to reply to a change request on a ChargeItem",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "Communication",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
   "derivation": "constraint",
