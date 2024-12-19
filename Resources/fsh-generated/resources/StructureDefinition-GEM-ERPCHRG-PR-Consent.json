@@ -120,6 +120,7 @@
       {
         "id": "Consent.dateTime",
         "path": "Consent.dateTime",
+        "comment": "dateTime wird vom E-Rezept-Fachdienst zu dem Zeitpunkt gesetzt, an dem die Consent Ressource hochgeladen wird.",
         "mustSupport": true
       },
       {
