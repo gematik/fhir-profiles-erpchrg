@@ -19,6 +19,8 @@ Id: GEM-ERPCHRG-PR-Consent
     * assigner.identifier MS
     * assigner.identifier only IdentifierIknr
 * dateTime MS
+  * ^comment = "dateTime wird vom E-Rezept-Fachdienst zu dem Zeitpunkt gesetzt, an dem die Consent Ressource hochgeladen wird."
+
 
 * policyRule MS
 * policyRule from v3-ActCode

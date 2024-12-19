@@ -85,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/GEM_ERPCHRG_PR_Consent.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-GEM-ERPCHRG-VS-ConsentType.json",

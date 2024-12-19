@@ -9,5 +9,5 @@ StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json                     GEM_ERPC
 StructureDefinition-GEM-ERPCHRG-PR-ChargeItem.json                      GEM_ERPCHRG_PR_ChargeItem                      Profile     profiles/GEM_ERPCHRG_PR_ChargeItem.fsh                      1 - 71
 StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReply.json  GEM_ERPCHRG_PR_Communication_ChargChangeReply  Profile     profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReply.fsh  1 - 23
 StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReq.json    GEM_ERPCHRG_PR_Communication_ChargChangeReq    Profile     profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReq.fsh    1 - 22
-StructureDefinition-GEM-ERPCHRG-PR-Consent.json                         GEM_ERPCHRG_PR_Consent                         Profile     profiles/GEM_ERPCHRG_PR_Consent.fsh                         1 - 24
+StructureDefinition-GEM-ERPCHRG-PR-Consent.json                         GEM_ERPCHRG_PR_Consent                         Profile     profiles/GEM_ERPCHRG_PR_Consent.fsh                         1 - 26
 ValueSet-GEM-ERPCHRG-VS-ConsentType.json                                GEM_ERPCHRG_VS_ConsentType                     ValueSet    valuesets/GEM_ERPCHRG_VS_ConsentType.fsh                    1 - 6
