@@ -3,35 +3,22 @@ Parent: Consent
 Id: GEM-ERPCHRG-PR-Consent
 * insert Meta(GEM_ERPCHRG_PR_Consent)
 * insert MetaProfile(GEM_ERPCHRG_PR_Consent)
+
 * status = #active (exactly)
-* scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope" (exactly)
-* scope.coding.code = #patient-privacy (exactly)
-* scope.coding.display = "Privacy Consent" (exactly)
-* category 1..1
-* category from GEM_ERPCHRG_VS_ConsentType (extensible)
-* patient 1..
-* patient.identifier 1..1
-* patient.identifier only $identifier-pkv or $identifier-kvid-10
-* patient.identifier.assigner.display 0..1
+* scope.coding 1..1 MS
+  * system = $cs-consent-scope (exactly)
+  * code = #patient-privacy (exactly)
+  * display = "Privacy Consent" (exactly)
+
+* category 1..1 MS
+* category from GEM_ERPCHRG_VS_ConsentType (required)
+* patient 1..1 MS
+  * identifier 1..1 MS
+  * identifier only IdentifierKvid10
+    * assigner MS
+    * assigner.identifier MS
+    * assigner.identifier only IdentifierIknr
+* dateTime MS
+
 * policyRule MS
-* policyRule from http://terminology.hl7.org/ValueSet/v3-ActCode
-* dateTime ^comment = "dateTime wird vom E-Rezept-Fachdienst zu dem Zeitpunkt gesetzt, an dem die Consent Ressource hochgeladen wird."
-
-
-Instance: ChargeItemConsent
-InstanceOf: GEM_ERPCHRG_PR_Consent
-Title:   "Consent to store digital ChargeItem"
-Usage: #example
-* id = "0dcc5d4c-bf24-4c06-b02e-be5bc24587e2"
-* meta.profile = "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.0"
-* status = #active
-* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
-* category = https://gematik.de/fhir/erpchrg/CodeSystem/GEM_ERPCHRG_CS_ConsentType#CHARGCONS "Consent for saving electronic charge item"
-* patient[+].identifier.type.coding[+].system = "http://fhir.de/CodeSystem/identifier-type-de-basis"
-* patient[=].identifier.type.coding[=].code = #PKV
-* patient[=].identifier.system = "http://fhir.de/sid/pkv/kvid-10"
-* patient[=].identifier.value = "X234567890"
-* patient[=].identifier.assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
-* patient[=].identifier.assigner.identifier.value = "168140950"
-* dateTime = "2022-06-01T07:13:00+05:00"
-* policyRule = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPTIN
+* policyRule from v3-ActCode

@@ -3,10 +3,22 @@
   "id": "0dcc5d4c-bf24-4c06-b02e-be5bc24587e2",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.0"
+      "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.1"
     ]
   },
   "status": "active",
+  "patient": {
+    "identifier": {
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "assigner": {
+        "identifier": {
+          "system": "http://fhir.de/sid/arge-ik/iknr",
+          "value": "168140950"
+        }
+      },
+      "value": "P987654321"
+    }
+  },
   "scope": {
     "coding": [
       {
@@ -27,27 +39,7 @@
       ]
     }
   ],
-  "patient": {
-    "identifier": {
-      "type": {
-        "coding": [
-          {
-            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
-            "code": "PKV"
-          }
-        ]
-      },
-      "system": "http://fhir.de/sid/pkv/kvid-10",
-      "value": "X234567890",
-      "assigner": {
-        "identifier": {
-          "system": "http://fhir.de/sid/arge-ik/iknr",
-          "value": "168140950"
-        }
-      }
-    }
-  },
-  "dateTime": "2022-06-01T07:13:00+05:00",
+  "dateTime": "2025-10-01T15:29:00.434+00:00",
   "policyRule": {
     "coding": [
       {

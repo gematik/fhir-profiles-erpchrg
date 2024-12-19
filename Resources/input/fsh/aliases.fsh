@@ -1,6 +1,6 @@
-Alias: $identifier-telematik-id = http://fhir.de/StructureDefinition/identifier-telematik-id
-Alias: $identifier-pkv = https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Identifier_PkvID_10
-Alias: $identifier-kvid-10 = http://fhir.de/StructureDefinition/identifier-kvid-10
+Alias: $identifier-telematik-id = https://gematik.de/fhir/sid/telematik-id
+Alias: $identifier-kvid-10 = http://fhir.de/sid/gkv/kvid-10
+Alias: $identifier-iknr = http://fhir.de/sid/arge-ik/iknr
 
 Alias: $DAV-PKV-PR-ERP-AbgabedatenBundle = http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PKV-PR-ERP-AbgabedatenBundle
 
@@ -9,3 +9,5 @@ Alias: $GEM_ERP_PR_Bundle = https://gematik.de/fhir/erp/StructureDefinition/GEM_
 Alias: $GEM_ERP_NS_AccessCode = https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_AccessCode
 Alias: $GEM_ERP_NS_PrescriptionId = https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId
 Alias: $KBV_PR_ERP_Bundle = https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle
+
+Alias: $cs-consent-scope = http://terminology.hl7.org/CodeSystem/consentscope
