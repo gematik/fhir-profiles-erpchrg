@@ -2,16 +2,16 @@
   "resourceType": "StructureDefinition",
   "id": "GEM-ERPCHRG-PR-Communication-ChargChangeReq",
   "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq",
-  "version": "1.0",
+  "version": "1.1",
   "name": "GEM_ERPCHRG_PR_Communication_ChargChangeReq",
   "title": "Request for Modification on ChargeItem",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "publisher": "gematik GmbH",
   "description": "Ressource used for the communication of Change Request on an existing ChargeItem between patient and pharmacy",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "Communication",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
   "derivation": "constraint",
@@ -37,7 +37,7 @@
         "path": "Communication.meta.profile",
         "min": 1,
         "max": "1",
-        "fixedCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq|1.0"
+        "fixedCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq|1.1"
       },
       {
         "id": "Communication.meta.security",
@@ -113,8 +113,7 @@
           {
             "code": "Identifier",
             "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10",
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Identifier_PkvID_10"
+              "http://fhir.de/StructureDefinition/identifier-kvid-10"
             ]
           }
         ]
