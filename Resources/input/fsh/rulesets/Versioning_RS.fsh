@@ -1,7 +1,7 @@
 // General rule for to handle versions for all structure definitions
 RuleSet: Versioning
 * ^status = #draft
-* ^version = "1.1"
+* ^version = "1.1.0"
 
 RuleSet: Meta (profileName)
 * insert Versioning

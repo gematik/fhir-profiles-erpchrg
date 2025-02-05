@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "GEM-ERPCHRG-EX-MarkingFlag",
   "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_EX_MarkingFlag",
-  "version": "1.1",
+  "version": "1.1.0",
   "name": "GEM_ERPCHRG_EX_MarkingFlag",
   "status": "draft",
   "experimental": false,
