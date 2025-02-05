@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/GEM_ERPCHRG_PR_ChargeItem.fsh",
     "startLine": 1,
-    "endLine": 71
+    "endLine": 70
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReply.json",
@@ -77,7 +77,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReply.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReq.json",
@@ -85,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReq.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-Consent.json",
@@ -93,7 +93,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/GEM_ERPCHRG_PR_Consent.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 25
   },
   {
     "outputFile": "ValueSet-GEM-ERPCHRG-VS-ConsentType.json",

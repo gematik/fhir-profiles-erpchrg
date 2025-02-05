@@ -1,7 +1,6 @@
 Profile: GEM_ERPCHRG_PR_Consent
 Parent: Consent
 Id: GEM-ERPCHRG-PR-Consent
-* insert Meta(GEM_ERPCHRG_PR_Consent)
 * insert MetaProfile(GEM_ERPCHRG_PR_Consent)
 
 * status = #active (exactly)

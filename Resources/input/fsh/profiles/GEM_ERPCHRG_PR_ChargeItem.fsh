@@ -1,7 +1,6 @@
 Profile: GEM_ERPCHRG_PR_ChargeItem
 Parent: ChargeItem
 Id: GEM-ERPCHRG-PR-ChargeItem
-* insert Meta (GEM_ERPCHRG_PR_ChargeItem)
 * insert MetaProfile (GEM_ERPCHRG_PR_ChargeItem)
 
 * extension ^slicing.discriminator.type = #value
