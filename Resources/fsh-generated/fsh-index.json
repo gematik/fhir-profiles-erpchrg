@@ -56,6 +56,30 @@
     "endLine": 11
   },
   {
+    "outputFile": "Parameters-Example-Parameters-Patch-ChargeItem-1.json",
+    "fshName": "Example-Parameters-Patch-ChargeItem-1",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_Parameters_Patch_ChargeItem.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Parameters-Example-Parameters-Patch-ChargeItem-2.json",
+    "fshName": "Example-Parameters-Patch-ChargeItem-2",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_Parameters_Patch_ChargeItem.fsh",
+    "startLine": 8,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Parameters-INVALID-Example-Parameters-Patch-ChargeItem.json",
+    "fshName": "INVALID-Example-Parameters-Patch-ChargeItem",
+    "fshType": "Instance",
+    "fshFile": "examples/Example_Parameters_Patch_ChargeItem.fsh",
+    "startLine": 16,
+    "endLine": 19
+  },
+  {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json",
     "fshName": "GEM_ERPCHRG_EX_MarkingFlag",
     "fshType": "Extension",
@@ -94,6 +118,14 @@
     "fshFile": "profiles/GEM_ERPCHRG_PR_Consent.fsh",
     "startLine": 1,
     "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-GEM-ERPCHRG-PR-PAR-Patch-ChargeItem-Input.json",
+    "fshName": "GEM_ERPCHRG_PR_PAR_Patch_ChargeItem_Input",
+    "fshType": "Profile",
+    "fshFile": "profiles/GEM_ERPCHRG_PR_PAR_Patch_ChargeItem_Input.fsh",
+    "startLine": 1,
+    "endLine": 49
   },
   {
     "outputFile": "ValueSet-GEM-ERPCHRG-VS-ConsentType.json",
