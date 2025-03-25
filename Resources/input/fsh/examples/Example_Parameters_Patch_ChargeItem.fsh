@@ -13,7 +13,9 @@ Title: "Example Parameters Patch Charge Item"
 * parameter[markingFlag].part[taxOffice].valueBoolean = true
 * parameter[markingFlag].part[subsidy].valueBoolean = true
 
-Instance: INVALID-Example-Parameters-Patch-ChargeItem
-InstanceOf: GEM_ERPCHRG_PR_PAR_Patch_ChargeItem_Input
-Usage: #example
-Title: "Example Parameters Patch Charge Item"
+// Invalid Example to test invariant
+// Instance: INVALID-Example-Parameters-Patch-ChargeItem
+// InstanceOf: GEM_ERPCHRG_PR_PAR_Patch_ChargeItem_Input
+// Usage: #example
+// Title: "Example Parameters Patch Charge Item"
+// * parameter[markingFlag].name = "markingFlag"

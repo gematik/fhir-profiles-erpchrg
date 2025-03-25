@@ -72,14 +72,6 @@
     "endLine": 14
   },
   {
-    "outputFile": "Parameters-INVALID-Example-Parameters-Patch-ChargeItem.json",
-    "fshName": "INVALID-Example-Parameters-Patch-ChargeItem",
-    "fshType": "Instance",
-    "fshFile": "examples/Example_Parameters_Patch_ChargeItem.fsh",
-    "startLine": 16,
-    "endLine": 19
-  },
-  {
     "outputFile": "StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json",
     "fshName": "GEM_ERPCHRG_EX_MarkingFlag",
     "fshType": "Extension",

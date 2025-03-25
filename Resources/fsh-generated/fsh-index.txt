@@ -8,7 +8,6 @@ Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.json                       ChargeIt
 Consent-ChargeItemConsent-Request.json                                  ChargeItemConsent-Request                      Instance    examples/Example_Consent.fsh                                1 - 11
 Parameters-Example-Parameters-Patch-ChargeItem-1.json                   Example-Parameters-Patch-ChargeItem-1          Instance    examples/Example_Parameters_Patch_ChargeItem.fsh            1 - 6
 Parameters-Example-Parameters-Patch-ChargeItem-2.json                   Example-Parameters-Patch-ChargeItem-2          Instance    examples/Example_Parameters_Patch_ChargeItem.fsh            8 - 14
-Parameters-INVALID-Example-Parameters-Patch-ChargeItem.json             INVALID-Example-Parameters-Patch-ChargeItem    Instance    examples/Example_Parameters_Patch_ChargeItem.fsh            16 - 19
 StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.json                     GEM_ERPCHRG_EX_MarkingFlag                     Extension   extensions/GEM_ERPCHRG_EX_MarkingFlag.fsh                   1 - 37
 StructureDefinition-GEM-ERPCHRG-PR-ChargeItem.json                      GEM_ERPCHRG_PR_ChargeItem                      Profile     profiles/GEM_ERPCHRG_PR_ChargeItem.fsh                      1 - 70
 StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReply.json  GEM_ERPCHRG_PR_Communication_ChargChangeReply  Profile     profiles/GEM_ERPCHRG_PR_Communication_ChargChangeReply.fsh  1 - 22
