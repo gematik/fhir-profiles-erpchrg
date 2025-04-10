@@ -1,6 +1,6 @@
 {
   "resourceType": "Consent",
-  "id": "0dcc5d4c-bf24-4c06-b02e-be5bc24587e2",
+  "id": "ChargeItemConsent-Request",
   "meta": {
     "profile": [
       "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent|1.1"
@@ -39,7 +39,6 @@
       ]
     }
   ],
-  "dateTime": "2025-10-01T15:29:00.434+00:00",
   "policyRule": {
     "coding": [
       {

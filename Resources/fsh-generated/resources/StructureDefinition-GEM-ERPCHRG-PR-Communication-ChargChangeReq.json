@@ -2,16 +2,17 @@
   "resourceType": "StructureDefinition",
   "id": "GEM-ERPCHRG-PR-Communication-ChargChangeReq",
   "url": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq",
-  "version": "1.0",
+  "version": "1.1.0",
   "name": "GEM_ERPCHRG_PR_Communication_ChargChangeReq",
   "title": "Request for Modification on ChargeItem",
   "status": "active",
   "experimental": false,
+  "date": "2025-04-10",
   "publisher": "gematik GmbH",
   "description": "Ressource used for the communication of Change Request on an existing ChargeItem between patient and pharmacy",
   "fhirVersion": "4.0.1",
   "kind": "resource",
-  "abstract": true,
+  "abstract": false,
   "type": "Communication",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
   "derivation": "constraint",
@@ -20,29 +21,35 @@
       {
         "id": "Communication.meta",
         "path": "Communication.meta",
-        "min": 1
-      },
-      {
-        "id": "Communication.meta.versionId",
-        "path": "Communication.meta.versionId",
-        "max": "0"
-      },
-      {
-        "id": "Communication.meta.source",
-        "path": "Communication.meta.source",
-        "max": "0"
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Communication.meta.profile",
         "path": "Communication.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed",
+          "description": "Slicing for meta profile",
+          "ordered": false
+        },
         "min": 1,
         "max": "1",
-        "fixedCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq|1.0"
+        "mustSupport": true
       },
       {
-        "id": "Communication.meta.security",
-        "path": "Communication.meta.security",
-        "max": "0"
+        "id": "Communication.meta.profile:erpchrgProfile",
+        "path": "Communication.meta.profile",
+        "sliceName": "erpchrgProfile",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq|1.1",
+        "mustSupport": true
       },
       {
         "id": "Communication.basedOn",
@@ -113,8 +120,7 @@
           {
             "code": "Identifier",
             "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10",
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Identifier_PkvID_10"
+              "http://fhir.de/StructureDefinition/identifier-kvid-10"
             ]
           }
         ]

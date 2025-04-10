@@ -3,24 +3,30 @@
   "id": "ChargeItem-POST-Binary",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.0"
+      "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem|1.1"
     ]
   },
   "status": "billable",
   "identifier": [
     {
       "system": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId",
-      "value": "160.123.456.789.123.58"
+      "value": "200.000.000.000.000.01"
     },
     {
       "system": "https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_AccessCode",
       "value": "777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea"
     }
   ],
+  "subject": {
+    "identifier": {
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "value": "P987654321"
+    }
+  },
   "enterer": {
     "identifier": {
       "system": "https://gematik.de/fhir/sid/telematik-id",
-      "value": "3-15.2.1456789123.191"
+      "value": "3-2-APO-XanthippeVeilchenblau01"
     }
   },
   "supportingInformation": [
@@ -45,19 +51,5 @@
       }
     ]
   },
-  "subject": {
-    "identifier": {
-      "system": "http://fhir.de/sid/pkv/kvid-10",
-      "value": "X234567890",
-      "type": {
-        "coding": [
-          {
-            "code": "PKV",
-            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-          }
-        ]
-      }
-    }
-  },
-  "enteredDate": "2022-12-16T07:13:00+05:00"
+  "enteredDate": "2025-10-01T15:29:00.434+00:00"
 }
