@@ -5,7 +5,7 @@
   "version": "1.1.0",
   "name": "GEM_ERPCHRG_PR_Communication_ChargChangeReq",
   "title": "Request for Modification on ChargeItem",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "date": "2025-04-10",
   "publisher": "gematik GmbH",
