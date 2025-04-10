@@ -1,5 +1,5 @@
 {
-  "updated": "2025-02-05T12:52:54.45718+01:00",
+  "updated": "2025-04-10T15:21:11.499857+02:00",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "de.basisprofil.r4": "1.5.2"
