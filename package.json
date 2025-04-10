@@ -1,5 +1,5 @@
 {
-  "name": "fhir-profiles-erpchrg",
+  "name": "de.gematik.erezept-patientenrechnung.r4",
   "jurisdiction": "urn:iso:std:iso:3166#DE",
   "author": "gematik",
   "version": "1.1.0",
