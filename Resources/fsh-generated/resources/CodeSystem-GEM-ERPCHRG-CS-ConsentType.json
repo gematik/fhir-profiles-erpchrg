@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "GEM_ERPCHRG_CS_ConsentType",
   "id": "GEM-ERPCHRG-CS-ConsentType",
@@ -14,7 +14,7 @@
       "display": "Consent for saving electronic charge item"
     }
   ],
-  "date": "2025-02-28",
+  "date": "2025-04-10",
   "publisher": "gematik GmbH",
   "contact": [
     {
