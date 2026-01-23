@@ -1,0 +1,236 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "de.gematik.erezept-patientenrechnung.r4",
+  "url": "https://gematik.de/fhir/erpchrg/ImplementationGuide/de.gematik.erezept-patientenrechnung.r4",
+  "version": "1.1.0-draft",
+  "name": "ERezeptPatientenrechnung",
+  "title": "Implementation Guide für E-Rezept Patientenrechnung",
+  "status": "draft",
+  "publisher": "gematik GmbH",
+  "contact": [
+    {
+      "name": "gematik GmbH",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://gematik.de"
+        },
+        {
+          "system": "email",
+          "value": "erp-umsetzung@gematik.de"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
+    }
+  ],
+  "packageId": "de.gematik.erezept-patientenrechnung.r4",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.basisprofil.r4",
+      "version": "1.5.2",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "id": "de_basisprofil_r4"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "ChargeItem/ChargeItem-GET-Completed"
+        },
+        "name": "ChargeItem with Bundles completed by Fachdienst",
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem"
+      },
+      {
+        "reference": {
+          "reference": "ChargeItem/ChargeItem-POST-Binary"
+        },
+        "name": "ChargeItem with contained Binary to Fachdienst",
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_ChargeItem"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/GEM-ERPCHRG-CS-ConsentType"
+        },
+        "name": "CodeSystem of types for a consent",
+        "description": "Type of patient consent.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Communication/b4cf7f71-3ade-40ab-97a9-929f95af29f2"
+        },
+        "name": "Communication message sent by patient to pharmacy to request the change of an existing ChargeItem by providing the AccessCode",
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReq"
+      },
+      {
+        "reference": {
+          "reference": "Communication/3bbc2209-9c23-4553-986e-a5c9f69a39fb"
+        },
+        "name": "Communication message sent by pharmacy to patient in response to a previous ChargeItem-related message",
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Communication_ChargChangeReply"
+      },
+      {
+        "reference": {
+          "reference": "Consent/ChargeItemConsent-Request"
+        },
+        "name": "Consent to store digital ChargeItem",
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent"
+      },
+      {
+        "reference": {
+          "reference": "Consent/0dcc5d4c-bf24-4c06-b02e-be5bc24587e2"
+        },
+        "name": "Consent to store digital ChargeItem",
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent"
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Example-Parameters-Patch-ChargeItem-1"
+        },
+        "name": "Example Parameters Patch Charge Item",
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_PAR_Patch_ChargeItem_Input"
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Example-Parameters-Patch-ChargeItem-2"
+        },
+        "name": "Example Parameters Patch Charge Item",
+        "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_PAR_Patch_ChargeItem_Input"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GEM-ERPCHRG-PR-PAR-Patch-ChargeItem-Input"
+        },
+        "name": "GEM ERPCHRG PR PAR Patch ChargeItem Input Parameter",
+        "description": "This profile defines the parameters for changing Information for the ChargeItem.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GEM-ERPCHRG-EX-MarkingFlag"
+        },
+        "name": "GEM_ERPCHRG_EX_MarkingFlag",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GEM-ERPCHRG-PR-ChargeItem"
+        },
+        "name": "GEM_ERPCHRG_PR_ChargeItem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GEM-ERPCHRG-PR-Consent"
+        },
+        "name": "GEM_ERPCHRG_PR_Consent",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GEM-ERPCHRG-PR-Communication-ChargChangeReply"
+        },
+        "name": "Reply on change Request on ChargeItem from pharmacy to Patient",
+        "description": "Ressource used for the communication to reply to a change request on a ChargeItem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GEM-ERPCHRG-PR-Communication-ChargChangeReq"
+        },
+        "name": "Request for Modification on ChargeItem",
+        "description": "Ressource used for the communication of Change Request on an existing ChargeItem between patient and pharmacy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/GEM-ERPCHRG-VS-ConsentType"
+        },
+        "name": "ValueSet of Consent Codes",
+        "description": "Type of Consents for the ePrescription.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Implementation Guide E-Rezept-Fachdienst",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "artifacts.html",
+          "title": "FHIR-Artefakte",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2026+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/content"
+      },
+      {
+        "code": "no-narrative",
+        "value": "StructureDefinition/*"
+      },
+      {
+        "code": "no-narrative",
+        "value": "Bundle/*"
+      },
+      {
+        "code": "no-narrative",
+        "value": "OperationOutcome/*"
+      },
+      {
+        "code": "no-narrative",
+        "value": "Medication/*"
+      },
+      {
+        "code": "no-narrative",
+        "value": "MedicationRequest/*"
+      },
+      {
+        "code": "no-narrative",
+        "value": "MedicationDispense/*"
+      },
+      {
+        "code": "no-narrative",
+        "value": "Parameters/*"
+      },
+      {
+        "code": "no-narrative",
+        "value": "CapabilityStatement/*"
+      },
+      {
+        "code": "no-narrative",
+        "value": "Provenance/*"
+      }
+    ]
+  }
+}

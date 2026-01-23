@@ -1,0 +1,16 @@
+[ChargeItem-GET-Completed]: ChargeItem-ChargeItem-GET-Completed.html
+[ChargeItem-POST-Binary]: ChargeItem-ChargeItem-POST-Binary.html
+[GEM_ERPCHRG_CS_ConsentType]: CodeSystem-GEM-ERPCHRG-CS-ConsentType.html
+[b4cf7f71-3ade-40ab-97a9-929f95af29f2]: Communication-b4cf7f71-3ade-40ab-97a9-929f95af29f2.html
+[3bbc2209-9c23-4553-986e-a5c9f69a39fb]: Communication-3bbc2209-9c23-4553-986e-a5c9f69a39fb.html
+[ChargeItemConsent-Request]: Consent-ChargeItemConsent-Request.html
+[0dcc5d4c-bf24-4c06-b02e-be5bc24587e2]: Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.html
+[Example-Parameters-Patch-ChargeItem-1]: Parameters-Example-Parameters-Patch-ChargeItem-1.html
+[Example-Parameters-Patch-ChargeItem-2]: Parameters-Example-Parameters-Patch-ChargeItem-2.html
+[GEM_ERPCHRG_PR_PAR_Patch_ChargeItem_Input]: StructureDefinition-GEM-ERPCHRG-PR-PAR-Patch-ChargeItem-Input.html
+[GEM_ERPCHRG_EX_MarkingFlag]: StructureDefinition-GEM-ERPCHRG-EX-MarkingFlag.html
+[GEM_ERPCHRG_PR_ChargeItem]: StructureDefinition-GEM-ERPCHRG-PR-ChargeItem.html
+[GEM_ERPCHRG_PR_Consent]: StructureDefinition-GEM-ERPCHRG-PR-Consent.html
+[GEM_ERPCHRG_PR_Communication_ChargChangeReply]: StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReply.html
+[GEM_ERPCHRG_PR_Communication_ChargChangeReq]: StructureDefinition-GEM-ERPCHRG-PR-Communication-ChargChangeReq.html
+[GEM_ERPCHRG_VS_ConsentType]: ValueSet-GEM-ERPCHRG-VS-ConsentType.html

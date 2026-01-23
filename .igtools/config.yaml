@@ -1,0 +1,12 @@
+current: 1.1.0
+directory: input
+frozen_hash: null
+frozen_version: null
+migrated_with_version: 0.3.0
+name: IG E-Rezept Patientenrechnung
+next_req_number: 0
+numbering_mode: sequential
+prefix: REQ
+releases:
+- 1.1.0
+scope: ERP-CHRG
