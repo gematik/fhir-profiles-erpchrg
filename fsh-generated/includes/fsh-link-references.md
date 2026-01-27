@@ -5,6 +5,8 @@
 [3bbc2209-9c23-4553-986e-a5c9f69a39fb]: Communication-3bbc2209-9c23-4553-986e-a5c9f69a39fb.html
 [ChargeItemConsent-Request]: Consent-ChargeItemConsent-Request.html
 [0dcc5d4c-bf24-4c06-b02e-be5bc24587e2]: Consent-0dcc5d4c-bf24-4c06-b02e-be5bc24587e2.html
+[erp-fachdienst-client]: CapabilityStatement-erp-fachdienst-client.html
+[erp-fachdienst-server-erpchrg]: CapabilityStatement-erp-fachdienst-server-erpchrg.html
 [Example-Parameters-Patch-ChargeItem-1]: Parameters-Example-Parameters-Patch-ChargeItem-1.html
 [Example-Parameters-Patch-ChargeItem-2]: Parameters-Example-Parameters-Patch-ChargeItem-2.html
 [GEM_ERPCHRG_PR_PAR_Patch_ChargeItem_Input]: StructureDefinition-GEM-ERPCHRG-PR-PAR-Patch-ChargeItem-Input.html

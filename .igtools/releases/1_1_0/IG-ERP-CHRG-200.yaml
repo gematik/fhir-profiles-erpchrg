@@ -1,0 +1,18 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: aee696062519d6a5858e7156ea81f251e1dd9f226ad11bb0cb84c507f8464e77
+created: '2026-01-27T12:10:05.165050'
+date: '2026-01-27T12:10:05.165053'
+key: IG-ERP-CHRG-200
+modified: '2026-01-27T12:10:05.165051'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: 'Der E-Rezept-Fachdienst MUSS beim Erzeugen eines ChargeItem mittels HTTP-POST-Operation
+  die folgenden Elemente schreiben: ChargeItem.enteredDate (aktueller Zeitstempel).'
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – ChargeItem befüllen
+version: 0

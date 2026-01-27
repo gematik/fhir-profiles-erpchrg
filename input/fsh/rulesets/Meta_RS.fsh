@@ -19,6 +19,11 @@ RuleSet: MetaProfile(profileName)
 
 * insert PackageMetaProfileExactly(StructureDefinition/{profileName})
 
+RuleSet: MetaInstance(name)
+* url = "https://gematik.de/fhir/erpchrg/OperationDefinition/{name}OperationDefinition"
+* name = "{name}"
+* insert VersioningInstance
+
 RuleSet: CodeSystem(name)
 * ^url = "https://gematik.de/fhir/erpchrg/CodeSystem/{name}"
 * insert Versioning

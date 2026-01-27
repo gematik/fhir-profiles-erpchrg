@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 5e7e54c95fe538b28779de1a6598a9cf5b88aba4765e1af2eb9a24a381a27609
+created: '2026-01-27T10:25:54.943961'
+date: '2026-01-27T10:25:54.943963'
+key: IG-ERP-CHRG-319
+modified: '2026-01-27T10:25:54.943962'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-POST-Operation auf den Endpunkt
+  /ChargeItem das E-Rezept-Bundle vom Profil KBV_PR_ERP_Bundle ohne die Signatur zur
+  im URL-Parameter "task=..." übertragenen Task-ID identifizieren und zur ChargeItem-Ressource
+  mit dem Identifier PrescriptionID speichern und in ChargeItem.supportingInformation:prescriptionItem
+  die Referenz hinzufügen.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – Verordnungsdatensatz
+  übernehmen
+version: 0

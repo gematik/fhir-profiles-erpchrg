@@ -1,0 +1,20 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: b6f49038b46a8679fc01c89577f71574e57bdfe4758aff04d8fec6d636e368cb
+created: '2026-01-27T10:25:54.930493'
+date: '2026-01-27T10:25:54.930496'
+key: IG-ERP-CHRG-232
+modified: '2026-01-27T10:25:54.930495'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-datenschutz-und-sicherheit.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Die Fachanwendung E-Rezept MUSS sicherstellen, dass die technische Umsetzung
+  der Einwilligung im E-Rezept-FdV und des Vermerkens dieser im E-Rezept-Fachdienst
+  so zuverlässig ist, dass der Vermerk im E-Rezept-Fachdienst als nicht abstreitbar
+  angesehen werden kann.
+title: Nichtabstreitbarkeit der Einwilligung
+version: 0

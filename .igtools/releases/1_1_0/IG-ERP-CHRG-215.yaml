@@ -1,0 +1,20 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 7f405d1df25017696cb5a4188858d12f97198aef30d61249d09d75298f842c35
+created: '2026-01-27T12:10:05.153942'
+date: '2026-01-27T12:10:05.153944'
+key: IG-ERP-CHRG-215
+modified: '2026-01-27T12:10:05.153943'
+release_status: NEW
+source: input/pagecontent/query-api-consent.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-Operation DELETE auf den Endpunkt
+  /Consent mit ?category=CHARGCONS alle dem Versicherten zugeordneten ChargeItem-Ressourcen
+  (ChargeItem.subject.identifier) anhand der KVNR des Versicherten im ACCESS_TOKEN
+  im "Authorization"-Header des HTTP-Requests identifizieren und löschen.
+title: E-Rezept-Fachdienst – Consent löschen – Löschen der bestehenden Abrechnungsinformationen
+version: 0

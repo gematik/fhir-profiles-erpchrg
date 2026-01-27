@@ -1,8 +1,19 @@
 // General rule for to handle versions for all structure definitions
 RuleSet: Versioning
-* ^status = #draft
-* ^version = "1.1.0"
-* ^date = "2025-04-10"
+* insert VersioningContent(1.1.0, draft, 2025-04-10)
+
+RuleSet: VersioningContent(version, status, date)
+* ^status = #{status}
+* ^version = "{version}"
+* ^date = "{date}"
+
+RuleSet: VersioningInstance
+* insert VersioningInstanceContent(1.1.0, draft, 2025-04-10)
+
+RuleSet: VersioningInstanceContent(version, status, date)
+* status = #{status}
+* version = "{version}"
+* date = "{date}"
 
 // Rules to set meta.profile in profiles and instances
 RuleSet: PackageMetaProfileExactly(profile)

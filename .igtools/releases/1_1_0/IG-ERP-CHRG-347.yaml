@@ -1,0 +1,24 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: f30e79160aee234fddd8468f8466170f0ae42f81a43ef4c0f95a532fddea8e42
+created: '2026-01-27T10:25:54.947923'
+date: '2026-01-27T10:25:54.947925'
+key: IG-ERP-CHRG-347
+modified: '2026-01-27T10:25:54.947924'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS das Einstellen einer Nachricht der Profile GEM_ERP_PR_Communication_DispReq,
+  GEM_ERP_PR_Communication_InfoReq oder GEM_ERP_PR_Communication_Representative durch
+  einen Versicherten über die HTTP-Operation POST auf den Endpunkt /Communication
+  mit dem http-Status-Code 400 abbrechen, wenn die KVNR des in Communication.basedOn
+  referenzierten Tasks ungleich der KVNR des Einstellenden in "idNummer" des ACCESS_TOKEN
+  ist und der HTTP-Header "X-AccessCode" fehlt oder ungleich dem AccessCode-Identifier
+  des referenzierten Tasks ist, um irreführende Testnachrichten zu unterbinden.
+title: E-Rezept-Fachdienst – Nachricht einstellen – Versicherte – Prüfung Versichertenbezug
+  und Berechtigung
+version: 0

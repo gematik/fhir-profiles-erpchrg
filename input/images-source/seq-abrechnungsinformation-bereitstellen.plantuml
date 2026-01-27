@@ -1,0 +1,45 @@
+@startuml
+title Abrechnungsinformation durch Abgebenden bereitstellen
+
+actor "Mitarbeiter LEI" as MA
+participant "Primärsystem\nabgebende LEI" as PS
+participant "Konnektor" as K
+participant "E-Rezept Fachdienst" as FD
+participant "Identity Provider" as IDP
+
+MA -> MA: E-Rezept dispensieren()
+
+MA -> PS: Abrechnungsinformation\nbereitstellen()
+activate PS
+
+PS -> PS: Task-ID und Geheimnis des E-Rezepts bestimmen()
+PS -> PS: PKV-Abgabedatensatz erstellen()
+
+PS -> K: I_SAK_Operations::sign_Document_QES(PKV-Abgabedatensatz)
+activate K
+K --> PS: PKV-Abgabedatensatz-Signatur
+deactivate K
+
+opt kein gültiger AuthN-Token
+  ref over PS, IDP: UC 5.2 - AuthN-Token durch LEI anfordern
+end
+
+PS -> FD: POST /ChargeItem(AuthN-Token, Task-ID,\nGeheimnis, PKV-Abgabedatensatz)
+activate FD
+
+FD -> FD: Einwilligung des Versicherten prüfen()
+FD -> FD: Existenz, Status und Geheimnis des Task prüfen()
+FD -> FD: FlowType prüfen()
+FD -> FD: PKV-Abgabedatensatz prüfen()
+FD -> FD: Verordnungsdatensatz und Quittung aus Task übernehmen()
+FD -> FD: Abrechnungsinformationen speichern()
+FD -> FD: AccessCode zum Ändern erzeugen()
+FD -> FD: Datenzugriff protokollieren()
+
+FD --> PS: ChargeItem
+deactivate FD
+
+PS --> MA: status
+deactivate PS
+
+@enduml

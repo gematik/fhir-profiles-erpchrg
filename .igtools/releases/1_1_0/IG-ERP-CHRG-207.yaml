@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 0966c0a921699c9f1fca3116e569c14c6621693c71c53580094b3f039e215903
+created: '2026-01-27T12:10:05.166796'
+date: '2026-01-27T12:10:05.166799'
+key: IG-ERP-CHRG-207
+modified: '2026-01-27T12:10:05.166798'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-PUT-Operation auf eine konkrete
+  über <id> adressierte /ChargeItem/<id> Ressource durch eine abgebende LEI die Signatur
+  des PKV-Abgabedatensatzes gemäß ETSI_QES prüfen und bei fehlender oder nicht gültiger
+  Signatur mit Status 400 und einem Hinweis auf die ungültige Signatur in OperationOutcome
+  abbrechen, um ausschließlich authentische Daten zu verwalten.
+title: E-Rezept-Fachdienst – Abrechnungsinformation ändern – Apotheke – Signaturprüfung
+  PKV-Abgabedatensatz
+version: 0

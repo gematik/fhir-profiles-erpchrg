@@ -1,0 +1,21 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: f8aaea5e37f86ed9035a1fa1cd8c15856174488f70ffdfdf0245e1b223c9ebd8
+created: '2026-01-27T12:10:05.164486'
+date: '2026-01-27T12:10:05.164489'
+key: IG-ERP-CHRG-196
+modified: '2026-01-27T12:10:05.164488'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS ein Signatur-Zertifikat einer nonQES-Signatur einer
+  Leistungserbringerinstitution gemäß gemSpec_PKI#TUC_PKI_018 mit den Parametern oid_smc_b_osig,
+  intendedKeyUsage nonRepudiation, intendedExtendedKeyUsage leer, OCSP-Graceperiod
+  12 Stunden, Offline-Modus nein, Prüfmodus OCSP auf Gültigkeit prüfen. Die OCSP-Response
+  darf 12 Stunden zwischengespeichert werden.
+title: E-Rezept-Fachdienst – Signaturzertifikat SMC-B prüfen
+version: 0

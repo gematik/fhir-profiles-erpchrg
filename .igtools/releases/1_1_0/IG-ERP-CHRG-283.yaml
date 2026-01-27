@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 696cb1be80f197d4eefe36f77c9bfdb3451a1e81ce80781a789410d297cc6508
+created: '2026-01-27T10:25:54.938324'
+date: '2026-01-27T10:25:54.938326'
+key: IG-ERP-CHRG-283
+modified: '2026-01-27T10:25:54.938325'
+release_status: NEW
+source: input/pagecontent/menu-technische-umsetzung-verarbeitungsregeln.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS ein ChargeItem innerhalb eines Monats nach Ablauf
+  von 10 Jahren nach dem Erstellen der Ressource automatisch löschen und das Löschen
+  in einem AuditEvent für den Versicherten nachvollziehbar protokollieren, damit nicht
+  mehr benötigte Informationen gelöscht sind. Der E-Rezept-Fachdienst MUSS bei jedem
+  Löschen eines ChargeItems alle referenzierten Bundles (E-Rezept-Bundle, Quittungs-Bundle,
+  PKV-Abgabedatensatz) ebenfalls löschen, damit die Informationen rund um ein gelöschtes
+  ChargeItem ebenfalls entfernt werden.
+title: E-Rezept-Fachdienst – Löschfrist ChargeItem
+version: 0

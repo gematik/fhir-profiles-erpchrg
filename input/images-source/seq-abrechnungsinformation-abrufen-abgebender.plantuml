@@ -1,0 +1,29 @@
+@startuml
+title Abrechnungsinformation durch Abgebenden abrufen
+
+actor "Mitarbeiter LEI" as MA
+participant "Primärsystem\nabgebende LEI" as PS
+participant "E-Rezept Fachdienst" as FD
+participant "Identity Provider" as IDP
+
+MA -> PS: Abrechnungsinformation abrufen()
+activate PS
+
+opt kein gültiger AuthN-Token
+  ref over PS, IDP: UC 5.2 - AuthN-Token durch LEI anfordern
+end
+
+PS -> FD: GET /ChargeItem/{PrescriptionID}(AuthN-Token,\nAccessCode zum Ändern)
+activate FD
+
+FD -> FD: AccessCode zum Ändern prüfen()
+FD -> FD: Telematik-ID prüfen()
+FD -> FD: Datenzugriff protokollieren()
+
+FD --> PS: ChargeItem (Verordnung, PKV-Abgabedatensatz)
+deactivate FD
+
+PS --> MA: ChargeItem (Verordnung, PKV-Abgabedatensatz)
+deactivate PS
+
+@enduml

@@ -1,0 +1,40 @@
+@startuml
+title PKV-Abgabedatensatz durch Abgebenden ändern
+
+actor "Mitarbeiter LEI" as MA
+participant "Primärsystem\nabgebende LEI" as PS
+participant "Konnektor" as K
+participant "E-Rezept Fachdienst" as FD
+participant "Identity Provider" as IDP
+
+MA -> PS: Abrechnungsinformationen ändern()
+activate PS
+
+PS -> PS: PKV-Abgabedatensatz erstellen()
+
+PS -> K: I_SAK_Operations::sign_Document_QES(PKV-Abgabedatensatz)
+activate K
+K --> PS: PKV-Abgabedatensatz-Signatur
+deactivate K
+
+opt kein gültiger AuthN-Token
+  ref over PS, IDP: UC 5.2 - AuthN-Token durch LEI anfordern
+end
+
+PS -> FD: PUT /ChargeItem/{PrescriptionID}(AuthN-Token,\nAccessCode zum Ändern, PKV-Abgabedatensatz)
+activate FD
+
+FD -> FD: AccessCode zum Ändern prüfen()
+FD -> FD: Telematik-ID prüfen()
+FD -> FD: PKV-Abgabedatensatz prüfen()
+FD -> FD: PKV-Abgabedatensatz speichern()
+FD -> FD: Neuen AccessCode zum Ändern erzeugen()
+FD -> FD: Datenzugriff protokollieren()
+
+FD --> PS: status
+deactivate FD
+
+PS --> MA: status
+deactivate PS
+
+@enduml

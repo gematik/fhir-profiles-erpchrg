@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: bf603bc05668c4ac90faf4ae9d9938a8c1aac2fef4c5e7395999ae6766a6cec7
+created: '2026-01-27T10:25:54.944226'
+date: '2026-01-27T10:25:54.944229'
+key: IG-ERP-CHRG-321
+modified: '2026-01-27T10:25:54.944228'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-POST-Operation auf den Endpunkt
+  /ChargeItem eine 256-Bit-Zufallszahl mit einer Mindestentropie von 120 Bit erzeugen,
+  hexadezimal kodieren ([0-9a-f]{64}) und diese im zu speichernden ChargeItem als
+  externe ID in ChargeItem.identifier:AccessCode als https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AccessCode
+  hinzufügen, damit nachfolgende Zugriffe auf diesen Datensatz nur durch Berechtigte
+  in Kenntnis des AccessCodes erfolgen.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – Generierung AccessCode
+version: 0

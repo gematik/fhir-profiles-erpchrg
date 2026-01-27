@@ -1,0 +1,24 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 53fb9c288150ecf83f3e7a3cb73bb4c3bf130b3bf0f403092e58b4a56229611a
+created: '2026-01-27T10:25:54.945839'
+date: '2026-01-27T10:25:54.945841'
+key: IG-ERP-CHRG-332
+modified: '2026-01-27T10:25:54.945840'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-PUT-Operation auf eine konkrete
+  über <id> adressierte /ChargeItem/<id> Ressource durch eine abgebende LEI eine 256-Bit-Zufallszahl
+  mit einer Mindestentropie von 120 Bit erzeugen, hexadezimal kodieren ([0-9a-f]{64})
+  und diese im zu speichernden ChargeItem als externe ID in ChargeItem.identifier:AccessCode
+  als https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AccessCode überschreiben,
+  damit nachfolgende Zugriffe auf diesen Datensatz nur durch Berechtigte in Kenntnis
+  des AccessCodes erfolgen.
+title: E-Rezept-Fachdienst – Abrechnungsinformation ändern – Apotheke – Generierung
+  AccessCode
+version: 0

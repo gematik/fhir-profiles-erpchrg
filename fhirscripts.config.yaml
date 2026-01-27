@@ -1,0 +1,10 @@
+# Build pipeline configuration (informational)
+steps:
+  - name: generate-assets
+    command: scripts/generate-heading-links-js.sh
+  - name: sushi
+    command: sushi .
+  - name: generate-images
+    command: scripts/generate-drawio-images.sh
+  - name: ig-publisher
+    command: ./_genonce.sh -no-sushi

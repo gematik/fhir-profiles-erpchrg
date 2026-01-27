@@ -1,0 +1,21 @@
+@startuml
+title Abrechnungsinformation durch den Versicherten weitergeben
+
+actor "Versicherter" as V
+participant "Frontend des\nVersicherten" as FE
+participant "Ziel-App" as ZA
+
+V -> FE: Abrechnungsinformation teilen()
+activate FE
+
+FE -> FE: PDF/A mit eingebetteter\nAbrechnungsinformation erstellen()
+
+FE -> ZA: Teilen()
+activate ZA
+ZA --> FE: status
+deactivate ZA
+
+FE --> V: status
+deactivate FE
+
+@enduml

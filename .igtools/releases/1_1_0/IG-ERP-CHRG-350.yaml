@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 45e4f718b4c90f814c17c7c8b432a70c5d5230ccce92ae433db429d4247c3f15
+created: '2026-01-27T10:25:54.948298'
+date: '2026-01-27T10:25:54.948301'
+key: IG-ERP-CHRG-350
+modified: '2026-01-27T10:25:54.948300'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: 'Der E-Rezept-Fachdienst MUSS beim Einstellen einer Nachricht der Profile GEM_ERP_PR_Communication_DispReq,
+  GEM_ERP_PR_Communication_InfoReq oder GEM_ERPCHRG_PR_Communication_ChargChangeReq
+  zur Versicherten-zu-Apotheken-Kommunikation über die HTTP-Operation POST auf den
+  Endpunkt /Communication prüfen, ob für die Telematik-ID des Empfängers Subscriptions
+  registriert sind und für Registrierungen über den Subscription Service eine Notification
+  (ping : subscription-id) senden.'
+title: E-Rezept-Fachdienst – Nachricht einstellen – Notification Apotheke
+version: 0

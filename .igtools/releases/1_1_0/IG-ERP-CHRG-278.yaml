@@ -1,0 +1,19 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: f2785fb77b9c5a1a99ed8eedc3fb2278903b541e6fd5ff1b737ee00bdef271ec
+created: '2026-01-27T10:25:54.937440'
+date: '2026-01-27T10:25:54.937442'
+key: IG-ERP-CHRG-278
+modified: '2026-01-27T10:25:54.937441'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS alle Zugriffe auf die Ressource ChargeItem mittels
+  der HTTP-Operationen HEAD unterbinden, damit keine unzulässigen Operationen auf
+  die Informationen zu Abrechnungsinformationen ausgeführt werden können.
+title: E-Rezept-Fachdienst – ChargeItem – unzulässige Operationen
+version: 0

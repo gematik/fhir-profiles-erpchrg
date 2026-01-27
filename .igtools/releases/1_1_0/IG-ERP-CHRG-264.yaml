@@ -1,0 +1,20 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: d1c28ef777a437a7a42d146bf8afbbf3b7e682505d1f166479f2cc328f0b7b66
+created: '2026-01-27T10:25:54.935432'
+date: '2026-01-27T10:25:54.935434'
+key: IG-ERP-CHRG-264
+modified: '2026-01-27T10:25:54.935433'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-Operation PATCH auf den Endpunkt
+  /ChargeItem ohne Angabe einer <id> für eine konkrete Ressource mit dem HTTP-Fehlercode
+  405 ablehnen, um das Ändern mehrerer Ressourcen über einen Request zu verhindern.
+title: E-Rezept-Fachdienst – Abrechnungsinformation ändern (PATCH) – alles Ändern
+  verbieten
+version: 0

@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 97a203eb3519b54dde18b4b7bd0f6341a2fc8117e89ad4d0e468e84b6f97c662
+created: '2026-01-27T10:25:54.946825'
+date: '2026-01-27T10:25:54.946827'
+key: IG-ERP-CHRG-340
+modified: '2026-01-27T10:25:54.946826'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-GET-Operation auf den Endpunkt
+  /Consent die dem Versicherten zugeordneten Consent-Ressourcen anhand der KVNR des
+  Versicherten im ACCESS_TOKEN im "Authorization"-Header des HTTP-Requests identifizieren
+  und in den Response aufnehmen, die in Consent.patient.identifier die entsprechende
+  KVNR des begünstigten Versicherten referenziert haben, damit ausschließlich Versicherte
+  ihre eigenen Informationen zu Einwilligungen einsehen können.
+title: E-Rezept-Fachdienst – Consent lesen – Filter Consent auf KVNR des Versicherten
+version: 0

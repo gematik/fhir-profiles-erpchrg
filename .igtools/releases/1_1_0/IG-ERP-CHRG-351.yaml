@@ -1,0 +1,19 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: e6d530e8dd0624ef0290961aeb177a5a4cef2d60dbcb869c25ab38e5a02c5c4e
+created: '2026-01-27T10:25:54.948596'
+date: '2026-01-27T10:25:54.948599'
+key: IG-ERP-CHRG-351
+modified: '2026-01-27T10:25:54.948598'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-consent.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS alle Zugriffe auf die Ressource Consent mittels
+  der HTTP-Operationen PUT, PATCH oder HEAD unterbinden, damit keine unzulässigen
+  Operationen auf die Informationen zur Einwilligung ausgeführt werden können.
+title: E-Rezept-Fachdienst – unzulässige Operationen Consent
+version: 0

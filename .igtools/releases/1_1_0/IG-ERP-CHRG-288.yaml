@@ -1,0 +1,19 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 64a80abf2e2d083f8f414cb4ec481c11623354f0ae07c9a5a7cfedb7d6ef2ee4
+created: '2026-01-27T10:25:54.939202'
+date: '2026-01-27T10:25:54.939204'
+key: IG-ERP-CHRG-288
+modified: '2026-01-27T10:25:54.939203'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS den Aufruf der Operation DELETE /ChargeItem ohne
+  Angabe einer konkreten über <id> adressierte ChargeItem Ressource mit dem HTTP-Fehlercode
+  405 ablehnen, um das Löschen mehrerer Ressourcen über einen Request zu verhindern.
+title: E-Rezept-Fachdienst – Abrechnungsinformation löschen – alles Löschen verbieten
+version: 0

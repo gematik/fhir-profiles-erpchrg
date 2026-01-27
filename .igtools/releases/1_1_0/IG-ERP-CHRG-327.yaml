@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: ec4372dfce2ef41d3a9e02ba6e08c538f73f58a6bd96dbb8ac7000086eb93a67
+created: '2026-01-27T10:25:54.945091'
+date: '2026-01-27T10:25:54.945094'
+key: IG-ERP-CHRG-327
+modified: '2026-01-27T10:25:54.945093'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-PUT-Operation auf eine konkrete
+  über <id> adressierte /ChargeItem/<id> Ressource durch eine abgebende LEI den im
+  containedBinary übermittelten PKV-Abgabedatensatz herauslösen und entfernen, die
+  Ressource zur ChargeItem-Ressource speichern und in ChargeItem.supportingInformation:dispenseItem
+  die Referenz hinzufügen.
+title: E-Rezept-Fachdienst – Abrechnungsinformation ändern – Apotheke – PKV-Abgabedatensatz
+  übernehmen
+version: 0

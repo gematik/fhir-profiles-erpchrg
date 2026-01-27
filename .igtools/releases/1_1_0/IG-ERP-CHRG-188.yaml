@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 452c51b842dced1555a4b8b6e40d7df20427bd8d3c85bfc3ab233bea4683ab8f
+created: '2026-01-27T12:10:05.162571'
+date: '2026-01-27T12:10:05.162577'
+key: IG-ERP-CHRG-188
+modified: '2026-01-27T12:10:05.162575'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-POST-Operation auf den Endpunkt
+  /ChargeItem das im URL-Parameter "secret=..." übertragene Secret gegen das im referenzierten
+  Task gespeicherte SecretTask.identifier:Secret als https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_Secret
+  prüfen und bei Ungleichheit oder Fehlen des URL-Parameters die Operation mit dem
+  HTTP-Fehlercode 403 abbrechen, damit der Zugriff auf diesen Datensatz nur durch
+  die berechtigten Apotheke in Kenntnis des Secrets erfolgt.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – Prüfung Secret
+  Task
+version: 0

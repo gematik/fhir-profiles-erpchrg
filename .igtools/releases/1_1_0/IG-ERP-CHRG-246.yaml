@@ -1,0 +1,21 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: bc61cea5094ed07677512e14ff955e161663405e34d35c9b6a3d058c86888599
+created: '2026-01-27T10:25:54.933056'
+date: '2026-01-27T10:25:54.933058'
+key: IG-ERP-CHRG-246
+modified: '2026-01-27T10:25:54.933057'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-POST-Operation auf den Endpunkt
+  /ChargeItem die Signatur des PKV-Abgabedatensatzes gemäß ETSI_QES prüfen und bei
+  fehlender oder nicht gültiger Signatur mit Status 400 abbrechen, um ausschließlich
+  authentische Daten zu verwalten.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – Signaturprüfung
+  PKV-Abgabedatensatz
+version: 0

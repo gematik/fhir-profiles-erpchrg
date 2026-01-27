@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: e9f5e7490418efe3efb7106536c782da6bc12bd8c60b651630933d94307cfd9c
+created: '2026-01-27T10:25:54.943090'
+date: '2026-01-27T10:25:54.943092'
+key: IG-ERP-CHRG-312
+modified: '2026-01-27T10:25:54.943091'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-POST-Operation auf den Endpunkt
+  /ChargeItem sicherstellen, dass zu der in ChargeItem.subject.identifier übermittelten
+  KVNR ein Consent-Datensatz mit Consent.patient.identifier = KVNR und Consent.category.coding.code
+  = CHARGCONS existiert und bei fehlgeschlagener Prüfung die Operation mit dem HTTP-Fehlercode
+  403 abbrechen, damit nur eine Abrechnungsinformation für Versicherte gespeichert
+  wird, die eine Einwilligung erteilt haben.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – Prüfung Einwilligung
+version: 0

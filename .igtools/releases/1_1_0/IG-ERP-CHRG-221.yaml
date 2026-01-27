@@ -1,0 +1,20 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 37044fe3c8906a04fcb02708323df5065a09a774dc4d43b36da2cedcc2a92285
+created: '2026-01-27T12:10:05.152934'
+date: '2026-01-27T12:10:05.152936'
+key: IG-ERP-CHRG-221
+modified: '2026-01-27T12:10:05.152935'
+release_status: NEW
+source: input/pagecontent/query-api-consent.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS die im HTTP-POST-Operation auf die Ressource Consent
+  übertragene Consent-Ressource gegen das FHIR-Profil Consent prüfen und bei Nicht-Konformität
+  das Anlegen der Ressource im E-Rezept-Fachdienst mit dem http-Status-Code 400 ablehnen,
+  damit nur FHIR-valide Ressourcen in den E-Rezept-Fachdienst hochgeladen werden.
+title: E-Rezept-Fachdienst – Consent schreiben – FHIR-Validierung
+version: 0

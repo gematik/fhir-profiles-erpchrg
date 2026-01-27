@@ -1,0 +1,21 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 53bd7855d721f1a0b421e2938e1ab4c4d115e9ad23924195c5897d6c4b56897b
+created: '2026-01-27T12:10:05.163493'
+date: '2026-01-27T12:10:05.163496'
+key: IG-ERP-CHRG-192
+modified: '2026-01-27T12:10:05.163495'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-POST-Operation auf den Endpunkt
+  /ChargeItem den im containedBinary übermittelten PKV-Abgabedatensatz herauslösen
+  und entfernen, die Ressource zur ChargeItem-Ressource speichern und in ChargeItem.supportingInformation:dispenseItem
+  die Referenz hinzufügen.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – PKV-Abgabedatensatz
+  übernehmen
+version: 0

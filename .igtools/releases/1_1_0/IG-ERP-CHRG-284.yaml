@@ -1,0 +1,21 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 563f66e800d681d81f0cfda2998c23fa6e23fd3bfe572ddd4fd4500b2e304491
+created: '2026-01-27T10:25:54.938455'
+date: '2026-01-27T10:25:54.938458'
+key: IG-ERP-CHRG-284
+modified: '2026-01-27T10:25:54.938457'
+release_status: NEW
+source: input/pagecontent/menu-technische-umsetzung-verarbeitungsregeln.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS jeden Aufruf der folgenden Operationen protokollieren
+  und die gelesene bzw. geschriebene Ressource im Protokolleintrag AuditEvent.entity.what
+  als Referenz hinzufügen sowie die KVNR des betroffenen Versicherten in AuditEvent.entity.name
+  speichern, damit der Versicherte Zugriffe nachvollziehen und bei unberechtigten
+  Zugriffen intervenieren kann.
+title: E-Rezept-Fachdienst – Versichertenprotokoll zu Operationen
+version: 0

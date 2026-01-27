@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 674234f51682af715aa58405bcb808a475b5270a89bf61dc271026303c107ccc
+created: '2026-01-27T10:25:54.939495'
+date: '2026-01-27T10:25:54.939497'
+key: IG-ERP-CHRG-290
+modified: '2026-01-27T10:25:54.939496'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-DELETE-Operation auf eine
+  konkrete über <id> adressierte /ChargeItem/<id> Ressource durch einen Versicherten,
+  den Versicherten anhand der KVNR aus dem ACCESS_TOKEN im "Authorization"-Header
+  des HTTP-Requests identifizieren, diese gegen die in ChargeItem.subject.identifier
+  hinterlegte KVNR des begünstigten Versicherten prüfen und bei Ungleichheit den Aufruf
+  mit dem HTTP-Fehlercode 403 abweisen, damit ausschließlich der begünstigte Versicherte
+  eine Abrechnungsinformation löscht.
+title: E-Rezept-Fachdienst – Abrechnungsinformation löschen – Prüfung KVNR
+version: 0

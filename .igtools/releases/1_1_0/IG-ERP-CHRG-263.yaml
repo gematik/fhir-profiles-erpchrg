@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL NOT
+content_hash: 66dfcba2b8c998f1b87e70d96472d7d877e34df7c18d98e9297ce29aae2b3b40
+created: '2026-01-27T10:25:54.935299'
+date: '2026-01-27T10:25:54.935301'
+key: IG-ERP-CHRG-263
+modified: '2026-01-27T10:25:54.935300'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst DARF beim Aufruf der Operation GET /ChargeItem/<id>
+  durch eine abgebende Leistungserbringerinstitution das in ChargeItem.supportingInformation
+  referenzierte Element ChargeItem.supportingInformation:receipt und den Identifier
+  Task.identifier:AccessCode NICHT in den Response übernehmen, sodass die abgebende
+  LEI nur den Verordnungsdatensatz und den durch sie änderbaren PKV-Abgabedatensatz
+  erhält.
+title: E-Rezept-Fachdienst – Abrechnungsinformation abrufen – Apotheke – kein AccessCode
+  und Quittung
+version: 0

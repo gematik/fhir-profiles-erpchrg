@@ -1,0 +1,21 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 3e5237a8976c80425e14dbb507dc4b83629b197d730f2d14baddf3408db2869d
+created: '2026-01-27T12:10:05.138069'
+date: '2026-01-27T12:10:05.138072'
+key: IG-ERP-CHRG-226
+modified: '2026-01-27T12:10:05.138071'
+release_status: NEW
+source: input/pagecontent/query-api-communication.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Einstellen einer Nachricht der Profile GEM_ERP_PR_Communication_DispReq,
+  GEM_ERP_PR_Communication_InfoReq, GEM_ERP_PR_Communication_Reply oder GEM_ERP_PR_Communication_Representative
+  über die HTTP-Operation POST auf den Endpunkt /Communication mit dem http-Status-Code
+  400 abbrechen, wenn das Pflichtfeld Communication.basedOn einen Task referenziert,
+  der nicht existiert, um Spam und nicht-rezeptbezogene Kommunikation zu verhindern.
+title: E-Rezept-Fachdienst – Nachricht einstellen – Prüfung Existenz Task
+version: 0

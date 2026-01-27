@@ -1,0 +1,32 @@
+@startuml
+title Abrechnungsinformation durch den Versicherten löschen
+
+actor "Versicherter" as V
+participant "Frontend des\nVersicherten" as FE
+participant "E-Rezept\nFachdienst" as FD
+participant "Identity Provider" as IDP
+
+V -> FE: Abrechnungsinformationen löschen()
+activate FE
+
+FE -> V: Bestätigung zum Löschen anfordern()
+FE -> FE: Abrechnungsinformation auswählen()
+FE -> FE: PrescriptionID zu Abrechnungsinformation bestimmen()
+
+opt kein gültiger AuthN-Token
+  ref over FE, IDP: UC 5.1 - AuthN-Token durch Versicherten anfordern
+end
+
+FE -> FD: DELETE /ChargeItem/{PrescriptionID}(AuthN-Token)
+activate FD
+
+FD -> FD: Abrechnungsinformation löschen()
+FD -> FD: Löschvorgang protokollieren()
+
+FD --> FE: status
+deactivate FD
+
+FE --> V: status
+deactivate FE
+
+@enduml

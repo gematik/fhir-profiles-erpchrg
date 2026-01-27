@@ -1,0 +1,18 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 82a6a43cdbd3ca40f34a4b67fa64d37c172f41fa52b7d7d44a4bc58e59d448e1
+created: '2026-01-27T10:25:54.930222'
+date: '2026-01-27T10:25:54.930226'
+key: IG-ERP-CHRG-230
+modified: '2026-01-27T10:25:54.930224'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-datenschutz-und-sicherheit.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Die Fachanwendung E-Rezept MUSS sicherstellen, dass eine Verarbeitung von Abrechnungsinformationen
+  nur für PKV-Versicherte erfolgt, die hierfür eingewilligt haben.
+title: Verarbeitung von Abrechnungsinformationen nur nach Einwilligung
+version: 0

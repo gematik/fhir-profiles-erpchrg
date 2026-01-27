@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 5e327f3ea02486b3c752593becb03f898ea57736761baaf311bf4eb4efdc78ab
+created: '2026-01-27T10:25:54.949714'
+date: '2026-01-27T10:25:54.949716'
+key: IG-ERP-CHRG-360
+modified: '2026-01-27T10:25:54.949715'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-consent.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-Operation DELETE auf den Endpunkt
+  /Consent die Rolle "professionOID" des Aufrufers im ACCESS_TOKEN im HTTP-RequestHeader
+  "Authorization" feststellen und sicherstellen, dass ausschließlich Versicherte in
+  der Rolle oid_versicherter die Operation am E-Rezept-Fachdienst aufrufen dürfen,
+  damit die Information zur Einwilligung nicht durch Unberechtigte gelöscht werden
+  kann.
+title: E-Rezept-Fachdienst – Consent löschen – Rollenprüfung Versicherter
+version: 0

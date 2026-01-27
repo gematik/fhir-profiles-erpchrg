@@ -1,0 +1,18 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL NOT
+content_hash: 95db9d252c10b5292f8d0f12118ffa964e9610a5ddc1f43b4fee208ed1f2ed20
+created: '2026-01-27T10:25:54.930363'
+date: '2026-01-27T10:25:54.930366'
+key: IG-ERP-CHRG-231
+modified: '2026-01-27T10:25:54.930365'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-datenschutz-und-sicherheit.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst DARF NICHT Abrechnungsinformationen verarbeiten, wenn
+  keine Einwilligung des PKV-Versicherten erfolgt ist.
+title: Verarbeitung von Abrechnungsinformationen im E-Rezept-Fachdienst nur nach Einwilligung
+version: 0

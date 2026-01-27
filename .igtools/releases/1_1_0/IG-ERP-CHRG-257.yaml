@@ -1,0 +1,20 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: MAY
+content_hash: 106729f0a5adbe5de59521e3158bdfd60b7a574b7c06ca7fc8e57deefe0fa9b5
+created: '2026-01-27T10:25:54.934418'
+date: '2026-01-27T10:25:54.934420'
+key: IG-ERP-CHRG-257
+modified: '2026-01-27T10:25:54.934419'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst KANN beim Aufruf der HTTP-GET-Operation auf den Endpunkt
+  /ChargeItem das Suchergebnis in einem Paging-Mechanismus auf mehrere Ergebnis-Bundle
+  aufteilen, damit der Nutzer eine komfortable Navigationsmöglichkeit in seinen Abrechnungsinformationen
+  erhält.
+title: E-Rezept-Fachdienst – Abrechnungsinformationen abrufen – Paging
+version: 0

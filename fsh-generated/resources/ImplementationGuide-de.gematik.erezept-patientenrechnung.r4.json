@@ -4,7 +4,7 @@
   "url": "https://gematik.de/fhir/erpchrg/ImplementationGuide/de.gematik.erezept-patientenrechnung.r4",
   "version": "1.1.0-draft",
   "name": "ERezeptPatientenrechnung",
-  "title": "Implementation Guide für E-Rezept Patientenrechnung",
+  "title": "E-Rezepte apothekenpflichtiger Arzneimittel für PKV-Versicherte",
   "status": "draft",
   "publisher": "gematik GmbH",
   "contact": [
@@ -43,6 +43,12 @@
       "version": "1.5.2",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
+    },
+    {
+      "packageId": "de.gematik.ti",
+      "version": "1.2.0",
+      "uri": "https://gematik.de/fhir/ti/ImplementationGuide/de.gematik.ti",
+      "id": "de_gematik_ti"
     }
   ],
   "definition": {
@@ -96,6 +102,22 @@
         },
         "name": "Consent to store digital ChargeItem",
         "exampleCanonical": "https://gematik.de/fhir/erpchrg/StructureDefinition/GEM_ERPCHRG_PR_Consent"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/erp-fachdienst-client"
+        },
+        "name": "ERPCHRG CapabilityStatement für Clients des E-Rezept-Fachdienst",
+        "description": "Dieses CapabilityStatement legt die Anforderungen an Clients des E-Rezept-Fachdienst für PKV-Abrechnungsinformationen fest.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/erp-fachdienst-server-erpchrg"
+        },
+        "name": "ERPCHRG CapabilityStatement für den E-Rezept-Fachdienst",
+        "description": "CapabilityStatement für den E-Rezept-Fachdienst (PKV-Abrechnungsinformationen)",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -176,8 +198,90 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "menu-fachlichkeit-ueberblick.html",
+          "title": "Überblick zur Verordnung und Belieferung von Arzneimitteln",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "menu-fachlichkeit-szenarien.html",
+          "title": "Szenarien für den Verordnungsprozess",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "menu-fachlichkeit-szenario-pkv.html",
+              "title": "E-Rezept für PKV Versicherte",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "menu-fachlichkeit-anwendungsfaelle.html",
+          "title": "Anwendungsfälle für den Medikationsprozess",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "menu-technische-umsetzung-systemueberblick.html",
+          "title": "Systemüberblick",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "menu-technische-umsetzung-anwendungsfaelle.html",
+          "title": "Technische Anwendungsfälle",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "menu-technische-umsetzung-verarbeitungsregeln.html",
+          "title": "Verarbeitungsregeln für den E-Rezept-Fachdienst",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "menu-schnittstellen-generelle-prinzipien.html",
+          "title": "Generelle Prinzipien",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "menu-schnittstellen-datenschutz-und-sicherheit.html",
+          "title": "Datenschutz und Sicherheit",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "query-api-chargeitem.html",
+          "title": "Query API: ChargeItem",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "query-api-consent.html",
+          "title": "Query API: Consent",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "query-api-communication.html",
+          "title": "Query API: Communication",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "query-api-task.html",
+          "title": "Query API: Task",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "op-accept.html",
+          "title": "Operation: $accept",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "op-activate.html",
+          "title": "Operation: $activate",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "artifacts.html",
           "title": "FHIR-Artefakte",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "referenced.html",
+          "title": "Referenzen",
           "generation": "markdown"
         }
       ]
@@ -190,6 +294,10 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent"
       },
       {
         "code": "path-pages",

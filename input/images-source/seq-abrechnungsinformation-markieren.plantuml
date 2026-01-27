@@ -1,0 +1,31 @@
+@startuml
+title Abrechnungsinformation durch den Versicherten markieren
+
+actor "Versicherter" as V
+participant "Frontend des\nVersicherten" as FE
+participant "E-Rezept\nFachdienst" as FD
+participant "Identity Provider" as IDP
+
+V -> FE: Abrechnungsinformation markieren()
+activate FE
+
+FE -> FE: Markierungen auswählen()
+FE -> FE: PrescriptionID bestimmen()
+
+opt kein gültiger AuthN-Token
+  ref over FE, IDP: UC 5.1 - AuthN-Token durch Versicherten anfordern
+end
+
+FE -> FD: PATCH /ChargeItem/{PrescriptionID}(AuthN-Token)
+activate FD
+
+FD -> FD: Markierung speichern()
+FD -> FD: Datenzugriff protokollieren()
+
+FD --> FE: status
+deactivate FD
+
+FE --> V: status
+deactivate FE
+
+@enduml

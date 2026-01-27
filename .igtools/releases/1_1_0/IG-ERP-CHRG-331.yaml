@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 67d3bae4107fa8e32a9b7d3fbb2fb1f256ab70e7ac2d6839148d3e60abbf3a4b
+created: '2026-01-27T10:25:54.945699'
+date: '2026-01-27T10:25:54.945701'
+key: IG-ERP-CHRG-331
+modified: '2026-01-27T10:25:54.945700'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: 'Der E-Rezept-Fachdienst MUSS die im HTTP-PUT-Operation auf die Ressource ChargeItem
+  übertragene ChargeItem-Ressource gegen das FHIR-Profil ChargeItem prüfen, auf die
+  Zulässigkeit der änderbaren Felder prüfen: abgebende LEI darf nur PKV-Abgabedatensatz
+  ändern, und bei fehlerhafter Prüfung die Operation mit dem http-Status-Code 400
+  und einem Hinweis auf unzulässige Änderung gesperrter Attribute in OperationOutcome
+  abbrechen, damit kein Schadcode und keine fachfremden Daten in den E-Rezept-Fachdienst
+  hochgeladen werden.'
+title: E-Rezept-Fachdienst – Abrechnungsinformation ändern – FHIR-Validierung ChargeItem
+version: 0

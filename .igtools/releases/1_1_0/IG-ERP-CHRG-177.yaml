@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: db38a46f7e5520207d4051622d21f3577c5c6ed013857aa942f3bbdbe22a4f48
+created: '2026-01-27T12:10:05.160042'
+date: '2026-01-27T12:10:05.160048'
+key: IG-ERP-CHRG-177
+modified: '2026-01-27T12:10:05.160046'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-GET-Operation auf eine konkrete
+  über <id> adressierte /ChargeItem/<id> Ressource durch eine abgebende Leistungserbringerinstitution,
+  die LEI anhand der Telematik-ID aus dem ACCESS_TOKEN im "Authorization"-Header des
+  HTTP-Requests identifizieren, diese gegen die in ChargeItem.enterer.identifier hinterlegte
+  Telematik-ID der einstellenden LEI prüfen und bei Ungleichheit den Aufruf mit dem
+  HTTP-Fehlercode 403 abweisen, damit ausschließlich die LEI eine Abrechnungsinformation
+  abrufen kann, welche die Abrechnungsinformation bereitgestellt hat.
+title: E-Rezept-Fachdienst – Abrechnungsinformation abrufen – Apotheke – Prüfung Telematik-ID
+version: 0

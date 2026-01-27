@@ -1,0 +1,19 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: abf8816ae8df48b5c2f052d3255aae6c22a3f8b879ac5e879ca39dbf11368c7f
+created: '2026-01-27T12:10:05.157299'
+date: '2026-01-27T12:10:05.157315'
+key: IG-ERP-CHRG-173
+modified: '2026-01-27T12:10:05.157306'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-GET-Operation auf den Endpunkt
+  /ChargeItem eine Liste von ChargeItem Ressourcen ohne die in supportingInformation
+  referenzierten Datensätze entsprechend der Filterung und Suchkriterien übermitteln.
+title: E-Rezept-Fachdienst – Abrechnungsinformationen abrufen – Response
+version: 0

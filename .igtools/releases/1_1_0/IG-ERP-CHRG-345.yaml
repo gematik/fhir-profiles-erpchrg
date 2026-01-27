@@ -1,0 +1,19 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 7d83ec5d31b13c2c621f2e1cfc0f40c8ed698979a9c3dd294670f406e2ac084d
+created: '2026-01-27T10:25:54.947438'
+date: '2026-01-27T10:25:54.947440'
+key: IG-ERP-CHRG-345
+modified: '2026-01-27T10:25:54.947439'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-POST-Operation auf den Endpunkt
+  /Consent – falls bei den Prüfungen keine Fehler aufgetreten sind, welche zum Abbruch
+  der Operation führen – die übermittelte Ressource persistieren.
+title: E-Rezept-Fachdienst – Consent schreiben – Persistieren
+version: 0

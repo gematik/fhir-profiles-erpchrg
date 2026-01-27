@@ -1,0 +1,24 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 494042958dd484ac7f743b789114369a96a48ab7eecea3385d7faa247713444c
+created: '2026-01-27T12:10:05.160818'
+date: '2026-01-27T12:10:05.160823'
+key: IG-ERP-CHRG-179
+modified: '2026-01-27T12:10:05.160821'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Operation GET /ChargeItem/<id>
+  durch einen Versicherten zusätzlich zum ChargeItem die folgenden Datensätze im JSON-Format
+  in einem Responsebundle zurück liefern und dafür in jedem Aufruf den Verordnungsdatensatz,
+  den PKV-Abgabedatensatz und die Quittung im XML-Format mit der Signaturidentität
+  des E-Rezept-Fachdienstes gemäß RFC5652 im Profil CAdES-BES (Enveloping) signieren
+  und in jede Fachdienstsignatur die letzte OCSP-Antwort der Statusprüfung des Signaturzertifikats
+  C.FD.OSIG einbetten, damit der Versicherte die Daten für die Abrechnung an Kostenträger
+  weiterleiten kann.
+title: E-Rezept-Fachdienst – Abrechnungsinformation abrufen – Versicherte – Signieren
+version: 0

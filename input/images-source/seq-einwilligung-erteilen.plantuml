@@ -1,0 +1,28 @@
+@startuml
+title Einwilligung zum Speichern der Abrechnungsinformationen durch den Versicherten erteilen
+
+actor "Versicherter" as V
+participant "Frontend des\nVersicherten" as FE
+participant "E-Rezept\nFachdienst" as FD
+participant "Identity Provider" as IDP
+
+V -> FE: Einwilligung erteilen()
+activate FE
+
+opt kein gültiger AuthN-Token
+  ref over FE, IDP: UC 5.1 - AuthN-Token durch Versicherten anfordern
+end
+
+FE -> FD: POST /Consent(AuthN-Token)
+activate FD
+
+FD -> FD: Einwilligung speichern()
+FD -> FD: Datenzugriff protokollieren()
+
+FD --> FE: Consent
+deactivate FD
+
+FE --> V: Status()
+deactivate FE
+
+@enduml

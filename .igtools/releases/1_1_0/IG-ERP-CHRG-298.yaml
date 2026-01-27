@@ -1,0 +1,24 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: af7cf8324b286df1e2a7e63ddacf653f2f674e8fe29f6178f5c695f7d860e099
+created: '2026-01-27T10:25:54.940532'
+date: '2026-01-27T10:25:54.940534'
+key: IG-ERP-CHRG-298
+modified: '2026-01-27T10:25:54.940533'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-GET-Operation auf eine konkrete
+  über <id> adressierte /ChargeItem/<id> Ressource durch einen Versicherten, den Versicherten
+  anhand der KVNR aus dem ACCESS_TOKEN im "Authorization"-Header des HTTP-Requests
+  identifizieren, diese gegen die in ChargeItem.subject.identifier hinterlegte KVNR
+  des begünstigten Versicherten prüfen und bei Ungleichheit den Aufruf mit dem HTTP-Fehlercode
+  403 abweisen, damit ausschließlich der begünstigte Versicherte eine Abrechnungsinformation
+  abrufen kann.
+title: E-Rezept-Fachdienst – Abrechnungsinformation abrufen – Versicherter – Prüfung
+  KVNR
+version: 0

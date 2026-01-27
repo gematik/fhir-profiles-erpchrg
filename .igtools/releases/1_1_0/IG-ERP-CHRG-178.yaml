@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: eac0d490a69d80b7ca34a28eef1e1fe18f2a03b29476f2ee8b700fad88dc5378
+created: '2026-01-27T12:10:05.160441'
+date: '2026-01-27T12:10:05.160447'
+key: IG-ERP-CHRG-178
+modified: '2026-01-27T12:10:05.160445'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-GET-Operation auf eine konkrete
+  über <id> adressierte /ChargeItem/<id> Ressource durch eine abgebende Leistungserbringerinstitution,
+  den im URL-Parameter "?ac=..." übertragenen AccessCode gegen den im referenzierten
+  ChargeItem gespeicherten AccessCodeChargeItem.identifier:AccessCode als https://gematik.de/fhir/erp/StructureDefinition/GEM_ERP_PR_AccessCode
+  prüfen und bei Ungleichheit oder Fehlen des URL-Parameters die Operation mit dem
+  HTTP-Fehlercode 403 abbrechen, damit Zugriffe auf diesen Datensatz nur durch Berechtigte
+  in Kenntnis des AccessCodes erfolgen.
+title: E-Rezept-Fachdienst – Abrechnungsinformation abrufen – Apotheke – Prüfung AccessCode
+version: 0

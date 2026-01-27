@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: ab4790d650571405f6cfbf6bc35d3024d03be5e5b9582f7d2fe776d80e1cf37e
+created: '2026-01-27T12:10:05.154319'
+date: '2026-01-27T12:10:05.154322'
+key: IG-ERP-CHRG-164
+modified: '2026-01-27T12:10:05.154321'
+release_status: NEW
+source: input/pagecontent/op-activate.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Zugriff auf einen Task des Flowtype Task.extension:flowType
+  = 200 oder 209 mittels HTTP-POST-Operation über /Task/<id>/$activate prüfen, ob
+  Coverage.type.coding.code mit dem Wert "PKV" belegt ist und im Fehlerfall die Operation
+  mit Http-Fehlercode 400 abbrechen, um sicherzustellen, dass diese Workflows nur
+  für E-Rezepte für PKV-Versicherte genutzt werden.
+title: E-Rezept-Fachdienst – Task aktivieren – Flowtype 200/209 – Prüfung Coverage
+  Type
+version: 0

@@ -1,0 +1,21 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: e27c0861ee524b5fc72e7157f1d3b25394103df07a9910eabf5394696de63d6d
+created: '2026-01-27T10:25:54.934168'
+date: '2026-01-27T10:25:54.934170'
+key: IG-ERP-CHRG-255
+modified: '2026-01-27T10:25:54.934169'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS das Eingrenzen einer Suchanfrage auf /ChargeItem
+  über die URL-Parameter gemäß https://www.hl7.org/fhir/chargeitem.html#search mindestens
+  für die Attribute ChargeItem.enteredDate und ChargeItem.meta.__lastUpdated erlauben,
+  damit Versicherte und Apotheken eine Suche nach neuen Abrechnungsinformationseinträgen
+  durchführen können.
+title: E-Rezept-Fachdienst – Abrechnungsinformationen abrufen – Suchkriterien
+version: 0

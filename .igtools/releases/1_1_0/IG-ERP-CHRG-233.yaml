@@ -1,0 +1,18 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 6e8d00918f6e71ede2f3b8ffe9de024598f4cfce1c099a1b28718bcf3a99fb67
+created: '2026-01-27T10:25:54.930630'
+date: '2026-01-27T10:25:54.930634'
+key: IG-ERP-CHRG-233
+modified: '2026-01-27T10:25:54.930632'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-datenschutz-und-sicherheit.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS Abrechnungsinformationen zu einem E-Rezept nach
+  zehn Jahren löschen.
+title: Löschen von Abrechnungsinformationen nach zehn Jahren
+version: 0

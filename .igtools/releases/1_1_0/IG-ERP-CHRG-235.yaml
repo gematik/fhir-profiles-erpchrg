@@ -1,0 +1,19 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: dd043843de57d834f1a2b2f8972098d5c8eb208bfa583f736c51cc8fa0bbeb5f
+created: '2026-01-27T10:25:54.930905'
+date: '2026-01-27T10:25:54.930908'
+key: IG-ERP-CHRG-235
+modified: '2026-01-27T10:25:54.930907'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-datenschutz-und-sicherheit.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS die Abrechnungsinformationen während der Verarbeitung
+  (inkl. Transport und Speichern) vor unberechtigter Einsichtnahme oder Manipulation
+  schützen.
+title: Schutz der Abrechnungsinformationen
+version: 0

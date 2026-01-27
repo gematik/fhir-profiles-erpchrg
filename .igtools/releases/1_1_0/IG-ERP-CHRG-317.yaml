@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: e99f501e34fc90075385e15b28a2e23a9c29385c50c29ab72b2ff43b6458e3b0
+created: '2026-01-27T10:25:54.943709'
+date: '2026-01-27T10:25:54.943711'
+key: IG-ERP-CHRG-317
+modified: '2026-01-27T10:25:54.943710'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-POST-Operation auf den Endpunkt
+  /ChargeItem das Signaturzertifikat des PKV-Abgabedatensatzes prüfen. Das Signaturzertifikat
+  muss anhand der Zertifikatsprüfung für mathematisch gültig, zeitlich gültig und
+  online gültig befunden werden und der Aufruf anderenfalls mit Status 400 abgebrochen
+  werden, um ausschließlich authentische Daten zu verwalten.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – Prüfung Signaturzertifikat
+  PKV-Abgabedatensatz
+version: 0

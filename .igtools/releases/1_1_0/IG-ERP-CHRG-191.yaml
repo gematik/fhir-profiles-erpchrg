@@ -1,0 +1,26 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: e2ae02eb5b7b3ca337c1eb28a1e518ff182501a702a37a023c68a1076d8194f8
+created: '2026-01-27T12:10:05.163347'
+date: '2026-01-27T12:10:05.163350'
+key: IG-ERP-CHRG-191
+modified: '2026-01-27T12:10:05.163349'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS die im HTTP-POST-Operation auf die Ressource ChargeItem
+  übertragene ChargeItem-Ressource gegen das FHIR-Profil ChargeItem prüfen und die
+  Korrektheit der Rezept-ID (GEM_ERP_PR_PrescriptionId) im referenzierten Task als
+  ChargeItem.identifier, die Korrektheit der Versicherten-ID des Versicherten im referenzierten
+  Task (Task.for) gegen ChargeItem.subject.identifier sowie die Korrektheit der Telematik-ID
+  der Apotheke gemäß ACCESS_TOKEN mit dem Wert in ChargeItem.enterer.identifier prüfen
+  und bei Nicht-Konformität das Anlegen der Ressource im E-Rezept-Fachdienst mit dem
+  http-Status-Code 400 ablehnen, damit nur FHIR-valide Ressourcen in den E-Rezept-Fachdienst
+  hochgeladen werden.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – FHIR-Validierung
+  ChargeItem
+version: 0

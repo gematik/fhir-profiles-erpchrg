@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: ab222baf5f6d8adcb6e8079b1d1e5fa7a02835e4621a9c9c388ab509ae491f35
+created: '2026-01-27T10:25:54.949343'
+date: '2026-01-27T10:25:54.949346'
+key: IG-ERP-CHRG-357
+modified: '2026-01-27T10:25:54.949345'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-consent.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-GET-Operation auf den Endpunkt
+  /Consent sicherstellen, dass ausschließlich Versicherte in der Rolle oid_versicherter
+  die Operation am E-Rezept-Fachdienst aufrufen dürfen und die Rolle "professionOID"
+  des Aufrufers im ACCESS_TOKEN im HTTP-RequestHeader "Authorization" feststellen,
+  damit die Information zur Einwilligung nicht durch Unberechtigte ausgelesen werden
+  kann.
+title: E-Rezept-Fachdienst – Consent lesen – Rollenprüfung Versicherter
+version: 0

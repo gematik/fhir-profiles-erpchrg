@@ -1,0 +1,24 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: eea8063351a3bdab484b087c05b38234bf2f18ca55bd485f4bf33013318b270c
+created: '2026-01-27T10:25:54.936749'
+date: '2026-01-27T10:25:54.936751'
+key: IG-ERP-CHRG-273
+modified: '2026-01-27T10:25:54.936750'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-PUT-Operation auf eine konkrete
+  über <id> adressierte /ChargeItem/<id> Ressource durch eine abgebende LEI die im
+  HTTP-PUT-Operation auf die Ressource ChargeItem übertragene PKV-Abgabedatensatz-Ressource
+  gegen das FHIR-Profil PKV-Abgabedatensatz prüfen und bei Nicht-Konformität das Anlegen
+  der Ressource im E-Rezept-Fachdienst mit dem http-Status-Code 400 und einem Hinweis
+  auf die FHIR-Invalidität in OperationOutcome ablehnen, damit nur FHIR-valide Ressourcen
+  in den E-Rezept-Fachdienst hochgeladen werden.
+title: E-Rezept-Fachdienst – Abrechnungsinformation ändern – Apotheke – FHIR-Validierung
+  PKV-Abgabedatensatz
+version: 0

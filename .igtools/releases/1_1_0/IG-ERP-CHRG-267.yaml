@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: af1b0acb3ebbb77e86b7c5363b71cfa65ea2554a34372081415c594a53faa3bb
+created: '2026-01-27T10:25:54.935857'
+date: '2026-01-27T10:25:54.935859'
+key: IG-ERP-CHRG-267
+modified: '2026-01-27T10:25:54.935858'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: 'Der E-Rezept-Fachdienst MUSS die im HTTP-PATCH-Operation auf die Ressource
+  ChargeItem übertragenen Attribute gegen das FHIR-Profil ChargeItem prüfen, auf die
+  Zulässigkeit der änderbaren Felder prüfen: Versicherter darf nur Markierungen (extension
+  ChargeItem.extension:markingFlag) ändern, und bei fehlerhafter Prüfung die Operation
+  mit dem http-Status-Code 400 und einem Hinweis auf unzulässige Änderung gesperrter
+  Attribute in OperationOutcome abbrechen, damit kein Schadcode und keine fachfremden
+  Daten in den E-Rezept-Fachdienst hochgeladen werden.'
+title: E-Rezept-Fachdienst – Abrechnungsinformation ändern (PATCH) – Zulässige Felder
+version: 0

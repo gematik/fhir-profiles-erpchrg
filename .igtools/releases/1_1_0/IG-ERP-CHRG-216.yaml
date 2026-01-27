@@ -1,0 +1,20 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: f1e7b64a674e98cd17c56c15b972cd369680e93a3188e2f573f6d4ffdc715878
+created: '2026-01-27T12:10:05.154069'
+date: '2026-01-27T12:10:05.154071'
+key: IG-ERP-CHRG-216
+modified: '2026-01-27T12:10:05.154070'
+release_status: NEW
+source: input/pagecontent/query-api-consent.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-Operation DELETE auf den Endpunkt
+  /Consent die Ressource löschen, bei der Consent.patient.identifier der KVNR aus
+  dem ACCESS_TOKEN im "Authorization"-Header des HTTP-Requests sowie Consent.category.coding.code
+  dem in ?category übermittelten Wert entspricht.
+title: E-Rezept-Fachdienst – Consent löschen – Löschen der Consent
+version: 0

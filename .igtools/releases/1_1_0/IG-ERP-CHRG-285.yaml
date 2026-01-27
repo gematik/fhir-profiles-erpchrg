@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 7ba4af666fb8746d940cbb27786be760fbc7bf17b00c010fe10a923c46668668
+created: '2026-01-27T10:25:54.938802'
+date: '2026-01-27T10:25:54.938804'
+key: IG-ERP-CHRG-285
+modified: '2026-01-27T10:25:54.938803'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Zugriff auf einen Task des Flowtype Task.extension:flowType
+  = 200 oder 209 mittels HTTP-POST-Operation über /Task/<id>/$accept, wenn für die
+  KVNR des begünstigten Versicherten (Task.for) eine Consent Ressource mit Consent.patient.identifier
+  = KVNR und Consent.category.coding.code = "CHARGCONS" existiert, das Response Bundle
+  um die Consent Ressource ergänzen, um der abgebenden LEI die Information zu übermitteln,
+  ob der Versicherte eine Einwilligung zum Speichern der Abrechnungsinformationen
+  auf dem E-Rezept-Fachdienst erteilt hat.
+title: E-Rezept-Fachdienst – Task akzeptieren – Flowtype 200/209 – Einwilligung ermitteln
+version: 0

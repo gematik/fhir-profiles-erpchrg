@@ -1,0 +1,137 @@
+- id: AF_10082
+  anchor: abrechnungsinformation-bereitstellen
+  link: menu-fachlichkeit-anwendungsfaelle.html#abrechnungsinformation-bereitstellen
+  title: "Abrechnungsinformation durch Abgebenden bereitstellen"
+  roles: ["Abgebende LEI"]
+  description: |
+    Mit der Belieferung des E-Rezepts übermittelt die abgebende LEI den PKV-Abgabedatensatz
+    an den E-Rezept-Fachdienst und stellt damit die Abrechnungsinformation digital bereit.
+    Voraussetzung ist die Einwilligung des Versicherten zum Speichern der Abrechnungsinformationen.
+  preconditions: |
+    - Ein Mitarbeiter der abgebenden LEI hat „Quittung abrufen“ durchgeführt.
+    - Task-ID und Secret zur Statusänderung „in Abgabe (gesperrt)“ sind bekannt.
+    - Das E-Rezept hat den Status „quittiert“.
+    - Einwilligung des Versicherten liegt vor.
+  actions: |
+    - PKV-Abgabedatensatz erstellen und signieren.
+    - ChargeItem mit PrescriptionID und Pflichtfeldern erzeugen.
+    - ChargeItem, Secret und Abgabedaten an den E-Rezept-Fachdienst senden.
+    - Fachdienst prüft Einwilligung, Signatur und FHIR-Validität; übernimmt Verordnungsdatensatz und Quittung.
+    - Fachdienst erzeugt AccessCode zum Ändern.
+  postconditions: |
+    - Abrechnungsinformation ist gespeichert und protokolliert.
+  relatedTechnicalUseCases: |
+    - [Abrechnungsinformation bereitstellen](./menu-technische-umsetzung-anwendungsfaelle.html#bereitstellen-abgebende-lei)
+
+- id: AF_10081
+  anchor: abrechnungsinformation-abrufen
+  link: menu-fachlichkeit-anwendungsfaelle.html#abrechnungsinformation-abrufen
+  title: "Abrechnungsinformation durch Abgebenden abrufen"
+  roles: ["Abgebende LEI"]
+  description: |
+    Die Apotheke ruft eine zuvor von ihr bereitgestellte Abrechnungsinformation ab,
+    wenn sie die Daten im Primärsystem nicht mehr vorliegen hat und der AccessCode bekannt ist.
+  preconditions: |
+    - Rezept-ID und AccessCode zum Ändern sind bekannt.
+  actions: |
+    - Aufruf des E-Rezept-Fachdienstes mit Rezept-ID und AccessCode.
+    - Fachdienst prüft AccessCode und Berechtigung.
+    - Fachdienst liefert Verordnungs- und PKV-Abgabedatensatz.
+  postconditions: |
+    - Datensätze liegen im Primärsystem vor; Zugriff ist protokolliert.
+  relatedTechnicalUseCases: |
+    - [Abrechnungsinformation abrufen](./menu-technische-umsetzung-anwendungsfaelle.html#abrufen-abgebende-lei)
+
+- id: AF_10083
+  anchor: pkv-abgabedatensatz-aendern
+  link: menu-fachlichkeit-anwendungsfaelle.html#pkv-abgabedatensatz-aendern
+  title: "PKV-Abgabedatensatz durch Abgebenden ändern"
+  roles: ["Abgebende LEI"]
+  description: |
+    Die abgebende LEI ändert auf Wunsch des Versicherten den PKV-Abgabedatensatz.
+    Der zuvor gespeicherte Datensatz wird überschrieben.
+  preconditions: |
+    - Abrechnungsinformation wurde zuvor bereitgestellt.
+    - Rezept-ID und AccessCode zum Ändern sind bekannt.
+  actions: |
+    - Neuer PKV-Abgabedatensatz wird erzeugt.
+    - Rezept-ID, AccessCode und Datensatz werden an den Fachdienst übermittelt.
+    - Fachdienst prüft AccessCode, Berechtigung, Signatur und FHIR-Validität.
+    - Datensatz wird überschrieben; neuer AccessCode wird erzeugt.
+  postconditions: |
+    - Änderung ist protokolliert; neuer AccessCode liegt vor.
+  relatedTechnicalUseCases: |
+    - [PKV-Abgabedatensatz ändern](./menu-technische-umsetzung-anwendungsfaelle.html#pkv-abgabedatensatz-aendern)
+
+- id: AF_10084
+  anchor: einwilligung-erteilen
+  link: menu-fachlichkeit-anwendungsfaelle.html#einwilligung-erteilen
+  title: "Einwilligung zum Speichern der Abrechnungsinformationen erteilen"
+  roles: ["Versicherter"]
+  description: |
+    Der Versicherte erteilt die Einwilligung zur Speicherung von Abrechnungsinformationen
+    im E-Rezept-Fachdienst. Die Einwilligung ist unbefristet.
+  preconditions: |
+    - Der Nutzer ist als PKV-Versicherter identifiziert.
+  actions: |
+    - Einwilligung im FdV erfassen.
+    - Consent-Ressource erstellen und an den Fachdienst übertragen.
+  postconditions: |
+    - Einwilligung ist gespeichert und protokolliert.
+  relatedTechnicalUseCases: |
+    - [Einwilligung erteilen](./menu-technische-umsetzung-anwendungsfaelle.html#einwilligung-erteilen)
+
+- id: AF_10085
+  anchor: einwilligung-widerrufen
+  link: menu-fachlichkeit-anwendungsfaelle.html#einwilligung-widerrufen
+  title: "Einwilligung zum Speichern der Abrechnungsinformationen widerrufen"
+  roles: ["Versicherter"]
+  description: |
+    Der Versicherte widerruft die Einwilligung. Dadurch werden alle Abrechnungsinformationen
+    im E-Rezept-Fachdienst gelöscht.
+  preconditions: |
+    - Einwilligung wurde zuvor erteilt und ist abrufbar.
+  actions: |
+    - Widerruf im FdV bestätigen.
+    - DELETE /Consent?category=CHARGCONS ausführen.
+  postconditions: |
+    - Einwilligung und Abrechnungsinformationen sind gelöscht; Vorgang ist protokolliert.
+  relatedTechnicalUseCases: |
+    - [Einwilligung widerrufen](./menu-technische-umsetzung-anwendungsfaelle.html#einwilligung-widerrufen)
+
+- id: AF_10086
+  anchor: einwilligung-einsehen
+  link: menu-fachlichkeit-anwendungsfaelle.html#einwilligung-einsehen
+  title: "Einwilligung zum Speichern der Abrechnungsinformationen einsehen"
+  roles: ["Versicherter"]
+  description: |
+    Der Versicherte sieht ein, ob eine Einwilligung im E-Rezept-Fachdienst vorliegt.
+  preconditions: |
+    - Keine.
+  actions: |
+    - GET /Consent ausführen.
+    - Consent-Ressource mit CHARGCONS auswerten.
+  postconditions: |
+    - Einwilligungsstatus liegt zur Anzeige im FdV vor.
+  relatedTechnicalUseCases: |
+    - [Einwilligung einsehen](./menu-technische-umsetzung-anwendungsfaelle.html#einwilligung-einsehen)
+
+- id: AF_10087
+  anchor: abrechnungsinformationen-abrufen
+  link: menu-fachlichkeit-anwendungsfaelle.html#abrechnungsinformationen-abrufen
+  title: "Abrechnungsinformationen durch den Versicherten abrufen"
+  roles: ["Versicherter"]
+  description: |
+    Der Versicherte ruft die Abrechnungsinformationen aus dem E-Rezept-Fachdienst ab
+    und kann sie anzeigen, exportieren oder weiterleiten.
+  preconditions: |
+    - Einwilligung liegt vor.
+    - Abrechnungsinformationen wurden durch eine Apotheke bereitgestellt.
+  actions: |
+    - Liste per GET /ChargeItem abrufen.
+    - Detailabruf via GET /ChargeItem/<id> durchführen.
+    - Fachdienst signiert Datensätze beim Detailabruf.
+  postconditions: |
+    - Daten stehen im FdV zur Anzeige und zum Export bereit; Abruf ist protokolliert.
+  relatedTechnicalUseCases: |
+    - [Abrechnungsinformation abrufen](./menu-technische-umsetzung-anwendungsfaelle.html#abrechnungsinformation-abrufen-versicherter)

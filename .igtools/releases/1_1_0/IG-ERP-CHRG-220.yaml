@@ -1,0 +1,21 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 7e817983323f9ccad40a7b9ab075f353504d7ba59d52d3e24bbd70fb785f01e6
+created: '2026-01-27T12:10:05.152808'
+date: '2026-01-27T12:10:05.152810'
+key: IG-ERP-CHRG-220
+modified: '2026-01-27T12:10:05.152809'
+release_status: NEW
+source: input/pagecontent/query-api-consent.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-POST-Operation auf den Endpunkt
+  /Consent sicherstellen, dass die KVNR im ACCESS_TOKEN im "Authorization"-Header
+  des HTTP-Requests und die KVNR in Consent.patient.identifier übereinstimmen, damit
+  eine Einwilligung für einen Versicherten nicht durch Dritte erteilt werden kann.
+  Im Fehlerfall muss der Http-Request mit dem Http-Fehlercode 403 abgewiesen werden.
+title: E-Rezept-Fachdienst – Consent schreiben – Prüfung KVNR
+version: 0

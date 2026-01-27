@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 83584f534f8c29e47e3a6b2a7f5215dfda297a9fde06051321c1186284023056
+created: '2026-01-27T12:10:05.165354'
+date: '2026-01-27T12:10:05.165357'
+key: IG-ERP-CHRG-182
+modified: '2026-01-27T12:10:05.165356'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-PATCH-Operation auf eine konkrete
+  über <id> adressierte /ChargeItem/<id> Ressource sicherstellen, dass ausschließlich
+  Nutzer in der Rolle oid_versicherter die Operation am E-Rezept-Fachdienst aufrufen
+  dürfen und die Rolle "professionOID" des Aufrufers im ACCESS_TOKEN im HTTP-RequestHeader
+  "Authorization" feststellen, damit eine Abrechnungsinformation nicht durch Unberechtigte
+  aktualisiert werden kann.
+title: E-Rezept-Fachdienst – Abrechnungsinformation ändern (PATCH) – Rollenprüfung
+version: 0

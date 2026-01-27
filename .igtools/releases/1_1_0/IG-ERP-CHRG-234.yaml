@@ -1,0 +1,20 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 3c2fb52a376a1a815a080687979da5668aa0f7a14a1061dd58f07bc98327abcf
+created: '2026-01-27T10:25:54.930772'
+date: '2026-01-27T10:25:54.930774'
+key: IG-ERP-CHRG-234
+modified: '2026-01-27T10:25:54.930773'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-datenschutz-und-sicherheit.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS sicherstellen, dass abgebende Leistungserbringer
+  die Information über die Möglichkeit des Speicherns der Abrechnungsinformationen
+  im E-Rezept-Fachdienst nur im Kontext eines konkreten E-Rezepts erhalten.
+title: Information über Möglichkeit des Speicherns der Abrechnungsinformationen nur
+  für konkretes E-Rezept
+version: 0

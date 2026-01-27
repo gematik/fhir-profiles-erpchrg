@@ -1,0 +1,21 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 503ad57d918f34f483b4b5dc83a2ae44d9ef105618f2c55156b08da02cc69ce8
+created: '2026-01-27T10:25:54.933551'
+date: '2026-01-27T10:25:54.933554'
+key: IG-ERP-CHRG-250
+modified: '2026-01-27T10:25:54.933553'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-POST-Operation auf den Endpunkt
+  /ChargeItem das Quittung-Bundle vom Profil GEM_ERP_PR_Bundle ohne die Signatur zur
+  im URL-Parameter "task=..." übertragenen Task-ID identifizieren und zur ChargeItem-Ressource
+  mit dem Identifier PrescriptionID speichern und in ChargeItem.supportingInformation:receipt
+  die Referenz hinzufügen.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – Quittung übernehmen
+version: 0

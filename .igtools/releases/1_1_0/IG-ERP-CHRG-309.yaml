@@ -1,0 +1,22 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: e5bb616bd813e79e6f5e5216de4a90fc19698ca8785cacda1ab63068ca21fd32
+created: '2026-01-27T10:25:54.942686'
+date: '2026-01-27T10:25:54.942688'
+key: IG-ERP-CHRG-309
+modified: '2026-01-27T10:25:54.942687'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-query-api.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der Http-POST-Operation auf den Endpunkt
+  /ChargeItem sicherstellen, dass zu der im URL-Parameter "task=..." übertragene Task-ID
+  eine Task-Ressource mit dem Status Task.status = completed existiert und bei fehlgeschlagener
+  Prüfung mit dem HTTP-Fehlercode 409 abbrechen, damit nur eine Abrechnungsinformation
+  für E-Rezepte mit dem Status „quittiert“ angelegt wird.
+title: E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – Prüfung Existenz
+  Task
+version: 0

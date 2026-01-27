@@ -4,9 +4,9 @@ frozen_hash: null
 frozen_version: null
 migrated_with_version: 0.3.0
 name: IG E-Rezept Patientenrechnung
-next_req_number: 0
+next_req_number: 363
 numbering_mode: sequential
-prefix: REQ
+prefix: IG
 releases:
 - 1.1.0
-scope: ERP-CHRG
+scope: ERP-CHRG-

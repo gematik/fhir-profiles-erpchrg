@@ -1,0 +1,25 @@
+@startuml
+title Einwilligungen durch Versicherten einsehen
+
+actor "Versicherter" as V
+participant "Frontend des\nVersicherten" as FE
+participant "E-Rezept\nFachdienst" as FD
+participant "Identity Provider" as IDP
+
+V -> FE: Einwilligungen einsehen()
+activate FE
+
+opt kein gültiger AuthN-Token
+  ref over FE, IDP: UC 5.1 - AuthN-Token durch Versicherten anfordern
+end
+
+FE -> FD: GET /Consent(AuthN-Token)
+activate FD
+
+FD --> FE: Consent Liste
+deactivate FD
+
+FE --> V: Consent
+deactivate FE
+
+@enduml

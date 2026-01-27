@@ -1,0 +1,23 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 46c41d6ea852075f3486785dcbef3bc0f591c56231b3b61d85078532fd44babf
+created: '2026-01-27T12:10:05.166157'
+date: '2026-01-27T12:10:05.166160'
+key: IG-ERP-CHRG-203
+modified: '2026-01-27T12:10:05.166159'
+release_status: NEW
+source: input/pagecontent/query-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-PUT-Operation auf eine konkrete
+  über <id> adressierte /ChargeItem/<id> Ressource durch eine abgebende Leistungserbringerinstitution
+  (Apotheke), diese anhand der Telematik-ID aus dem ACCESS_TOKEN im "Authorization"-Header
+  des HTTP-Requests identifizieren, diese gegen die im gespeicherten Datensatz in
+  ChargeItem.enterer.identifier hinterlegte Telematik-ID prüfen und bei Ungleichheit
+  den Aufruf mit dem HTTP-Fehlercode 403 abweisen, damit ausschließlich die Apotheke,
+  welche die Abrechnungsinformation bereitgestellt hat, diese ändert.
+title: E-Rezept-Fachdienst – Abrechnungsinformation ändern – Apotheke – Prüfung Telematik-ID
+version: 0

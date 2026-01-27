@@ -1,0 +1,18 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 0f9c3231f23762cacf1d7f71a43315f456869d7251ec48de9421eb6bd8ae9d9b
+created: '2026-01-27T10:25:54.931040'
+date: '2026-01-27T10:25:54.931106'
+key: IG-ERP-CHRG-236
+modified: '2026-01-27T10:25:54.931103'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-datenschutz-und-sicherheit.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS die Einwilligung in das Speichern der Abrechnungsinformationen
+  und deren Widerruf – inkl. Zeitpunkt der Aktion – für den Versicherten protokollieren.
+title: Protokollierung der Einwilligung bzw. des Widerrufs
+version: 0

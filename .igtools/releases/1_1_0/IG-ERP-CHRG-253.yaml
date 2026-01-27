@@ -1,0 +1,21 @@
+actor:
+- E-Rezept-Fachdienst
+conformance: SHALL
+content_hash: 59db0a13c68de61944425ad7419f250c6a87d237aad6c720bf99dde527c38ba7
+created: '2026-01-27T10:25:54.933919'
+date: '2026-01-27T10:25:54.933921'
+key: IG-ERP-CHRG-253
+modified: '2026-01-27T10:25:54.933920'
+release_status: NEW
+source: input/pagecontent/menu-schnittstellen-api-chargeitem.md
+status: ACTIVE
+test_procedures:
+  E-Rezept-Fachdienst:
+  - Produkttest
+text: Der E-Rezept-Fachdienst MUSS beim Aufruf der HTTP-GET-Operation auf den Endpunkt
+  /ChargeItem sicherstellen, dass ausschließlich Nutzer in der Rolle oid_versicherter
+  die Operation am E-Rezept-Fachdienst aufrufen dürfen und die Rolle "professionOID"
+  des Aufrufers im ACCESS_TOKEN im HTTP-RequestHeader "Authorization" feststellen,
+  damit E-Rezepte nicht durch Unberechtigte ausgelesen werden können.
+title: E-Rezept-Fachdienst – Abrechnungsinformationen abrufen – Rollenprüfung Versicherter
+version: 0
