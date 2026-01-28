@@ -200,82 +200,90 @@
         {
           "nameUrl": "menu-fachlichkeit-ueberblick.html",
           "title": "Überblick zur Verordnung und Belieferung von Arzneimitteln",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "menu-fachlichkeit-szenario-pkv.html",
-          "title": "E-Rezept für PKV Versicherte",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "menu-fachlichkeit-anwendungsfaelle.html",
-          "title": "Anwendungsfälle für den Medikationsprozess",
-          "generation": "markdown"
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "menu-fachlichkeit-szenario-pkv.html",
+              "title": "E-Rezept für PKV Versicherte",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "menu-fachlichkeit-anwendungsfaelle.html",
+              "title": "Anwendungsfälle für den Medikationsprozess",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "menu-technische-umsetzung-systemueberblick.html",
           "title": "Systemüberblick",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "menu-technische-umsetzung-anwendungsfaelle.html",
-          "title": "Technische Anwendungsfälle",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "menu-technische-umsetzung-verarbeitungsregeln.html",
-          "title": "Verarbeitungsregeln für den E-Rezept-Fachdienst",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "menu-schnittstellen-generelle-prinzipien.html",
-          "title": "Generelle Prinzipien",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "menu-schnittstellen-datenschutz-und-sicherheit.html",
-          "title": "Datenschutz und Sicherheit",
-          "generation": "markdown"
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "menu-technische-umsetzung-anwendungsfaelle.html",
+              "title": "Technische Anwendungsfälle",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "menu-technische-umsetzung-verarbeitungsregeln.html",
+              "title": "Verarbeitungsregeln für den E-Rezept-Fachdienst",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "menu-schnittstellen-generelle-prinzipien.html",
+              "title": "Generelle Prinzipien",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "menu-schnittstellen-datenschutz-und-sicherheit.html",
+              "title": "Datenschutz und Sicherheit",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "query-api.html",
           "title": "Query API",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "query-api-chargeitem.html",
-          "title": "Query API: ChargeItem",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "query-api-consent.html",
-          "title": "Query API: Consent",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "query-api-communication.html",
-          "title": "Query API: Communication",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "query-api-task.html",
-          "title": "Query API: Task",
-          "generation": "markdown"
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "query-api-chargeitem.html",
+              "title": "Query API: ChargeItem",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "query-api-consent.html",
+              "title": "Query API: Consent",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "query-api-communication.html",
+              "title": "Query API: Communication",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "query-api-task.html",
+              "title": "Query API: Task",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "operation-api.html",
           "title": "Operationen",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "op-accept.html",
-          "title": "Operation: $accept",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "op-activate.html",
-          "title": "Operation: $activate",
-          "generation": "markdown"
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "op-accept.html",
+              "title": "Operation: $accept",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "op-activate.html",
+              "title": "Operation: $activate",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "artifacts.html",
@@ -285,6 +293,26 @@
         {
           "nameUrl": "referenced.html",
           "title": "Referenzen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "release-notes.html",
+          "title": "Release Notes",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "spec-sheet.html",
+          "title": "Steckbriefe",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "license.html",
+          "title": "Apache Licence",
           "generation": "markdown"
         }
       ]

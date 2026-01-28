@@ -35,11 +35,11 @@ menu:
     Operationen: operation-api.html
   Anhänge:
     Referenzen: referenced.html
-    # Downloads: downloads.html
+    Downloads: downloads.html
     # OpenAPI: erp-chrg-openapi.html
     Release Notes: release-notes.html
     Steckbriefe: spec-sheet.html
-    Versionsvergleiche: comparisons.html
+    # Versionsvergleiche: comparisons.html
     Lizenz: license.html
   FHIR-Artefakte: artifacts.html
 
@@ -82,18 +82,18 @@ pages:
     title: "FHIR-Artefakte"
   referenced.md:
     title: "Referenzen"
-  # downloads.md:
-  #   title: "Downloads"
+  downloads.md:
+    title: "Downloads"
   # erp-openapi.md:
   #   title: "OpenAPI: E-Rezept Produkttypen"
-  # release-notes.md:
-  #   title: "Release Notes"
-  # spec-sheet.md:
-  #   title: "Steckbriefe"
+  release-notes.md:
+    title: "Release Notes"
+  spec-sheet.md:
+    title: "Steckbriefe"
   # comparisons.md:
   #   title: "Versionsvergleiche"
-  # license.md:
-  #   title: "Apache Licence"
+  license.md:
+    title: "Apache Licence"
 
 parameters:
   path-pages:

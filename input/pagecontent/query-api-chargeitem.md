@@ -27,6 +27,7 @@ Hinweis: Liegt keine Einwilligung vor, wird eine leere Liste zurückgegeben, da 
 Die Operation wird im FdV/AdV ausgelöst, z. B. beim Abruf der Liste oder nach Gerätewechsel.
 
 ### Resource API
+
 <div class="gematik-apidoc"
   data-api-type="FHIRResource"
   data-api-fhir-resource-type="ChargeItem"
@@ -40,6 +41,7 @@ Die Operation wird im FdV/AdV ausgelöst, z. B. beim Abruf der Liste oder nach G
 </div>
 
 ### Verarbeitung
+
 <requirement conformance="SHALL" key="IG-ERP-CHRG-170" title="E-Rezept-Fachdienst – Abrechnungsinformationen abrufen – Rollenprüfung Versicherter" version="0">
     <meta lockversion="false"/>
     <actor name="E-Rezept-Fachdienst">
@@ -93,6 +95,7 @@ Der Detailabruf liefert ein Bundle mit ChargeItem, Verordnungsdatensatz, PKV‑A
 Der Detailabruf erfolgt aus dem FdV/AdV oder durch die abgebende LEI (mit AccessCode), z. B. zur Korrektur.
 
 ### Resource API
+
 <div class="gematik-apidoc"
   data-api-type="FHIRResource"
   data-api-fhir-resource-type="ChargeItem"
@@ -106,6 +109,7 @@ Der Detailabruf erfolgt aus dem FdV/AdV oder durch die abgebende LEI (mit Access
 </div>
 
 ### Verarbeitung
+
 <requirement conformance="SHALL" key="IG-ERP-CHRG-175" title="E-Rezept-Fachdienst – Abrechnungsinformation abrufen – Rollenprüfung Versicherter oder Apotheker" version="0">
     <meta lockversion="false"/>
     <actor name="E-Rezept-Fachdienst">
@@ -167,6 +171,7 @@ Hinweis: In VAU‑Requests sind u. a. die Header `X-erp-user: l` und `X-erp-reso
 Die Operation wird nach der Belieferung ausgelöst, sobald eine Einwilligung des Versicherten vorliegt und die Abrechnungsinformation digital bereitgestellt werden soll.
 
 ### Resource API
+
 <div class="gematik-apidoc"
   data-api-type="FHIRResource"
   data-api-fhir-resource-type="ChargeItem"
@@ -180,6 +185,7 @@ Die Operation wird nach der Belieferung ausgelöst, sobald eine Einwilligung des
 </div>
 
 ### Verarbeitung
+
 <requirement conformance="SHALL" key="IG-ERP-CHRG-185" title="E-Rezept-Fachdienst – Abrechnungsinformation bereitstellen – Rollenprüfung" version="0">
     <meta lockversion="false"/>
     <actor name="E-Rezept-Fachdienst">
@@ -317,6 +323,7 @@ Versicherte können Markierungen am ChargeItem (z. B. für Einreichung) ändern.
 Der Anwendungsfall wird im FdV/AdV ausgelöst, wenn Markierungen angepasst werden.
 
 ### Resource API
+
 <div class="gematik-apidoc"
   data-api-type="FHIRResource"
   data-api-fhir-resource-type="ChargeItem"
@@ -330,6 +337,7 @@ Der Anwendungsfall wird im FdV/AdV ausgelöst, wenn Markierungen angepasst werde
 </div>
 
 ### Verarbeitung
+
 <requirement conformance="SHALL" key="IG-ERP-CHRG-181" title="E-Rezept-Fachdienst – Abrechnungsinformation ändern (PATCH) – alles Ändern verbieten" version="0">
     <meta lockversion="false"/>
     <actor name="E-Rezept-Fachdienst">
@@ -386,6 +394,7 @@ Der Anwendungsfall wird ausgelöst, wenn Korrekturen an Abgabedaten notwendig si
 </div>
 
 ### Verarbeitung
+
 <requirement conformance="SHALL" key="IG-ERP-CHRG-201" title="E-Rezept-Fachdienst – Abrechnungsinformation ändern – Rollenprüfung" version="0">
     <meta lockversion="false"/>
     <actor name="E-Rezept-Fachdienst">
@@ -488,6 +497,7 @@ Der Anwendungsfall wird durch den Versicherten im FdV/AdV ausgelöst.
 </div>
 
 ### Verarbeitung
+
 <requirement conformance="SHALL" key="IG-ERP-CHRG-166" title="E-Rezept-Fachdienst – Abrechnungsinformation löschen – alles Löschen verbieten" version="0">
     <meta lockversion="false"/>
     <actor name="E-Rezept-Fachdienst">
