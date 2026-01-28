@@ -1,4 +1,4 @@
-# API: Einwilligungen (Consent)
+API: Einwilligungen (Consent)
 
 Diese Seite beschreibt die Schnittstelle zur Verwaltung von Einwilligungen (Consent) für das Speichern von Abrechnungsinformationen. Die Einwilligung wird als Consent‑Ressource mit der Kategorie CHARGCONS abgebildet.
 

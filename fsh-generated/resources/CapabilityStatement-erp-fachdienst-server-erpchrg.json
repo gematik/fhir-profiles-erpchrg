@@ -35,6 +35,9 @@
     "application/fhir+json",
     "application/fhir+xml"
   ],
+  "imports": [
+    "https://gematik.de/fhir/erp/CapabilityStatement/erp-fachdienst-server"
+  ],
   "rest": [
     {
       "mode": "server",

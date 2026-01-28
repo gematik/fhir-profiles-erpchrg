@@ -1,4 +1,4 @@
-# Query API: ChargeItem
+Query API: ChargeItem
 
 Die Query API für ChargeItem ermöglicht den Zugriff auf Abrechnungsinformationen (Verordnungsdatensatz, PKV‑Abgabedatensatz, Quittung). Die Abrechnungsinformation wird als ChargeItem mit Referenzen auf die Datensätze abgebildet.
 

@@ -1,4 +1,4 @@
-# Query API
+Query API
 
 Dieses Kapitel beschreibt die Schnittstellen des E-Rezept-Fachdienstes für die PKV-Abrechnung (Flowtype 200/209). Anforderungen sind in Requirement-Blöcken formuliert.
 

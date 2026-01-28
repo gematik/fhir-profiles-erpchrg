@@ -1,4 +1,4 @@
-# Query API: Consent
+Query API: Consent
 
 Die Query API für Consent ermöglicht das Erteilen, Einsehen und Widerrufen der Einwilligung zur Speicherung von Abrechnungsinformationen.
 

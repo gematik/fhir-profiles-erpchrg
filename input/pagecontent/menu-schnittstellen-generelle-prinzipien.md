@@ -1,4 +1,4 @@
-# Generelle Prinzipien
+Generelle Prinzipien
 
 ## Authentisierung
 Die Authentisierung der Nutzer am E-Rezept-Fachdienst erfolgt mittels ACCESS_TOKEN. Tokens werden von registrierten Identity Providern ausgestellt. Für die Authentisierung eines Versicherten am IdP der gematik wird eine eGK mit NFC-Schnittstelle verwendet; zukünftig können föderierte IdPs eingebunden werden.

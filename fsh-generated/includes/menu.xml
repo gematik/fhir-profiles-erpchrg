@@ -22,7 +22,7 @@
         <a href="menu-fachlichkeit-ueberblick.html">Überblick</a>
       </li>
       <li>
-        <a href="menu-fachlichkeit-szenarien.html">Szenarien</a>
+        <a href="menu-fachlichkeit-szenario-pkv.html">Szenario PKV</a>
       </li>
       <li>
         <a href="menu-fachlichkeit-anwendungsfaelle.html">Anwendungsfälle</a>
@@ -56,37 +56,11 @@
       <li>
         <a href="menu-schnittstellen-datenschutz-und-sicherheit.html">Datenschutz und Sicherheit</a>
       </li>
-      <li class="dropdown">
-        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Query API
-          <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <li>
-            <a href="query-api-chargeitem.html">ChargeItem</a>
-          </li>
-          <li>
-            <a href="query-api-consent.html">Consent</a>
-          </li>
-          <li>
-            <a href="query-api-communication.html">Communication</a>
-          </li>
-          <li>
-            <a href="query-api-task.html">Task</a>
-          </li>
-        </ul>
+      <li>
+        <a href="query-api.html">Query API</a>
       </li>
-      <li class="dropdown">
-        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Operationen
-          <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <li>
-            <a href="op-accept.html">$accept</a>
-          </li>
-          <li>
-            <a href="op-activate.html">$activate</a>
-          </li>
-        </ul>
+      <li>
+        <a href="operation-api.html">Operationen</a>
       </li>
     </ul>
   </li>

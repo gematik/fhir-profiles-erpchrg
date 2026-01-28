@@ -1,4 +1,4 @@
-# Query API: Communication
+Query API: Communication
 
 Die Query API für Communication beschreibt das Einstellen von Nachrichten im Rahmen der PKV‑Abrechnung (z. B. Änderungsanfragen der Abrechnungsinformation).
 

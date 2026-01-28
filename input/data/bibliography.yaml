@@ -1,5 +1,5 @@
 entries:
-  - key: "FHIR-IG E-Rezept-Fachdienst"
+  - key: "gemIG_eRp_Prescription"
     author: "gematik"
     title: "FHIR-IG E-Rezept-Fachdienst"
     link: "https://gemspec.gematik.de/ig/fhir/erezept-workflow-r4/"

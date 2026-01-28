@@ -1,4 +1,4 @@
-# Datenschutz und Sicherheit
+Datenschutz und Sicherheit
 
 PKV-Versicherte erhalten Abrechnungsinformationen, die sie bei ihrer privaten Krankenversicherung zur Kostenerstattung einreichen. Der PKV-Abgabedatensatz wird nur gespeichert, wenn eine einmalige Einwilligung des Versicherten vorliegt. Die Abrechnungsinformationen werden bis zu 10 Jahre gespeichert und können anschließend durch den Versicherten abgerufen, weitergeleitet oder ausgedruckt werden.
 

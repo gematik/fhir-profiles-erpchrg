@@ -1,4 +1,4 @@
-# Systemüberblick
+Systemüberblick
 
 ## Einordnung in die Telematikinfrastruktur
 Die Einführung des E-Rezepts für PKV-Versicherte setzt auf die bestehende Infrastruktur auf. PKV-Versicherte sind eine neue Benutzergruppe. Die App des Kostenträgers ist eine neue Komponente, zu der das E-Rezept-Frontend des Versicherten eine Schnittstelle für Abrechnungsinformationen anbietet. Die App des Kostenträgers ist keine Komponente der TI. Der Export als PDF ermöglicht weitere Übermittlungskanäle (z. B. E-Mail, Webportal).

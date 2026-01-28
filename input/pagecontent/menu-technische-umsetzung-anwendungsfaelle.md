@@ -12,7 +12,13 @@ Die abgebende LEI stellt die Abrechnungsinformation zu einem E‑Rezept im E‑R
 <em>Schnittstelle:</em> <i><a href="./query-api-chargeitem.html">query-api-chargeitem</a></i>
 
 **Sequenzdiagramm (Platzhalter):**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-abrechnungsinformation-bereitstellen.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>abrechnungsinformation-bereitstellen</figcaption>
+</figure>
 
 <a id="abrufen-abgebende-lei"></a>
 ## Abrufen der Abrechnungsinformation durch die abgebende LEI (AF_10081)
@@ -25,7 +31,15 @@ Für Korrekturen kann die abgebende LEI eine zuvor bereitgestellte Abrechnungsin
 <em>Schnittstelle:</em> <i><a href="./query-api-chargeitem.html">query-api-chargeitem</a></i>
 
 **Sequenzdiagramm:**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-abrechnungsinformation-abrufen-abgebender.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>abrechnungsinformation-abrufen-abgebender</figcaption>
+</figure>
+
+<br>
 
 <a id="pkv-abgabedatensatz-aendern"></a>
 ## Ändern des PKV‑Abgabedatensatzes durch die abgebende LEI (AF_10083)
@@ -38,7 +52,13 @@ Wenn eine Korrektur erforderlich ist, kann die abgebende LEI den PKV‑Abgabedat
 <em>Schnittstelle:</em> <i><a href="./query-api-chargeitem.html">query-api-chargeitem</a></i>
 
 **Sequenzdiagramm (Platzhalter):**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-abrechnungsinformation-aendern.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>abrechnungsinformation-aendern</figcaption>
+</figure>
 
 <a id="einwilligung-erteilen"></a>
 ## Einwilligung zum Speichern erteilen (AF_10084)
@@ -50,7 +70,13 @@ Der Versicherte erteilt die Einwilligung zum Speichern der Abrechnungsinformatio
 <em>Schnittstelle:</em> <i><a href="./query-api-consent.html">query-api-consent</a></i>
 
 **Sequenzdiagramm (Platzhalter):**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-einwilligung-erteilen.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>einwilligung-erteilen</figcaption>
+</figure>
 
 <a id="einwilligung-einsehen"></a>
 ## Einwilligung einsehen (AF_10086)
@@ -62,7 +88,13 @@ Der Versicherte kann prüfen, ob eine Einwilligung vorliegt.
 <em>Schnittstelle:</em> <i><a href="./query-api-consent.html">query-api-consent</a></i>
 
 **Sequenzdiagramm (Platzhalter):**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-einwilligung-einsehen.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>einwilligung-einsehen</figcaption>
+</figure>
 
 <a id="einwilligung-widerrufen"></a>
 ## Einwilligung widerrufen (AF_10085)
@@ -74,7 +106,13 @@ Der Versicherte kann die Einwilligung jederzeit widerrufen. Mit dem Widerruf wer
 <em>Schnittstelle:</em> <i><a href="./query-api-consent.html">query-api-consent</a></i>
 
 **Sequenzdiagramm (Platzhalter):**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-einwilligung-widerrufen.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>einwilligung-widerrufen</figcaption>
+</figure>
 
 <a id="abrechnungsinformation-abrufen-versicherter"></a>
 ## Abrechnungsinformation abrufen (AF_10087)
@@ -88,7 +126,13 @@ Der Versicherte ruft eine Liste und die Details seiner Abrechnungsinformationen 
 <em>Schnittstelle:</em> <i><a href="./query-api-chargeitem.html">query-api-chargeitem</a></i>
 
 **Sequenzdiagramm (Platzhalter):**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-abrechnungsinformation-abrufen-versicherter.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>abrechnungsinformation-abrufen-versicherter</figcaption>
+</figure>
 
 <a id="abrechnungsinformation-weitergeben"></a>
 ## Abrechnungsinformation weitergeben (AF_10088)
@@ -100,7 +144,13 @@ Der Versicherte gibt die Abrechnungsinformation aus dem FdV/AdV heraus an eine Z
 <em>Schnittstelle:</em> <i><a href="./query-api-chargeitem.html">query-api-chargeitem</a></i>
 
 **Sequenzdiagramm (Platzhalter):**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-abrechnungsinformation-weitergeben.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>abrechnungsinformation-weitergeben</figcaption>
+</figure>
 
 <a id="abrechnungsinformation-markieren"></a>
 ## Abrechnungsinformation markieren
@@ -111,7 +161,13 @@ Der Versicherte kann Abrechnungsinformationen im FdV/AdV markieren (z. B. für A
 <em>Schnittstelle:</em> <i><a href="./query-api-chargeitem.html">query-api-chargeitem</a></i>
 
 **Sequenzdiagramm (Platzhalter):**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-abrechnungsinformation-markieren.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>abrechnungsinformation-markieren</figcaption>
+</figure>
 
 <a id="abrechnungsinformation-loeschen"></a>
 ## Abrechnungsinformation löschen
@@ -123,7 +179,13 @@ Der Versicherte kann eine Abrechnungsinformation aktiv löschen. Die Löschung i
 <em>Schnittstelle:</em> <i><a href="./query-api-chargeitem.html">query-api-chargeitem</a></i>
 
 **Sequenzdiagramm (Platzhalter):**
+
+<figure>
+    <div class="gem-ig-img-container" style="--box-width: 700px; margin-bottom: 30px;">
 {% include seq-abrechnungsinformation-loeschen.svg %}
+    </div>
+    <figcaption><strong>Abbildung: </strong>abrechnungsinformation-loeschen</figcaption>
+</figure>
 
 <a id="accesscode-an-apotheke-uebermitteln"></a>
 ## Berechtigen der Apotheke zum Ändern des PKV‑Abgabedatensatzes

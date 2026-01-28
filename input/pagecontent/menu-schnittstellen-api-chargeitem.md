@@ -1,4 +1,4 @@
-# API: Abrechnungsinformationen (ChargeItem)
+API: Abrechnungsinformationen (ChargeItem)
 
 Diese Seite beschreibt die Schnittstelle zur Abrechnungsinformation auf Basis der FHIR‑Ressource ChargeItem. Die Abrechnungsinformation besteht aus Verordnungsdatensatz, PKV‑Abgabedatensatz und Quittung, die über Referenzen im ChargeItem verknüpft sind.
 

@@ -2,7 +2,7 @@
   anchor: abrechnungsinformation-bereitstellen
   link: menu-fachlichkeit-anwendungsfaelle.html#abrechnungsinformation-bereitstellen
   title: "Abrechnungsinformation durch Abgebenden bereitstellen"
-  roles: ["Abgebende LEI"]
+  roles: ["Apotheker"]
   description: |
     Mit der Belieferung des E-Rezepts übermittelt die abgebende LEI den PKV-Abgabedatensatz
     an den E-Rezept-Fachdienst und stellt damit die Abrechnungsinformation digital bereit.
@@ -27,7 +27,7 @@
   anchor: abrechnungsinformation-abrufen
   link: menu-fachlichkeit-anwendungsfaelle.html#abrechnungsinformation-abrufen
   title: "Abrechnungsinformation durch Abgebenden abrufen"
-  roles: ["Abgebende LEI"]
+  roles: ["Apotheker"]
   description: |
     Die Apotheke ruft eine zuvor von ihr bereitgestellte Abrechnungsinformation ab,
     wenn sie die Daten im Primärsystem nicht mehr vorliegen hat und der AccessCode bekannt ist.
@@ -46,7 +46,7 @@
   anchor: pkv-abgabedatensatz-aendern
   link: menu-fachlichkeit-anwendungsfaelle.html#pkv-abgabedatensatz-aendern
   title: "PKV-Abgabedatensatz durch Abgebenden ändern"
-  roles: ["Abgebende LEI"]
+  roles: ["Apotheker"]
   description: |
     Die abgebende LEI ändert auf Wunsch des Versicherten den PKV-Abgabedatensatz.
     Der zuvor gespeicherte Datensatz wird überschrieben.

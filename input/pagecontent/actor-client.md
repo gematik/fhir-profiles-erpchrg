@@ -1,4 +1,4 @@
-### Primärsystem E-Rezept verordnende Leitungserbringer
+Primärsystem E-Rezept verordnende Leitungserbringer
 
 Die nachstehende Tabelle fasst Anforderungen dieses Implementation Guide für das _Primärsystem E-Rezept verordnende Leitungserbringer_ zusammen.
 

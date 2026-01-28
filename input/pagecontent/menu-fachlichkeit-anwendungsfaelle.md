@@ -1,4 +1,4 @@
-### Fachliche Anwendungsfälle
+Übersicht der fachlichen Anwendungsfälle im PKV‑Szenario.
 
 {% assign use_cases = site.data['use-cases'] %}
 {% assign roles = site.data['roles'] %}

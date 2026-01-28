@@ -203,16 +203,9 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "menu-fachlichkeit-szenarien.html",
-          "title": "Szenarien für den Verordnungsprozess",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "menu-fachlichkeit-szenario-pkv.html",
-              "title": "E-Rezept für PKV Versicherte",
-              "generation": "markdown"
-            }
-          ]
+          "nameUrl": "menu-fachlichkeit-szenario-pkv.html",
+          "title": "E-Rezept für PKV Versicherte",
+          "generation": "markdown"
         },
         {
           "nameUrl": "menu-fachlichkeit-anwendungsfaelle.html",
@@ -245,6 +238,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "query-api.html",
+          "title": "Query API",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "query-api-chargeitem.html",
           "title": "Query API: ChargeItem",
           "generation": "markdown"
@@ -262,6 +260,11 @@
         {
           "nameUrl": "query-api-task.html",
           "title": "Query API: Task",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operation-api.html",
+          "title": "Operationen",
           "generation": "markdown"
         },
         {

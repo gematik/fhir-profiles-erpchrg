@@ -1,16 +1,3 @@
-# Roles used for use case badges/filters
-- id: versicherter
-  label: Versicherter
-  color: "#1f77b4"
-- id: apotheke
-  label: Apotheke
-  color: "#ff7f0e"
-- id: kostentraeger
-  label: Kostenträger
-  color: "#2ca02c"
-- id: lei
-  label: Abgebende LEI
-  color: "#9467bd"
-- id: fachanwendung
-  label: E-Rezept-Fachdienst
-  color: "#8c564b"
+- Apotheker
+- (Zahn-)Arzt
+- Versicherter

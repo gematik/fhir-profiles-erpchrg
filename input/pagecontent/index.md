@@ -1,7 +1,5 @@
 Dieser Implementation Guide beschreibt das Feature zur Übermittlung von ärztlichen und zahnärztlichen Verordnungen für apothekenpflichtige Arzneimittel für PKV-Versicherte und die Bereitstellung der Abrechnungsinformationen für den Kostenträger. Es umfasst die Definition der Prozessparameter, Ergänzungen der workflowspezifischen Anforderungen an die Schnittstellen des E-Rezept-Fachdienstes sowie die Darstellung der Use Cases für Leistungserbringer und Versicherte.
 
-Schnittstellen und Spezifikationen, die in anderen Anwendungsfällen des E-Rezept-Fachdienst bereits beschrieben sind, werden hier nicht wiederholt. Entsprechende Anforderungen sind in [FHIR-IG E-Rezept-Fachdienst] dokumentiert und werden aus diesem IG referenziert.
-
 Die Fachanwendung E-Rezept ermöglicht die Übermittlung von ärztlichen bzw. zahnärztlichen Verordnungen in elektronischer Form. In der ersten Stufe sind dies Verordnungen für apothekenpflichtige Arzneimittel. In weiteren Ausbaustufen wird die Anwendung um weitere Verordnungen wie Betäubungsmittel (BtM), T-Rezepte sowie Heil- und Hilfsmittel erweitert.
 
 Die erstellten FHIR Profile richten sich an die Implementierer und Nutzer der Schnittstellen der Fachanwendung E-Rezept. Die Profile bilden dabei das technische Grundgerüst der Informationsobjekte zur Umsetzung des Projektes E-Rezept. Sie stehen in Verbindung mit den von der KBV definierten fachlichen Informationsobjekten (https://simplifier.net/eRezept/~introduction). 
@@ -13,8 +11,15 @@ Das Repository, was diesem Projekt zugrundeliegt und auch die FSH-Files enthält
 ## Wie dieser IG zu lesen ist
 
 Dieser Implementation Guide (IG) ist in mehrere Kapitel gegliedert siehe [Inhaltsverzeichnis](./toc.html).
+
 //TODO: tbd...
+
 Zuerst Szenarien und Anwendungsfälle, dann technische Umsetzung, Profile, Beispiele, Abhängigkeiten, Kontakt und rechtliche Hinweise.
+
+### Abhängiger IG
+Dieser FHIR-IG basiert auf dem FHIR-IG [gemIG_eRp_Prescription], welcher die Grundlage für die Implementierung des E-Rezept-Fachdienst und der Anwendungsfälle basiert. Alle dort beschriebenen Anforderungen und Datenmodelle gelten auch für diesen IG.
+
+Schnittstellen und Spezifikationen, die in anderen Anwendungsfällen des E-Rezept-Fachdienst bereits beschrieben sind, werden hier nicht wiederholt. Entsprechende Anforderungen sind in [gemIG_eRp_Prescription] dokumentiert und werden aus diesem IG referenziert.
 
 ## Abhängigkeiten
 

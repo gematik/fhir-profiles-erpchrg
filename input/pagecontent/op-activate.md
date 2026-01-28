@@ -1,4 +1,4 @@
-# Operation: $activate
+Operation: $activate
 
 ## Nachricht
 Die Operation $activate wird als HTTP POST auf `/Task/<id>/$activate` ausgeführt.
